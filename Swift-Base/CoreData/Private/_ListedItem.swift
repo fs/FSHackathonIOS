@@ -5,6 +5,7 @@ import CoreData
 
 enum ListedItemAttributes: String {
     case count = "count"
+    case date = "date"
     case selected = "selected"
     case unit = "unit"
 }
@@ -44,6 +45,11 @@ class _ListedItem: NSManagedObject {
     var count: NSNumber?
 
     // func validateCount(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged
+    var date: NSDate?
+
+    // func validateDate(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged
     var selected: NSNumber?

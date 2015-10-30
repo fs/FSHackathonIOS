@@ -9,6 +9,7 @@
 import UIKit
 
 class ListViewController: TGLStackedViewController {
+    
     private enum SectionIndex : Int {
         case List
         
@@ -21,8 +22,16 @@ class ListViewController: TGLStackedViewController {
         case List = "List"
     }
     
+    enum SegueIdentifier: String {
+        case NewList = "NewList"
+    }
+    
     //MARK: - params
-    var listOfLists: [List] = []
+    var listOfLists: [List] = [] {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
     
     //MARK: - life cycle
     override func loadView() {
@@ -46,16 +55,26 @@ class ListViewController: TGLStackedViewController {
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
     }
     
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier else { return }
+        
         if let lSender = sender as? UIButton {
-            let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: NSIndexPath(forRow: lSender.tag, inSection: 0)) as! ListCollectionViewCell
+            //need change to identifier
             let itemsList = segue.destinationViewController as! ItemsListViewController
-            itemsList.listCollectionViewCell = cell
+            itemsList.listIndex = lSender.tag
+            itemsList.listViewController = self
+            
+            return
+        }
+        
+        switch identifier {
+        case SegueIdentifier.NewList.rawValue:
+            let destinationViewController = segue.destinationViewController as! NewListViewController
+            destinationViewController.transitioningDelegate = destinationViewController.popoverDelegate
+            destinationViewController.modalPresentationStyle = .Custom
+            
+        default:
+            super.prepareForSegue(segue, sender: sender)
         }
     }
 }

@@ -13,7 +13,8 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var listCollectionViewCell: ListCollectionViewCell!
+    var listIndex: Int!
+    var listViewController: ListViewController!
     
     lazy var items = {
         return Item.MR_findAllSortedBy(ItemAttributes.order.rawValue, ascending: true) as! [Item]
@@ -74,6 +75,21 @@ extension ItemsListViewController: RACollectionViewDelegateTripletLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,  didEndDraggingItemAtIndexPath indexPath: NSIndexPath) {
         self.collectionView.reloadData()
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // create new listedItem
+        
+        let listedItem = ListedItem.MR_createEntity()
+        listedItem.item = self.items[indexPath.row]
+        listedItem.count = 12
+        listedItem.unit = Unit.Kilogramm.numberValue
+        
+        self.listViewController.listOfLists[self.listIndex].addListedItemsObject(listedItem)
+        self.listViewController.collectionView?.reloadData()
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }
 

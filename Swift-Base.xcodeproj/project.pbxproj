@@ -84,6 +84,40 @@
 		21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB31BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m */; };
 		21BA3B5B1BE408D900D6FE1F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB51BE3906D00B03AE4 /* NSString+MagicalDataImport.m */; };
 		21BA3B5D1BE40C8700D6FE1F /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BA3B5C1BE40C8700D6FE1F /* TodayCell.swift */; };
+		21BA3B5F1BE4210500D6FE1F /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED41BE3906D00B03AE4 /* MagicalRecord+Actions.m */; };
+		21BA3B601BE4210500D6FE1F /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED61BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.m */; };
+		21BA3B611BE4210500D6FE1F /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED81BE3906D00B03AE4 /* MagicalRecord+iCloud.m */; };
+		21BA3B621BE4210500D6FE1F /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDA1BE3906D00B03AE4 /* MagicalRecord+Options.m */; };
+		21BA3B631BE4210500D6FE1F /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDC1BE3906D00B03AE4 /* MagicalRecord+Setup.m */; };
+		21BA3B641BE4210500D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDE1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.m */; };
+		21BA3B651BE4210500D6FE1F /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEE11BE3906D00B03AE4 /* MagicalRecordInternal.m */; };
+		21BA3B661BE4210D00D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECD1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.m */; };
+		21BA3B671BE4210D00D6FE1F /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECF1BE3906D00B03AE4 /* NSPersistentStore+MagicalRecord.m */; };
+		21BA3B681BE4210D00D6FE1F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED11BE3906D00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		21BA3B691BE4211800D6FE1F /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC31BE3906D00B03AE4 /* NSManagedObjectContext+MagicalChainSave.m */; };
+		21BA3B6A1BE4211800D6FE1F /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC51BE3906D00B03AE4 /* NSManagedObjectContext+MagicalObserving.m */; };
+		21BA3B6B1BE4211800D6FE1F /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC71BE3906D00B03AE4 /* NSManagedObjectContext+MagicalRecord.m */; };
+		21BA3B6C1BE4211800D6FE1F /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC91BE3906D00B03AE4 /* NSManagedObjectContext+MagicalSaves.m */; };
+		21BA3B6D1BE4211800D6FE1F /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECB1BE3906D00B03AE4 /* NSManagedObjectContext+MagicalThreading.m */; };
+		21BA3B6E1BE4211F00D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB81BE3906D00B03AE4 /* NSManagedObject+MagicalAggregation.m */; };
+		21BA3B6F1BE4211F00D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBA1BE3906D00B03AE4 /* NSManagedObject+MagicalDataImport.m */; };
+		21BA3B701BE4211F00D6FE1F /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBC1BE3906D00B03AE4 /* NSManagedObject+MagicalFinders.m */; };
+		21BA3B711BE4211F00D6FE1F /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBE1BE3906D00B03AE4 /* NSManagedObject+MagicalRecord.m */; };
+		21BA3B721BE4211F00D6FE1F /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC01BE3906D00B03AE4 /* NSManagedObject+MagicalRequests.m */; };
+		21BA3B731BE4212900D6FE1F /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */; };
+		21BA3B741BE4212900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAB1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m */; };
+		21BA3B751BE4212900D6FE1F /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAD1BE3906D00B03AE4 /* NSEntityDescription+MagicalDataImport.m */; };
+		21BA3B761BE4212900D6FE1F /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAF1BE3906D00B03AE4 /* NSNumber+MagicalDataImport.m */; };
+		21BA3B771BE4212900D6FE1F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB11BE3906D00B03AE4 /* NSObject+MagicalDataImport.m */; };
+		21BA3B781BE4212900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB31BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		21BA3B791BE4212900D6FE1F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB51BE3906D00B03AE4 /* NSString+MagicalDataImport.m */; };
+		21BA3B7A1BE4214500D6FE1F /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069781BE37C30004F0999 /* _Item.swift */; };
+		21BA3B7B1BE4214500D6FE1F /* _List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069791BE37C30004F0999 /* _List.swift */; };
+		21BA3B7C1BE4214500D6FE1F /* _ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85191BE3A01600BCFA20 /* _ListedItem.swift */; };
+		21BA3B7D1BE4214900D6FE1F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; };
+		21BA3B7E1BE4214900D6FE1F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
+		21BA3B7F1BE4214900D6FE1F /* ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListedItem.swift */; };
+		21BA3B801BE424C700D6FE1F /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
 		21D1E1CD1BE3A0FD009378E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CB1BE3A0FD009378E3 /* Interface.storyboard */; };
 		21D1E1CF1BE3A0FD009378E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CE1BE3A0FD009378E3 /* Assets.xcassets */; };
 		21D1E1D61BE3A0FD009378E3 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21D1E1D51BE3A0FD009378E3 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -105,6 +139,8 @@
 		A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069841BE37F79004F0999 /* TodayViewController.swift */; };
 		A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A069861BE37F79004F0999 /* MainInterface.storyboard */; };
 		A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069801BE37F78004F0999 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E70876711BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */; };
+		E70876731BE409E50083BBFC /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876721BE409E50083BBFC /* NewListViewController.swift */; };
 		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
 		E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
@@ -382,6 +418,8 @@
 		A4A069CA1BE381CD004F0999 /* Swift-Base.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Swift-Base.entitlements"; sourceTree = "<group>"; };
 		A4A069CB1BE381DF004F0999 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
 		A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchExtension.entitlements; sourceTree = "<group>"; };
+		E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPopoverAnimatedTransitioningDelegate.swift; sourceTree = "<group>"; };
+		E70876721BE409E50083BBFC /* NewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
 		E73888721BE381D7002FC003 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7566DA01A1F85CB00DE3010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -458,6 +496,7 @@
 		196D6E161BAB0736000B7997 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */,
 				21A143221B99A479004116B8 /* FSHelpers */,
 			);
 			name = Helpers;
@@ -875,6 +914,7 @@
 				E73888721BE381D7002FC003 /* ListViewController.swift */,
 				E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */,
 				1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */,
+				E70876721BE409E50083BBFC /* NewListViewController.swift */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -1127,6 +1167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */,
+				E70876731BE409E50083BBFC /* NewListViewController.swift in Sources */,
 				21BA3B431BE408B900D6FE1F /* MagicalRecord+iCloud.m in Sources */,
 				21BA3B511BE408D000D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */,
 				21BA3B441BE408B900D6FE1F /* MagicalRecord+Options.m in Sources */,
@@ -1147,6 +1188,7 @@
 				E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */,
 				E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */,
 				E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */,
+				E70876711BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift in Sources */,
 				21BA3B5B1BE408D900D6FE1F /* NSString+MagicalDataImport.m in Sources */,
 				21A143331B99A479004116B8 /* FSE+UIColor.swift in Sources */,
 				190B851C1BE3A02000BCFA20 /* ListedItem.swift in Sources */,
@@ -1192,10 +1234,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BA3B7B1BE4214500D6FE1F /* _List.swift in Sources */,
+				21BA3B731BE4212900D6FE1F /* MagicalImportFunctions.m in Sources */,
+				21BA3B751BE4212900D6FE1F /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				21BA3B651BE4210500D6FE1F /* MagicalRecordInternal.m in Sources */,
 				21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */,
+				21BA3B681BE4210D00D6FE1F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */,
+				21BA3B7C1BE4214500D6FE1F /* _ListedItem.swift in Sources */,
+				21BA3B6B1BE4211800D6FE1F /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				21BA3B641BE4210500D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */,
 				A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */,
+				21BA3B741BE4212900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				21BA3B801BE424C700D6FE1F /* Swift-Base.xcdatamodeld in Sources */,
+				21BA3B6A1BE4211800D6FE1F /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				21BA3B5D1BE40C8700D6FE1F /* TodayCell.swift in Sources */,
+				21BA3B6E1BE4211F00D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */,
+				21BA3B721BE4211F00D6FE1F /* NSManagedObject+MagicalRequests.m in Sources */,
+				21BA3B711BE4211F00D6FE1F /* NSManagedObject+MagicalRecord.m in Sources */,
+				21BA3B7E1BE4214900D6FE1F /* List.swift in Sources */,
+				21BA3B6C1BE4211800D6FE1F /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				21BA3B5F1BE4210500D6FE1F /* MagicalRecord+Actions.m in Sources */,
+				21BA3B611BE4210500D6FE1F /* MagicalRecord+iCloud.m in Sources */,
+				21BA3B631BE4210500D6FE1F /* MagicalRecord+Setup.m in Sources */,
+				21BA3B791BE4212900D6FE1F /* NSString+MagicalDataImport.m in Sources */,
+				21BA3B7A1BE4214500D6FE1F /* _Item.swift in Sources */,
+				21BA3B7F1BE4214900D6FE1F /* ListedItem.swift in Sources */,
+				21BA3B761BE4212900D6FE1F /* NSNumber+MagicalDataImport.m in Sources */,
+				21BA3B661BE4210D00D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				21BA3B7D1BE4214900D6FE1F /* Item.swift in Sources */,
+				21BA3B781BE4212900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				21BA3B621BE4210500D6FE1F /* MagicalRecord+Options.m in Sources */,
+				21BA3B6D1BE4211800D6FE1F /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				21BA3B601BE4210500D6FE1F /* MagicalRecord+ErrorHandling.m in Sources */,
+				21BA3B771BE4212900D6FE1F /* NSObject+MagicalDataImport.m in Sources */,
+				21BA3B701BE4211F00D6FE1F /* NSManagedObject+MagicalFinders.m in Sources */,
+				21BA3B6F1BE4211F00D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */,
+				21BA3B671BE4210D00D6FE1F /* NSPersistentStore+MagicalRecord.m in Sources */,
+				21BA3B691BE4211800D6FE1F /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

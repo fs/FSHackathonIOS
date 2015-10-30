@@ -31,51 +31,54 @@ class Element {
     }
 }
 
-class List {
-    let title: String
-    let elements: [Element]
-    
-    var completed = false
-    
-    init (title: String, elements: [Element]) {
-        self.title = title
-        self.elements = elements
-    }
-    
-    var uncheckedElements: [Element] {
-        let values = self.elements.filter { (value: Element) -> Bool in
-            return !value.checked
-        }
-        return values
-    }
-    
-    var checkedElements: [Element] {
-        let values = self.elements.filter { (value: Element) -> Bool in
-            return value.checked
-        }
-        return values
-    }
-    
-    var minPrice: Double {
-        var value: Double = 0
-        for element in self.elements {
-            value += element.minPrice
-        }
-        return value
-    }
-    
-    var maxPrice: Double {
-        var value: Double = 0
-        for element in self.elements {
-            value += element.maxPrice
-        }
-        return value
-    }
-}
+//class List {
+//    let title: String
+//    var elements: [Element]
+//    
+//    var completed = false
+//    
+//    init (title: String, elements: [Element]) {
+//        self.title = title
+//        self.elements = elements
+//    }
+//    
+//    var uncheckedElements: [Element] {
+//        let values = self.elements.filter { (value: Element) -> Bool in
+//            return !value.checked
+//        }
+//        return values
+//    }
+//    
+//    var checkedElements: [Element] {
+//        let values = self.elements.filter { (value: Element) -> Bool in
+//            return value.checked
+//        }
+//        return values
+//    }
+//    
+//    var minPrice: Double {
+//        var value: Double = 0
+//        for element in self.elements {
+//            value += element.minPrice
+//        }
+//        return value
+//    }
+//    
+//    var maxPrice: Double {
+//        var value: Double = 0
+//        for element in self.elements {
+//            value += element.maxPrice
+//        }
+//        return value
+//    }
+//}
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var listTitleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
     var lists: [List] = []
     
@@ -86,7 +89,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             if value >= self.lists.count {
                 self._currentIndex = 0
             } else {
-                self.currentIndex = value
+                self._currentIndex = value
             }
             self.reloadData()
         }
@@ -101,6 +104,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return self.lists[self.currentIndex]
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.setupMagicalRecords()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lists = self.getLists()
@@ -112,25 +120,28 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
+    private func setupMagicalRecords () {
+        MagicalRecord.setupCoreDataStackWithStoreNamed("DataBase")
+        MagicalRecord.setShouldDeleteStoreOnModelMismatch(true)
+        MagicalRecord.setupAutoMigratingCoreDataStack()
+        MagicalRecord.setLoggingLevel(.Off)
+    }
+    
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
         return UIEdgeInsetsZero
     }
     
     func getLists () -> [List] {
-        var lists: [List] = []
-        for i in 0 ..< 5 {
-            var arr: [Element] = []
-            for j in 0 ..< 10 {
-                let value = Element(title: "Title \(i):\(j)", count: 5, unit: "гр.", minPrice: 5, maxPrice: 10)
-                arr.append(value)
-            }
-            lists.append(List(title: "List \(i)", elements: arr))
-        }
-        
+        let lists = List.MR_findAll() as! [List]
         return lists
     }
     
     func reloadData () {
+        if let list = self.currentList {
+            self.listTitleLabel.text = list.title
+            self.priceLabel.text = "От \(list.minPrice) до \(list.maxPrice) рублей"
+        }
+        
         self.tableView.reloadData()
     }
     
@@ -146,18 +157,42 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         self.currentIndex = 0
     }
     
+    @IBAction func tappedInView(sender: AnyObject) {
+        self.currentIndex++
+    }
+    
+    @IBAction func upButtonTapped(sender: AnyObject) {
+        let cells = self.tableView.visibleCells
+        guard let first = cells.first else {return}
+        
+        var toIndex = first.tag - 3
+        toIndex = toIndex >= 0 ? toIndex : 0
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: toIndex, inSection: 0), atScrollPosition: .Top, animated: true)
+    }
+    
+    @IBAction func downButtonTapped(sender: AnyObject) {
+        let cells = self.tableView.visibleCells
+        guard let last = cells.last else {return}
+        guard let list = self.currentList else {return}
+        
+        var toIndex = last.tag + 3
+        toIndex = toIndex < list.listedItems.count ? toIndex : list.listedItems.count - 1
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: toIndex, inSection: 0), atScrollPosition: .Top, animated: true)
+    }
 }
 
 extension TodayViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let list = self.currentList else {return 0}
-        return list.elements.count
+        return list.listedItems.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let list = self.currentList!
         let cell = tableView.dequeueReusableCellWithIdentifier("TodayCell") as! TodayCell
-        cell.prepareCell(list.elements[indexPath.row])
+//        cell.prepareCell(self.currentList!.listedItems[indexPath.row] as! Element)
+        cell.tag = indexPath.row
         return cell
     }
 }
