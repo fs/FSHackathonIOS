@@ -18,6 +18,8 @@ class Element {
     let minPrice: Double
     let maxPrice: Double
     
+    var checked: Bool = false
+    
     init (title: String, count: Int, unit: String, minPrice: Double, maxPrice: Double) {
         self.title = title
         self.count = count
