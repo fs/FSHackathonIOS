@@ -9,27 +9,27 @@
 import UIKit
 import NotificationCenter
 
-class Element {
-    let title: String
-    
-    let count: Int
-    let unit: String
-    
-    let minPrice: Double
-    let maxPrice: Double
-    
-    var checked: Bool = false
-    
-    var categoryColor = RandomColor()
-    
-    init (title: String, count: Int, unit: String, minPrice: Double, maxPrice: Double) {
-        self.title = title
-        self.count = count
-        self.unit = unit
-        self.minPrice = minPrice
-        self.maxPrice = maxPrice
-    }
-}
+//class Element {
+//    let title: String
+//    
+//    let count: Int
+//    let unit: String
+//    
+//    let minPrice: Double
+//    let maxPrice: Double
+//    
+//    var checked: Bool = false
+//    
+//    var categoryColor = RandomColor()
+//    
+//    init (title: String, count: Int, unit: String, minPrice: Double, maxPrice: Double) {
+//        self.title = title
+//        self.count = count
+//        self.unit = unit
+//        self.minPrice = minPrice
+//        self.maxPrice = maxPrice
+//    }
+//}
 
 //class List {
 //    let title: String
@@ -122,8 +122,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     private func setupMagicalRecords () {
         MagicalRecord.setupCoreDataStackWithStoreNamed("DataBase")
-        MagicalRecord.setShouldDeleteStoreOnModelMismatch(true)
-        MagicalRecord.setupAutoMigratingCoreDataStack()
+//        MagicalRecord.setShouldDeleteStoreOnModelMismatch(true)
+//        MagicalRecord.setupAutoMigratingCoreDataStack()
         MagicalRecord.setLoggingLevel(.Off)
     }
     
@@ -132,7 +132,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func getLists () -> [List] {
-        let lists = List.MR_findAll() as! [List]
+        let lists = List.MR_findAllSortedBy("date", ascending: true) as! [List]
         return lists
     }
     
@@ -191,7 +191,7 @@ extension TodayViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TodayCell") as! TodayCell
-//        cell.prepareCell(self.currentList!.listedItems[indexPath.row] as! Element)
+        cell.prepareCell(self.currentList!.listedItems[indexPath.row] as! ListedItem)
         cell.tag = indexPath.row
         return cell
     }
