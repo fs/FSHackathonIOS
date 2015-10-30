@@ -20,7 +20,6 @@ public class DataManager: NSObject {
     }
     
     public class func saveManagedContext() {
-        var error : NSError? = nil
         
         do {
             try self.getContext().save()
