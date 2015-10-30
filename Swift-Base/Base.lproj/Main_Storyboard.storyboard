@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="867" y="359"/>
         </scene>
-        <!--detail-->
+        <!--List Detail View Controller-->
         <scene sceneID="kKb-0T-IXD">
             <objects>
                 <viewController id="ho4-5o-SdX" customClass="ListDetailViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,8 +132,12 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="detail" id="my8-Er-IjX">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="BZb-eM-LxC"/>
+                    <navigationItem key="navigationItem" id="my8-Er-IjX">
+                        <barButtonItem key="leftBarButtonItem" title="Готово" id="BZb-eM-LxC">
+                            <connections>
+                                <action selector="doneTapped:" destination="ho4-5o-SdX" id="K8I-B2-7z9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="add" id="pNr-gX-4PO">
                             <connections>
                                 <segue destination="Nr3-Se-VDD" kind="show" id="Uci-TK-aKz"/>
