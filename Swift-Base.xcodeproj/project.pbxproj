@@ -12,7 +12,6 @@
 		212D019E1BB198A500B34340 /* FSHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D019D1BB198A500B34340 /* FSHelpersTests.swift */; settings = {ASSET_TAGS = (); }; };
 		213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B89BE19F01A1E005D3749 /* CoreGraphics.framework */; };
 		2158286D1A91E2F200833BE6 /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2158286B1A91E2F200833BE6 /* mogend.sh */; };
-		2158286F1A91E56600833BE6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2158286E1A91E56600833BE6 /* APIManager.swift */; };
 		218C64B81BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
 		218C64C01BA07DDE00EEEDF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 218C64BD1BA07DDE00EEEDF1 /* Localizable.strings */; };
 		21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A143241B99A479004116B8 /* FSE+Array.swift */; };
@@ -97,7 +96,6 @@
 		213B89C019F01A40005D3749 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		21513BBD19EBCBFA00EE6273 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2158286B1A91E2F200833BE6 /* mogend.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = mogend.sh; path = Scripts/mogend.sh; sourceTree = "<group>"; };
-		2158286E1A91E56600833BE6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		218C64B71BA078BA00EEEDF1 /* Swift-Base.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Swift-Base.xcdatamodel"; sourceTree = "<group>"; };
 		218C64BB1BA07D3800EEEDF1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main_Storyboard.strings; sourceTree = "<group>"; };
 		218C64C21BA07E1F00EEEDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -385,7 +383,6 @@
 		E731DC7A1A1CF1B700E12CBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E736C5E11A25CF8200B8986E /* API */,
 				218C64B41BA078BA00EEEDF1 /* CoreData */,
 			);
 			name = Models;
@@ -397,14 +394,6 @@
 				2124DF9F1A8DF48000422313 /* ViewController.swift */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		E736C5E11A25CF8200B8986E /* API */ = {
-			isa = PBXGroup;
-			children = (
-				2158286E1A91E56600833BE6 /* APIManager.swift */,
-			);
-			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -616,7 +605,6 @@
 				21A143371B99A479004116B8 /* FSHelpers.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
-				2158286F1A91E56600833BE6 /* APIManager.swift in Sources */,
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
 				A4A069731BE37B31004F0999 /* List.swift in Sources */,
 				21A143301B99A479004116B8 /* FSE+Double.swift in Sources */,
