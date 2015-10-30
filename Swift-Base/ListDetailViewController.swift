@@ -68,7 +68,8 @@ extension ListDetailViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-//        cell.prepareCell(List())
+        let item = self.list?.items[indexPath.row] as! Item
+        cell.prepareCell(item)
         return cell
     }
     
