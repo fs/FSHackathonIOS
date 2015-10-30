@@ -91,13 +91,13 @@ extension _Item {
         self.listedItems = mutable.copy() as! NSSet
     }
 
-    func addListedItemsObject(value: ListadItam!) {
+    func addListedItemsObject(value: ListedItem!) {
         let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.addObject(value)
         self.listedItems = mutable.copy() as! NSSet
     }
 
-    func removeListedItemsObject(value: ListadItam!) {
+    func removeListedItemsObject(value: ListedItem!) {
         let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.removeObject(value)
         self.listedItems = mutable.copy() as! NSSet

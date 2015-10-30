@@ -25,6 +25,9 @@ class ListDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func doneTapped(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 
     /*
     // MARK: - Navigation
@@ -50,7 +53,7 @@ extension ListDetailViewController: UITableViewDelegate
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 90
+        return 70
     }
     
 }

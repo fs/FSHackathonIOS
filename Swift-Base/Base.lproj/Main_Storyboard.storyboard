@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="867" y="359"/>
         </scene>
-        <!--detail-->
+        <!--List Detail View Controller-->
         <scene sceneID="kKb-0T-IXD">
             <objects>
                 <viewController id="ho4-5o-SdX" customClass="ListDetailViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="onb-gT-dXC">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailItemViewCell" rowHeight="70" id="Dgg-eb-Qu7" customClass="DetailItemViewCell" customModule="Swift_Base" customModuleProvider="target">
@@ -91,13 +91,18 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKw-sz-tt7">
                                                     <rect key="frame" x="66" y="39" width="246" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-9f-agE">
+                                                    <rect key="frame" x="280" y="19" width="32" height="32"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="checkboxView" destination="y4e-9f-agE" id="dec-pf-hpD"/>
                                             <outlet property="customImageView" destination="KXP-6t-Kfv" id="XYB-p1-aer"/>
                                             <outlet property="detailLabel" destination="rKw-sz-tt7" id="dON-bo-Z1q"/>
                                             <outlet property="titleLabel" destination="QK1-7H-v25" id="ZtK-bx-21l"/>
@@ -116,11 +121,23 @@
                             <constraint firstAttribute="trailing" secondItem="onb-gT-dXC" secondAttribute="trailing" id="2Gd-aG-3M2"/>
                             <constraint firstItem="QQG-pL-sJR" firstAttribute="top" secondItem="onb-gT-dXC" secondAttribute="bottom" id="9fA-td-PUO"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="EL1-kW-uMU"/>
+                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="zqh-AS-b4M" secondAttribute="top" id="Qsj-ux-p21"/>
+                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="cl1-U1-nWs"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="leading" secondItem="zqh-AS-b4M" secondAttribute="leading" id="lQj-DL-DKP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EL1-kW-uMU"/>
+                                <exclude reference="cl1-U1-nWs"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="detail" id="my8-Er-IjX">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="BZb-eM-LxC"/>
+                    <navigationItem key="navigationItem" id="my8-Er-IjX">
+                        <barButtonItem key="leftBarButtonItem" title="Готово" id="BZb-eM-LxC">
+                            <connections>
+                                <action selector="doneTapped:" destination="ho4-5o-SdX" id="K8I-B2-7z9"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="add" id="pNr-gX-4PO">
                             <connections>
                                 <segue destination="Nr3-Se-VDD" kind="show" id="Uci-TK-aKz"/>
