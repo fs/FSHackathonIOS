@@ -22,6 +22,8 @@ class ListCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 15
         
         self.tableView.estimatedRowHeight = 90
+        self.tableView.estimatedSectionFooterHeight = 0
+        self.tableView.estimatedSectionHeaderHeight = 0
         self.tableView.rowHeight = UITableViewAutomaticDimension
     }
     
