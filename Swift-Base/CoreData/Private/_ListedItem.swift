@@ -19,7 +19,7 @@ class _ListadItam: NSManagedObject {
     // MARK: - Class methods
 
     class func entityName () -> String {
-        return "ListadItam"
+        return "ListedItem"
     }
 
     class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {

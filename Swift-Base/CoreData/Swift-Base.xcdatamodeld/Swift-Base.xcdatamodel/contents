@@ -6,7 +6,7 @@
         <attribute name="maxPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListadItam" inverseName="item" inverseEntity="ListadItam" syncable="YES"/>
+        <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListedItem" inverseName="item" inverseEntity="ListedItem" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="title"/>
         </userInfo>
@@ -14,12 +14,12 @@
     <entity name="List" representedClassName="List" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="listedItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListadItam" inverseName="list" inverseEntity="ListadItam" syncable="YES"/>
+        <relationship name="listedItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListedItem" inverseName="list" inverseEntity="ListedItem" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="date"/>
         </userInfo>
     </entity>
-    <entity name="ListadItam" representedClassName="ListadItam" syncable="YES">
+    <entity name="ListedItem" representedClassName="ListadItam" syncable="YES">
         <attribute name="count" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="unit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="listedItems" inverseEntity="Item" syncable="YES"/>
@@ -28,6 +28,6 @@
     <elements>
         <element name="Item" positionX="-126" positionY="-36" width="128" height="133"/>
         <element name="List" positionX="-630" positionY="18" width="128" height="90"/>
-        <element name="ListadItam" positionX="-387" positionY="-171" width="128" height="103"/>
+        <element name="ListedItem" positionX="-387" positionY="-171" width="128" height="105"/>
     </elements>
 </model>
