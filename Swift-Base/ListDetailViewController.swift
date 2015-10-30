@@ -50,7 +50,7 @@ extension ListDetailViewController: UITableViewDelegate
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 90
+        return 70
     }
     
 }

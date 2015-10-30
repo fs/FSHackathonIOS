@@ -13,10 +13,14 @@ class DetailItemViewCell: UITableViewCell {
     @IBOutlet weak var customImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var checkboxView: UIView!
+    
+    var checkbox: M13Checkbox!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.checkbox = M13Checkbox(frame: self.checkboxView.bounds)
+        self.checkboxView.addSubview(self.checkbox)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
