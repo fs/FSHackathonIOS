@@ -14,6 +14,7 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var listIndex: Int!
+    var listViewController: ListViewController!
     
     lazy var items = {
         return Item.MR_findAll() as! [Item]
@@ -51,7 +52,15 @@ extension ItemsListViewController: UICollectionViewDelegate
     //MARK: Cells
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // create new listedItem
         
+        let listedItem = ListedItem.MR_createEntity()
+        listedItem.item = self.items[indexPath.row]
+        listedItem.count = 12
+        listedItem.unit = Unit.Kilogramm.numberValue
+        
+        self.listViewController.listOfLists[self.listIndex].addListedItemObject(listedItem)
+        self.listViewController.collectionView?.reloadData()
         self.navigationController?.popViewControllerAnimated(true)
     }
 }

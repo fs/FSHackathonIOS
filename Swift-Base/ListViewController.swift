@@ -55,6 +55,7 @@ class ListViewController: TGLStackedViewController {
         if let lSender = sender as? UIButton {
             let itemsList = segue.destinationViewController as! ItemsListViewController
             itemsList.listIndex = lSender.tag
+            itemsList.listViewController = self
         }
     }
 }
