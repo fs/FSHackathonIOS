@@ -12,7 +12,7 @@ class ListDetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var list: List?
+//    var list: List?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,8 +68,8 @@ extension ListDetailViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-        let item = self.list?.items[indexPath.row] as! Item
-        cell.prepareCell(item)
+//        let item = self.list?.items[indexPath.row] as! Item
+//        cell.prepareCell(item)
         return cell
     }
     

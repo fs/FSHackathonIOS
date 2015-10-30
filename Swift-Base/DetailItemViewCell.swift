@@ -25,10 +25,10 @@ class DetailItemViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepareCell(item: Item) {
-//        self.customImageView.image = item.image
-        self.titleLabel.text = item.title
-//        self.detailLabel.text = item.title
-    }
+//    func prepareCell(item: Item) {
+////        self.customImageView.image = item.image
+//        self.titleLabel.text = item.title
+////        self.detailLabel.text = item.title
+//    }
     
 }

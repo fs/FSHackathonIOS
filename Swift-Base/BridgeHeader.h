@@ -6,5 +6,5 @@
 //  Copyright (c) 2014 Flatstack. All rights reserved.
 //
 
-#import <MagicalRecord.h>
-#import <M13Checkbox.h>
+#import "MagicalRecord.h"
+#import "M13Checkbox.h"
