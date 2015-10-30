@@ -1,4 +1,4 @@
-platform :ios, '7.1'
+platform :ios, '8.0'
 source 'https://github.com/CocoaPods/Specs.git'
 
 #pod 'AFNetworking', '~> 2.6'
@@ -13,3 +13,15 @@ pod 'MagicalRecord'
 #pod 'NSDate-Extensions'
 pod 'M13Checkbox'
 pod 'TGLStackedViewController'
+
+target 'Watch', :exclusive => true do
+    pod 'M13Checkbox'
+end
+
+target 'WatchExtension', :exclusive => true do
+    pod 'M13Checkbox'
+end
+
+target 'Widget', :exclusive => true do
+    pod 'M13Checkbox'
+end
