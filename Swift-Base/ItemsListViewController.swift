@@ -13,6 +13,8 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var items = Item.MR_findAll() as! [Item]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,4 +37,35 @@ class ItemsListViewController: UIViewController {
     }
     */
 
+}
+
+//MARK: - UICollectionView -
+
+//MARK: - UICollectionViewDelegate
+extension ItemsListViewController: UICollectionViewDelegate
+{
+    //MARK: Cells
+    
+}
+
+//MARK: - UICollectionViewDataSource
+extension ItemsListViewController: UICollectionViewDataSource {
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 9
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemListCollectionViewCell", forIndexPath: indexPath) as! ItemListCollectionViewCell
+        cell.prepareCell(self.items[indexPath.row])
+        return cell
+    }
+    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        let cell = collec.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
+//        //        let item = self.list.listedItem.allObjects[indexPath.row] as! ListedItem
+//        //        cell.prepareCell(item)
+//        return cell
+//    }
+    
 }
