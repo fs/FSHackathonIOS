@@ -28,6 +28,20 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="pz4-Ew-YVO">
+                        <items>
+                            <menuItem title="Unhide completed" icon="resume" id="OZm-18-iWw" userLabel="Unhide completed">
+                                <connections>
+                                    <action selector="unhideCompleted" destination="AgC-eL-Hgc" id="aDQ-ww-1lE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide completed" icon="block" id="ncl-H0-M0w" userLabel="Hide completed">
+                                <connections>
+                                    <action selector="hideCompleted" destination="AgC-eL-Hgc" id="u1j-g5-07W"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="table" destination="Oh9-Ug-Lhf" id="mlw-Yp-3pj"/>
                     </connections>
@@ -74,8 +88,16 @@
                     </items>
                     <menu key="menu" id="DwB-za-AUG">
                         <items>
-                            <menuItem title="Done" icon="accept" id="7ma-ka-iJ6"/>
-                            <menuItem title="Restore all" icon="repeat" id="x4T-LI-pij" userLabel="Restore All"/>
+                            <menuItem title="Done" icon="accept" id="7ma-ka-iJ6">
+                                <connections>
+                                    <action selector="doneAction" destination="HU8-rw-gFP" id="BEv-8y-Mod"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Restore all" icon="repeat" id="x4T-LI-pij" userLabel="Restore All">
+                                <connections>
+                                    <action selector="restoreAll" destination="HU8-rw-gFP" id="kxL-6F-Vy0"/>
+                                </connections>
+                            </menuItem>
                             <menuItem title="Unhide completed" icon="resume" id="vJJ-18-Rnn" userLabel="Unhide completed">
                                 <connections>
                                     <action selector="unhideCompleted" destination="HU8-rw-gFP" id="v88-B7-wF4"/>

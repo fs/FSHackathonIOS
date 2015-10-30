@@ -87,4 +87,22 @@ class ListController: WKInterfaceController {
         self.prepareCells()
     }
     
+    @IBAction func restoreAll() {
+        for object in self.list.elements {
+            object.checked = false
+        }
+        
+        self.list.completed = false
+        
+        self.prepareCells()
+    }
+    @IBAction func doneAction() {
+        for object in self.list.elements {
+            object.checked = true
+        }
+        
+        self.list.completed = true
+        
+        self.prepareCells()
+    }
 }
