@@ -10,7 +10,7 @@
 		0155F91F0D879A450D1D0DFC553A325D /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78FEF06D1232B2357DC6D5ECD6C1E373 /* TGLStackedViewController.m */; };
 		0D0A7AF7B65D74709CCBBA1A1C446C9E /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 524207F18D2EDDBA3C1DBCFC4A9A45EC /* NSString+MagicalDataImport.m */; };
 		1A511FA37134B74B9F206FD1FA22BEB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */; };
-		21D4590D86A24E6B1F9065FC084B5520 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAD41D9091C6ABB26037F344615169C /* Pods-dummy.m */; };
+		21D4590D86A24E6B1F9065FC084B5520 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFC815C68BB0D547D6F7E3ED6DB3199 /* Pods-dummy.m */; };
 		22C67C0E3D895B14698E687264201035 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8606EBAD46258799D9C8FE5381E2510B /* NSManagedObject+MagicalRequests.m */; };
 		23F3EBFAA093F1454A0088FBADDB13C7 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 19721DFB2F22AAD5AD1104BB837A7943 /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		254EBFB6A85769F7328FE61BE170B410 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BB57BDF31F53E2E1A7F6FB92CD447E /* NSPersistentStore+MagicalRecord.m */; };
@@ -27,13 +27,13 @@
 		43EF4E6E17344F8D25F798FD3064E62B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDEDE5A31E7B9B2825AE12C253FABA /* CoreData.framework */; };
 		4962035A358DDFCAE417A3E6CC87B2DB /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA63D9C089B726042EF0F2D8A1A2578 /* NSManagedObject+MagicalDataImport.m */; };
 		4B258106B643A0FC93BD241DB1DF768C /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = F5265F12784EE90422CDF45A9318C8B9 /* MagicalRecord+iCloud.m */; };
-		4B6C1FA399E377DD9BC922B1A6FBADFF /* Pods-Watch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 705A6560510219AC8245F82E752878AA /* Pods-Watch-dummy.m */; };
+		4B6C1FA399E377DD9BC922B1A6FBADFF /* Pods-Watch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 575FC21D74D3F2D070989EF28946155E /* Pods-Watch-dummy.m */; };
 		4C2E43EBC048CDA2248507EDC04A5EDB /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = EB63D234BB82C0CF363D8AE947B7F85B /* NSObject+MagicalDataImport.m */; };
 		50B3DF5490183E3CEFF203ADC22BD8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */; };
 		50CF657553BDEC944C774A57FD487B3E /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF02C316C5BA8AEDA98F18333581216 /* MagicalRecord+Setup.m */; };
 		515B95B0678AD6737A3E8267B3B3C24A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */; };
 		51FDF9B8D36AA151ABF1D059A25EFE9D /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 877A6014F0D40D88881869BF1B95CB7C /* MagicalImportFunctions.m */; };
-		53323083C8A2682661301256C8A90EDE /* Pods-Widget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05FC103CA6A779DA8BA56C1E9A04D7E /* Pods-Widget-dummy.m */; };
+		53323083C8A2682661301256C8A90EDE /* Pods-Widget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA69C817D8FAED4237653301620DBB29 /* Pods-Widget-dummy.m */; };
 		57334E2830219E0B38EA2A28005C2A31 /* TGLExposedLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8560DD99510D5E7D10EBC7D55FB6C1 /* TGLExposedLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58F6FF29A3153232BE4AE9805920B19C /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 11B1E4FBBC1653B0D1E07EF304B6D125 /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		597D3072CAED3D9DDC19B52E4C6B0F79 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F9444D0C51E8B58A8A7ED6DCFC3D6B /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +60,7 @@
 		9469D08720BF34FE4D4D315526F55E89 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = C55F49EB050A87DF8B09C62B84B21269 /* MagicalRecordInternal.m */; };
 		95BAC9400D2FF09787FFC5F790D0A051 /* TGLExposedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F46056AEFB76C4D57655A1D9DAB9D04 /* TGLExposedLayout.m */; };
 		95C60432C416CF96D3CCC6140DF7EDB8 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 91DF5ECD41A98B8170F9AAC2511B075D /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9782D9D035750C81C78E6AF545617A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */; };
 		990A08C2A86EC12C75C691886B34B1F2 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C383C488D546B54C333EBA19C7F05E /* NSRelationshipDescription+MagicalDataImport.m */; };
 		A1571023AF37568AF73D72703C91C6BC /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A3655EE4A47DCE072E96E18D209953E1 /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A19C9FB095F303F4E706C5E64F5DAFFC /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC0960DBA2D25F0D350040F205044E3 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,7 +70,7 @@
 		AD6DFEC288CF4BAAD0367AB41FD5BFC7 /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B27C5D45DF686D6FA7EC1674B22857DD /* M13Checkbox-dummy.m */; };
 		B14BF83C9E0506107EAC57D335808A76 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3479A3898F11E12D5F5D137DB9029D26 /* NSAttributeDescription+MagicalDataImport.m */; };
 		B23D7C1C5CA628842ABA7102B95F77C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */; };
-		B3E739923A062F18AE61E04BED06C20F /* Pods-WatchExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEEC52CECBD343CCB56EE2F947539E /* Pods-WatchExtension-dummy.m */; };
+		B3E739923A062F18AE61E04BED06C20F /* Pods-WatchExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3943A3A090400B20EA97BC21ECB555A /* Pods-WatchExtension-dummy.m */; };
 		B94F1AB9B1EB4F94D8EEDC0CFFF41DA9 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 525561122195819B73FF614DCDCC7B3A /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9CB0538FE6765940F6DC07AC0D4FBD0 /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BE62598DC5D3EB0690FD1E3A9BAE1C /* MagicalRecord-dummy.m */; };
 		C1FAD95009B96907723EFE839B39DB8E /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 794D7205B35E8322121F41686F9952ED /* NSManagedObject+MagicalFinders.m */; };
@@ -79,6 +80,7 @@
 		D6F928D33A4F8C0551BB2A2DDFB45747 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAF23BC7BA1BAB31749D2E3CB30DDFA /* MagicalRecord+Options.m */; };
 		DA3875472942566EEA1EEDEF57BC08E4 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A70F3E2EB902453001C848ABFFA1C7 /* NSManagedObjectContext+MagicalChainSave.m */; };
 		DC44E2AC4D15C8AD11BD582120A25E3F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 439B2A62AC7D70E85C9738E082AFB7CA /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		E4E39C7440FA6D8B5481400C57229323 /* Pods-CoreDataProxy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BD5B77C013BE8A371FCAFA881A880 /* Pods-CoreDataProxy-dummy.m */; };
 		E50416B5E327EF05049A7C3218AA8539 /* TGLStackedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82575C385A2554DA8EFA3F8AD0104927 /* TGLStackedViewController-dummy.m */; };
 		E5AB27C3E64FF9F02EED9F22A7E0849B /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = DACCDFEE7341F509D1354B9A0DF430CB /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B50B9F6C4A5B546B28F61657177665 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = D213FBD1DE0B7FFC416AB1BCB0F75F9E /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -99,6 +101,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FCCF60D3AFC8A05F333CCB3275EC5B36;
 			remoteInfo = M13Checkbox;
+		};
+		353A2B72FE03FC0F82DBF0C253A2AEEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6C10FBC1B374482626BB335B0D22446;
+			remoteInfo = MagicalRecord;
 		};
 		48F0A9E5C40DA96B923492859A062C6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -138,144 +147,158 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04B64C87C2E510194E91BC7D3EA2235D /* Pods-WatchExtension.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.appstore debug.xcconfig"; sourceTree = "<group>"; };
-		05484FB3F99B68C3C0435E0755E6F12F /* Pods-Widget-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Widget-frameworks.sh"; sourceTree = "<group>"; };
-		0A1118A617992E44A9A205E755E5FFBD /* Pods-Widget.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.test staging.xcconfig"; sourceTree = "<group>"; };
-		0A78169528DDBC73D9039B6EA706371C /* libPods-WatchExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B3834EA5AEB7C5FA10F6741A9AF341B /* Pods-Widget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Widget-acknowledgements.plist"; sourceTree = "<group>"; };
+		01F162BED92D293B7DDF91BE333FF4A1 /* Pods-Watch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch-resources.sh"; sourceTree = "<group>"; };
+		047A088A7CE38EC206A24F0AE4F808C5 /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0651FD8F72F9DEB4E7920175BAEB4C2C /* Pods-WatchExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchExtension-resources.sh"; sourceTree = "<group>"; };
 		0B8560DD99510D5E7D10EBC7D55FB6C1 /* TGLExposedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLExposedLayout.h; path = TGLStackedViewController/TGLExposedLayout.h; sourceTree = "<group>"; };
 		10F9444D0C51E8B58A8A7ED6DCFC3D6B /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
 		11B1E4FBBC1653B0D1E07EF304B6D125 /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		11CA696E4F6937990573209E2D9FF597 /* Pods-Watch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-acknowledgements.plist"; sourceTree = "<group>"; };
 		1252B4373111DEE8EB01FEF57B72AC70 /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		143357F83058965BE66C58E26AFA1B6B /* Pods-CoreDataProxy.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		18C1B56CE22A0BC463AC7AE9B969FC7E /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
 		19721DFB2F22AAD5AD1104BB837A7943 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
 		1A1D44467737D78B2DBD1E43AC258A2C /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
 		1A740EC9275402801CCC73438C7FB9E1 /* TGLStackedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TGLStackedViewController-prefix.pch"; sourceTree = "<group>"; };
-		1C3D8859AAF63F98ED713EDFC3955469 /* Pods-Watch.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.appstore.xcconfig"; sourceTree = "<group>"; };
-		1D72F06D5BBAA889BBB1FDD4A1120B88 /* Pods-WatchExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		1D81D5BDF0D1E2CB5831C55E33CDA2E5 /* Pods-WatchExtension.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.release staging.xcconfig"; sourceTree = "<group>"; };
+		1B6E31A6220C554C6C82DAB21859B7FF /* Pods-Widget.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.test.xcconfig"; sourceTree = "<group>"; };
 		1DA63D9C089B726042EF0F2D8A1A2578 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
-		2078F8A69161F7F4D99A35337E6A3800 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		1DBE132F8AEEBA6366428959BA124072 /* Pods-CoreDataProxy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.release.xcconfig"; sourceTree = "<group>"; };
 		21924CA730B4670A1B4E350F17301A82 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
-		26C18B6192B7A1552B8B4C38EF6A7D8C /* Pods-WatchExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		23D7A03BA4186385297BAE004D1448B0 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		2732AD0CB0733468874498EF5AE89F35 /* Pods-Widget.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		283BCAA74EAB38F6B19E7B2FCDD29396 /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
-		2CBCAE9F45CF7D869D83BDB7C32D495D /* Pods.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.appstore.xcconfig; sourceTree = "<group>"; };
-		2DB658E1900393D2245A6DBEE42CD13C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		28C1687C1879C782C69D4C2614E750F4 /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
 		2F77BF066385121467DA426401B4E6A4 /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
 		30BE62598DC5D3EB0690FD1E3A9BAE1C /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
+		3275BAD322D02C2D8945CBC668EAA5AA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		32EE25713B7C82330FA9347124969294 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		332060AAA3637ACEF415F59D262D0DA6 /* Pods-WatchExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		3479A3898F11E12D5F5D137DB9029D26 /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		34BE050BBBDB726AC25BBF3B5CC1D346 /* Pods-Watch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch-frameworks.sh"; sourceTree = "<group>"; };
+		349EFFD4C0709A844F03C9CC756636D6 /* Pods-CoreDataProxy.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.appstore.xcconfig"; sourceTree = "<group>"; };
 		3952EA64188349FDE7B95982AA8CAC9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3F79D3999BEA54BAE75991417E551053 /* Pods.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.test staging.xcconfig"; sourceTree = "<group>"; };
-		3FC6615D3B902C96056EBF52E3F3313D /* Pods-Watch.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.release staging.xcconfig"; sourceTree = "<group>"; };
+		3CA2B4375E2229B3B059CD1E899F1AA9 /* Pods-CoreDataProxy.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.test staging.xcconfig"; sourceTree = "<group>"; };
+		3F066CB3A4C3A78C23B6FA4E22D3A450 /* libPods-CoreDataProxy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreDataProxy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		439B2A62AC7D70E85C9738E082AFB7CA /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
 		44AE70156015ADF788217E15D0274D09 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
-		4BEC9DB2EA9C7B789FF88F71B9E80C06 /* Pods-WatchExtension.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.debug staging.xcconfig"; sourceTree = "<group>"; };
-		4C0DFBBF54C13F0D6CC5136A969D0702 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CFEEC52CECBD343CCB56EE2F947539E /* Pods-WatchExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchExtension-dummy.m"; sourceTree = "<group>"; };
-		4F954320A642491C368EC4C462BB5CD0 /* Pods-WatchExtension.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.test.xcconfig"; sourceTree = "<group>"; };
+		46A9E744D62F9977920CCC9C3AD9213A /* Pods-WatchExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.appstore.xcconfig"; sourceTree = "<group>"; };
+		4964C7AFD21DD027B3BF98810AFBD824 /* libM13Checkbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM13Checkbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B65F0379E1A3743BEBF9801DEFC8EAA /* Pods-Widget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Widget-resources.sh"; sourceTree = "<group>"; };
+		4C1A3C045B3DD22EF71BEAA9487E1DDC /* libPods-Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5A97B489B57551A33E85641464B994 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F3723257D8113656663DE0B1E7B6B30 /* Pods-Watch.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.test.xcconfig"; sourceTree = "<group>"; };
 		51E8D370A4F24DB0FC380DE13DD9306A /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
 		51F8F201AA49CF2B00006C6FCF608B1D /* MagicalRecordShorthandMethodAliases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordShorthandMethodAliases.h; path = MagicalRecord/Core/MagicalRecordShorthandMethodAliases.h; sourceTree = "<group>"; };
 		524207F18D2EDDBA3C1DBCFC4A9A45EC /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
 		525561122195819B73FF614DCDCC7B3A /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
-		5A469A850A0F8364E5F99607430A2446 /* Pods-Watch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch-resources.sh"; sourceTree = "<group>"; };
+		5576D64D4002C33B6EA09D8AC3648CDC /* libPods-WatchExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		575FC21D74D3F2D070989EF28946155E /* Pods-Watch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watch-dummy.m"; sourceTree = "<group>"; };
+		5ADB1DB7304E0D73562CC1A8EDD8138C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		5BA6964E151BC9F1734FCF95694EA8CC /* Pods.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.test.xcconfig; sourceTree = "<group>"; };
 		5BC0960DBA2D25F0D350040F205044E3 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
-		5E32F36E4DC7543795C9734EC2802414 /* Pods-Watch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-acknowledgements.plist"; sourceTree = "<group>"; };
 		5E6195C4603B06966CC5CF6833C7F9D9 /* M13Checkbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13Checkbox.h; path = Classes/M13Checkbox.h; sourceTree = "<group>"; };
 		5E91E833008BE5E833665FFF33B87D31 /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
 		5F46056AEFB76C4D57655A1D9DAB9D04 /* TGLExposedLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLExposedLayout.m; path = TGLStackedViewController/TGLExposedLayout.m; sourceTree = "<group>"; };
-		5F9F7298532FE2812524F4136EB8201B /* Pods-Widget.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.test.xcconfig"; sourceTree = "<group>"; };
-		631A103DDFAE972B4A739275C1584DB8 /* libTGLStackedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTGLStackedViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A70F3E2EB902453001C848ABFFA1C7 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
 		65CEE539DBF8F48D1118A449E92FF689 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
-		66887726E538B4A8344F7806618AE15B /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		65D023A7E264231DB7C5FB35BD27BE95 /* Pods-Widget.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.debug staging.xcconfig"; sourceTree = "<group>"; };
+		6AD26A63FF27C045CBE463D49F3C7E76 /* Pods-WatchExtension.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.debug staging.xcconfig"; sourceTree = "<group>"; };
 		6BF410F42C41F1CE2FEEF6C9CDA0D783 /* M13Checkbox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13Checkbox.m; path = Classes/M13Checkbox.m; sourceTree = "<group>"; };
 		6DF02C316C5BA8AEDA98F18333581216 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
-		6DF9CAE965FAA44FB161469234A1A938 /* libPods-Widget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECBD25B48CD99C8A9CAD5D28272321E /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
-		705A6560510219AC8245F82E752878AA /* Pods-Watch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watch-dummy.m"; sourceTree = "<group>"; };
+		775B4C3E3263BD00C3528104DA3389BB /* Pods-WatchExtension.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.appstore debug.xcconfig"; sourceTree = "<group>"; };
+		7866C0296CE812A6FBEB505397ADF0B4 /* Pods-CoreDataProxy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreDataProxy-acknowledgements.markdown"; sourceTree = "<group>"; };
 		78E1DB38D4175E9A155435DC531F9924 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		78FA0106D30F9CEDE3CD7CB872B50A93 /* Pods-WatchExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		78FEF06D1232B2357DC6D5ECD6C1E373 /* TGLStackedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLStackedViewController.m; path = TGLStackedViewController/TGLStackedViewController.m; sourceTree = "<group>"; };
 		794D7205B35E8322121F41686F9952ED /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
 		79895F8BBBBA25FDCAD7A0AD74498BE9 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
-		7BFBBF68B969B1359F369013AC5E45F2 /* Pods-Widget.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.debug staging.xcconfig"; sourceTree = "<group>"; };
 		7EFD93DD0C2F1CFF6F7A56FF3E27FEEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		80A5D1A6BAF38483E0D81EC8313D2BA7 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		81D9F4BFA82C23C7E69D99B28843DAD7 /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
 		82575C385A2554DA8EFA3F8AD0104927 /* TGLStackedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TGLStackedViewController-dummy.m"; sourceTree = "<group>"; };
 		84C2C99B01C92DBA0972E4FA111475BB /* TGLStackedLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLStackedLayout.h; path = TGLStackedViewController/TGLStackedLayout.h; sourceTree = "<group>"; };
 		8606EBAD46258799D9C8FE5381E2510B /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
 		8681A9D891226656151ED3831CADAC98 /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
-		870E5C3019DA2C2FC4049003A954CA0D /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
 		877A6014F0D40D88881869BF1B95CB7C /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
-		8802A83645404E04136E9B845BBD2899 /* Pods.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.release staging.xcconfig"; sourceTree = "<group>"; };
-		88B2B18133F82C9C01A26028F9E42A84 /* Pods-Widget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Widget-resources.sh"; sourceTree = "<group>"; };
-		8976D6EC5C9DD6EC562642B66091C7BE /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
-		8CAD41D9091C6ABB26037F344615169C /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		89B56E1EAAE4AFD84FAD799951935AD3 /* Pods-CoreDataProxy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.debug.xcconfig"; sourceTree = "<group>"; };
 		8F67292857E7CA65C8575DB262B0B307 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
 		91D7BE3465E36903B1DA43326944F27D /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
 		91DF5ECD41A98B8170F9AAC2511B075D /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
-		95E3C21BE403919E37A27F8726F42ABC /* libM13Checkbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libM13Checkbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		920579C9B1C4CCCBF5EF3AA861363088 /* Pods-CoreDataProxy.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.test.xcconfig"; sourceTree = "<group>"; };
+		9261BB4C43E8B459B85E1D30AAECD996 /* Pods-Widget-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Widget-frameworks.sh"; sourceTree = "<group>"; };
+		92685747C42499E5C9127DEAC3B49CE3 /* Pods-Watch.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.appstore.xcconfig"; sourceTree = "<group>"; };
+		94AA166A1224FC4998BDC7D9FD043F5A /* Pods-Widget.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.test staging.xcconfig"; sourceTree = "<group>"; };
 		9826E3EAEB995163ACC116A4BD59C1F4 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
-		993CCE5C82C8FE341D42B6B45DB39E2B /* Pods.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.test.xcconfig; sourceTree = "<group>"; };
-		9D8E204A45A821388351A6ABEB31C92B /* Pods-Widget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Widget-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C0EB278BA5A862BAF06ABB8933DC446 /* Pods-Widget.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.release staging.xcconfig"; sourceTree = "<group>"; };
+		9C3E34D9276949E42512B003D1ABEA81 /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
 		9E06F3BB6E305AF06A9AB46AF33B0D8D /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
 		9E83BA0EE393330894175B1D8907763A /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		9E9C57E54220BBB5F82EEBE9EECFEDC5 /* Pods-CoreDataProxy.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.release staging.xcconfig"; sourceTree = "<group>"; };
 		9FAF23BC7BA1BAB31749D2E3CB30DDFA /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
 		9FCC9149C12938913BCAADBD7E2788B3 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
-		A346AD77D276B7C5461130983AB3B7F9 /* Pods-Watch.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		A3655EE4A47DCE072E96E18D209953E1 /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
-		A97F6B8E7ECCC5ACBA451D8F29545AD3 /* Pods-WatchExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A3943A3A090400B20EA97BC21ECB555A /* Pods-WatchExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchExtension-dummy.m"; sourceTree = "<group>"; };
+		A981B21493CB751BB3A3ACC0BC892F09 /* Pods.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		A9ABF1627B4D713A8F315AB8BD097E78 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
 		A9BB57BDF31F53E2E1A7F6FB92CD447E /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
 		AA1BF73641A8FF3BFCF88CF91B37046A /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
-		AFC92BF3FDA737A84DE8B521F1F03CFC /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA69C817D8FAED4237653301620DBB29 /* Pods-Widget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Widget-dummy.m"; sourceTree = "<group>"; };
+		AEE972EA050575A8200CEF5CA4928106 /* libPods-Widget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBB7DFA754CFDCABEAB30D4FA7D09CE /* Pods-CoreDataProxy.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataProxy.debug staging.xcconfig"; sourceTree = "<group>"; };
+		AFBF15E2CC0EBA9C9BC84820F65DF943 /* Pods-WatchExtension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchExtension-frameworks.sh"; sourceTree = "<group>"; };
 		B27C5D45DF686D6FA7EC1674B22857DD /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
+		B33A8B54F8955C0B9339DAE0595F0035 /* Pods-Watch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watch-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B44401B419B0141410C9F887188EE53E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B56C94A0F9BC9904E21651EDB8C3453E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B6DD736F726318025FECAAEDC07A315D /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
 		B6F3F5B8F2A4D1AE5C9BC807397C488D /* TGLStackedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TGLStackedViewController.xcconfig; sourceTree = "<group>"; };
-		B844C3EF14402C65D67059E63B47E47F /* Pods-WatchExtension.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.test staging.xcconfig"; sourceTree = "<group>"; };
-		B954DBEDC6C10C7222E7DD5E83D38C75 /* Pods-Watch.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.test.xcconfig"; sourceTree = "<group>"; };
+		B924186434133B60FAED6B36CD5925A7 /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4CC2ED9D415B6A043B9D20BD23D26A /* Pods-Widget.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.appstore.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB3F401A2D3444905DEED3657ED18B65 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
 		BBB6D4F8C1FFD707FCDB3CEDC9BEF6E1 /* TGLStackedLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGLStackedLayout.m; path = TGLStackedViewController/TGLStackedLayout.m; sourceTree = "<group>"; };
-		BCC4CC6CAC2A54D6A95F354D3E37CE86 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF3669E3FAAC5EF48E1B511D412EE815 /* Pods-WatchExtension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchExtension-frameworks.sh"; sourceTree = "<group>"; };
-		BFB6D2FD9A3065AFF2F38CF27C26C951 /* libPods-Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF97D3B1871E7A15F221EF7C1581CBB /* Pods.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.appstore.xcconfig; sourceTree = "<group>"; };
 		BFD5BC4624F7C5D161121D00A5FA658E /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
-		C05FC103CA6A779DA8BA56C1E9A04D7E /* Pods-Widget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Widget-dummy.m"; sourceTree = "<group>"; };
+		C2BC7C39E1946884E02AC744548CD9BC /* Pods-WatchExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.release.xcconfig"; sourceTree = "<group>"; };
+		C2C575E17DEEEF079A198559E875B091 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		C43E711156FCD49B35C259281ED3A482 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
 		C4C383C488D546B54C333EBA19C7F05E /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
 		C55F49EB050A87DF8B09C62B84B21269 /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
+		C5B4298BEA7B427C807A0C5D13A2B37D /* Pods-CoreDataProxy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataProxy-acknowledgements.plist"; sourceTree = "<group>"; };
 		C5DDEDE5A31E7B9B2825AE12C253FABA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		C69DF29DA3F281A6F446EB0A0EF90C32 /* Pods-Widget.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.release staging.xcconfig"; sourceTree = "<group>"; };
-		C9580F0C091694AAB5E3C0F17E3924E0 /* Pods-Watch.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.debug staging.xcconfig"; sourceTree = "<group>"; };
-		CA242DD67724FFDB3B0543F77AEFBC48 /* Pods.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.appstore debug.xcconfig"; sourceTree = "<group>"; };
+		C6C26B8CAA6FDB6E7B7016CE0774E5C3 /* Pods.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.debug staging.xcconfig"; sourceTree = "<group>"; };
+		C828AB567CD9A7A1B460B1A8BE5D111A /* Pods-CoreDataProxy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataProxy-resources.sh"; sourceTree = "<group>"; };
 		CA8158B52895CD3868EC1FA097BA283D /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
-		CCA14FBD1884D9727913B52BDE52F9EE /* Pods-Watch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watch-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0CD4F8F90B9A25C49F52D1FC13697B4 /* Pods-WatchExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchExtension-resources.sh"; sourceTree = "<group>"; };
+		CD62EDA708600ACA0E0D6233E26CD8EA /* Pods-CoreDataProxy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataProxy-frameworks.sh"; sourceTree = "<group>"; };
+		CD7321D4D5E360226C958BF74072A11D /* Pods.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.test staging.xcconfig"; sourceTree = "<group>"; };
+		CFFC815C68BB0D547D6F7E3ED6DB3199 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		D213FBD1DE0B7FFC416AB1BCB0F75F9E /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
 		DACCDFEE7341F509D1354B9A0DF430CB /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		DB693DB4A2FEAFE87217E06096DE71B3 /* Pods-Watch.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		DF593A81352D36C9C5834D95FA633F15 /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
+		DF8B7BC1D4BDF5CA7F2E17379902F7CA /* Pods-WatchExtension.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.test staging.xcconfig"; sourceTree = "<group>"; };
 		DF9B67EA0D9C112E343B41AC3CB8C308 /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
 		E0DC9E8A5D3AD4676FBDA21FAAA3E917 /* TGLStackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGLStackedViewController.h; path = TGLStackedViewController/TGLStackedViewController.h; sourceTree = "<group>"; };
 		E193B2A25AA99C7AF7323A7461418142 /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
 		E3906A9A34B694205899C4188B537FC9 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
-		E4AC0173EAF87954A8CA56D00449127C /* Pods-WatchExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.release.xcconfig"; sourceTree = "<group>"; };
-		E74995DF2961077E620D688CC725F4A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E65C259C64BA1C3806813D8F6B6CF540 /* Pods.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.release staging.xcconfig"; sourceTree = "<group>"; };
+		E758ED0FCD1024EB8CF2C6CE9F09FDF0 /* libTGLStackedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTGLStackedViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6BD5B77C013BE8A371FCAFA881A880 /* Pods-CoreDataProxy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreDataProxy-dummy.m"; sourceTree = "<group>"; };
 		EB63D234BB82C0CF363D8AE947B7F85B /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
-		EBB0EF62AB6C21FFD6D847B271469489 /* Pods.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods.debug staging.xcconfig"; sourceTree = "<group>"; };
+		EB95ED3C5F2B0F3311F67CC8EDCCA912 /* Pods-WatchExtension.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.release staging.xcconfig"; sourceTree = "<group>"; };
 		EBCB1F613864DB71801352519BEA5435 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
-		EBE0481DEA6A43F319F28FD8B8F63604 /* Pods-Widget.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.appstore debug.xcconfig"; sourceTree = "<group>"; };
-		ECEAA109298BF6105AF16E8DA9FA4FE6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		ED3C4F8E3BAE5F4AA8ED20C281D57113 /* Pods-Watch.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.test staging.xcconfig"; sourceTree = "<group>"; };
-		EE37AB3799C62E7932A06C92793B2C07 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
-		EEAAE891C3A93E30D440A9E3037B3FA5 /* Pods-Widget.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Widget.appstore.xcconfig"; sourceTree = "<group>"; };
+		ED00917435DD69AA14138608654F06A0 /* Pods-WatchExtension.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.test.xcconfig"; sourceTree = "<group>"; };
+		F19A2087A99E25ECE32EB93B6DA77FAC /* Pods-WatchExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1F4BD7876A221F8E49B1ECE58D70935 /* Pods-Widget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Widget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F3291CB07425C22CBA0CBD6CC593733B /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		F3B901063A038720BFD14DC8D34E2250 /* Pods-Watch.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.release staging.xcconfig"; sourceTree = "<group>"; };
 		F5265F12784EE90422CDF45A9318C8B9 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
-		F85F7857F44A98847840A25FCE267228 /* Pods-WatchExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchExtension.appstore.xcconfig"; sourceTree = "<group>"; };
-		FE450EA8EA2EE1318BCB546E1722E767 /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		F5B317EE4C5DE0E83B7108129721D45A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ED7F531A2397820CB9A99DED05321B /* Pods-Watch.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.test staging.xcconfig"; sourceTree = "<group>"; };
+		F8C3EC530C5403604F482BAC3D891A19 /* Pods-Widget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Widget-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA5C43CDA876DE794CAD675FFA8AC0E4 /* Pods-Watch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Watch-frameworks.sh"; sourceTree = "<group>"; };
 		FF5072BF02A55FE88ED7A14D19DE62A2 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		FFD7FCBB65B31A27AAFB721E1FF9C146 /* Pods-Watch.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch.debug staging.xcconfig"; sourceTree = "<group>"; };
 		FFEABC5825A3992D7EC5D4744FF0BFDB /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +345,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8DD00AF0A52856D5DBDE5EB1A676A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9782D9D035750C81C78E6AF545617A76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAC784A681F677F5BE100340191FB367 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +381,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A3C4A3806FA380F73BE73C528854359 /* Pods-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				B33A8B54F8955C0B9339DAE0595F0035 /* Pods-Watch-acknowledgements.markdown */,
+				11CA696E4F6937990573209E2D9FF597 /* Pods-Watch-acknowledgements.plist */,
+				575FC21D74D3F2D070989EF28946155E /* Pods-Watch-dummy.m */,
+				FA5C43CDA876DE794CAD675FFA8AC0E4 /* Pods-Watch-frameworks.sh */,
+				01F162BED92D293B7DDF91BE333FF4A1 /* Pods-Watch-resources.sh */,
+				92685747C42499E5C9127DEAC3B49CE3 /* Pods-Watch.appstore.xcconfig */,
+				DB693DB4A2FEAFE87217E06096DE71B3 /* Pods-Watch.appstore debug.xcconfig */,
+				C2C575E17DEEEF079A198559E875B091 /* Pods-Watch.debug.xcconfig */,
+				FFD7FCBB65B31A27AAFB721E1FF9C146 /* Pods-Watch.debug staging.xcconfig */,
+				28C1687C1879C782C69D4C2614E750F4 /* Pods-Watch.release.xcconfig */,
+				F3B901063A038720BFD14DC8D34E2250 /* Pods-Watch.release staging.xcconfig */,
+				4F3723257D8113656663DE0B1E7B6B30 /* Pods-Watch.test.xcconfig */,
+				F7ED7F531A2397820CB9A99DED05321B /* Pods-Watch.test staging.xcconfig */,
+			);
+			name = "Pods-Watch";
+			path = "Target Support Files/Pods-Watch";
+			sourceTree = "<group>";
+		};
+		2631DD902A42E22DB21B75C96F93A416 /* Pods-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4BD7876A221F8E49B1ECE58D70935 /* Pods-Widget-acknowledgements.markdown */,
+				F8C3EC530C5403604F482BAC3D891A19 /* Pods-Widget-acknowledgements.plist */,
+				AA69C817D8FAED4237653301620DBB29 /* Pods-Widget-dummy.m */,
+				9261BB4C43E8B459B85E1D30AAECD996 /* Pods-Widget-frameworks.sh */,
+				4B65F0379E1A3743BEBF9801DEFC8EAA /* Pods-Widget-resources.sh */,
+				BA4CC2ED9D415B6A043B9D20BD23D26A /* Pods-Widget.appstore.xcconfig */,
+				2732AD0CB0733468874498EF5AE89F35 /* Pods-Widget.appstore debug.xcconfig */,
+				B924186434133B60FAED6B36CD5925A7 /* Pods-Widget.debug.xcconfig */,
+				65D023A7E264231DB7C5FB35BD27BE95 /* Pods-Widget.debug staging.xcconfig */,
+				9C3E34D9276949E42512B003D1ABEA81 /* Pods-Widget.release.xcconfig */,
+				9C0EB278BA5A862BAF06ABB8933DC446 /* Pods-Widget.release staging.xcconfig */,
+				1B6E31A6220C554C6C82DAB21859B7FF /* Pods-Widget.test.xcconfig */,
+				94AA166A1224FC4998BDC7D9FD043F5A /* Pods-Widget.test staging.xcconfig */,
+			);
+			name = "Pods-Widget";
+			path = "Target Support Files/Pods-Widget";
+			sourceTree = "<group>";
+		};
 		289BA5AA7E95535126C67D1DE1B3C096 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,22 +433,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3508807F16751E2B0AFE53E4D701734B /* Pods-WatchExtension */ = {
+		3A38AA5606F17C8D6DE7947055487E20 /* Pods-WatchExtension */ = {
 			isa = PBXGroup;
 			children = (
-				A97F6B8E7ECCC5ACBA451D8F29545AD3 /* Pods-WatchExtension-acknowledgements.markdown */,
-				26C18B6192B7A1552B8B4C38EF6A7D8C /* Pods-WatchExtension-acknowledgements.plist */,
-				4CFEEC52CECBD343CCB56EE2F947539E /* Pods-WatchExtension-dummy.m */,
-				BF3669E3FAAC5EF48E1B511D412EE815 /* Pods-WatchExtension-frameworks.sh */,
-				D0CD4F8F90B9A25C49F52D1FC13697B4 /* Pods-WatchExtension-resources.sh */,
-				F85F7857F44A98847840A25FCE267228 /* Pods-WatchExtension.appstore.xcconfig */,
-				04B64C87C2E510194E91BC7D3EA2235D /* Pods-WatchExtension.appstore debug.xcconfig */,
-				1D72F06D5BBAA889BBB1FDD4A1120B88 /* Pods-WatchExtension.debug.xcconfig */,
-				4BEC9DB2EA9C7B789FF88F71B9E80C06 /* Pods-WatchExtension.debug staging.xcconfig */,
-				E4AC0173EAF87954A8CA56D00449127C /* Pods-WatchExtension.release.xcconfig */,
-				1D81D5BDF0D1E2CB5831C55E33CDA2E5 /* Pods-WatchExtension.release staging.xcconfig */,
-				4F954320A642491C368EC4C462BB5CD0 /* Pods-WatchExtension.test.xcconfig */,
-				B844C3EF14402C65D67059E63B47E47F /* Pods-WatchExtension.test staging.xcconfig */,
+				F19A2087A99E25ECE32EB93B6DA77FAC /* Pods-WatchExtension-acknowledgements.markdown */,
+				78FA0106D30F9CEDE3CD7CB872B50A93 /* Pods-WatchExtension-acknowledgements.plist */,
+				A3943A3A090400B20EA97BC21ECB555A /* Pods-WatchExtension-dummy.m */,
+				AFBF15E2CC0EBA9C9BC84820F65DF943 /* Pods-WatchExtension-frameworks.sh */,
+				0651FD8F72F9DEB4E7920175BAEB4C2C /* Pods-WatchExtension-resources.sh */,
+				46A9E744D62F9977920CCC9C3AD9213A /* Pods-WatchExtension.appstore.xcconfig */,
+				775B4C3E3263BD00C3528104DA3389BB /* Pods-WatchExtension.appstore debug.xcconfig */,
+				332060AAA3637ACEF415F59D262D0DA6 /* Pods-WatchExtension.debug.xcconfig */,
+				6AD26A63FF27C045CBE463D49F3C7E76 /* Pods-WatchExtension.debug staging.xcconfig */,
+				C2BC7C39E1946884E02AC744548CD9BC /* Pods-WatchExtension.release.xcconfig */,
+				EB95ED3C5F2B0F3311F67CC8EDCCA912 /* Pods-WatchExtension.release staging.xcconfig */,
+				ED00917435DD69AA14138608654F06A0 /* Pods-WatchExtension.test.xcconfig */,
+				DF8B7BC1D4BDF5CA7F2E17379902F7CA /* Pods-WatchExtension.test staging.xcconfig */,
 			);
 			name = "Pods-WatchExtension";
 			path = "Target Support Files/Pods-WatchExtension";
@@ -400,27 +473,6 @@
 				4A8F767FB7373B0CC8DF24FC974ADEFC /* Support Files */,
 			);
 			path = M13Checkbox;
-			sourceTree = "<group>";
-		};
-		4CE2F6BC2D7B6F8638A4138C1E222AE7 /* Pods-Widget */ = {
-			isa = PBXGroup;
-			children = (
-				9D8E204A45A821388351A6ABEB31C92B /* Pods-Widget-acknowledgements.markdown */,
-				0B3834EA5AEB7C5FA10F6741A9AF341B /* Pods-Widget-acknowledgements.plist */,
-				C05FC103CA6A779DA8BA56C1E9A04D7E /* Pods-Widget-dummy.m */,
-				05484FB3F99B68C3C0435E0755E6F12F /* Pods-Widget-frameworks.sh */,
-				88B2B18133F82C9C01A26028F9E42A84 /* Pods-Widget-resources.sh */,
-				EEAAE891C3A93E30D440A9E3037B3FA5 /* Pods-Widget.appstore.xcconfig */,
-				EBE0481DEA6A43F319F28FD8B8F63604 /* Pods-Widget.appstore debug.xcconfig */,
-				8976D6EC5C9DD6EC562642B66091C7BE /* Pods-Widget.debug.xcconfig */,
-				7BFBBF68B969B1359F369013AC5E45F2 /* Pods-Widget.debug staging.xcconfig */,
-				870E5C3019DA2C2FC4049003A954CA0D /* Pods-Widget.release.xcconfig */,
-				C69DF29DA3F281A6F446EB0A0EF90C32 /* Pods-Widget.release staging.xcconfig */,
-				5F9F7298532FE2812524F4136EB8201B /* Pods-Widget.test.xcconfig */,
-				0A1118A617992E44A9A205E755E5FFBD /* Pods-Widget.test staging.xcconfig */,
-			);
-			name = "Pods-Widget";
-			path = "Target Support Files/Pods-Widget";
 			sourceTree = "<group>";
 		};
 		57A14220228F14D1C12DBCCF10FC77BB /* iOS */ = {
@@ -517,9 +569,51 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				289BA5AA7E95535126C67D1DE1B3C096 /* Pods */,
-				FE9618DAB5501017E3BF25B88F03CD85 /* Products */,
-				D6973AB4DD1F0940FEF3CEDE335046DF /* Targets Support Files */,
+				E91AF048F7673C949F48FC95BAF3B225 /* Products */,
+				F637A424B53FA185BBE1625B5B4264F4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8C87F0D3F06264D91B25E0FE5ED04C4A /* Pods-CoreDataProxy */ = {
+			isa = PBXGroup;
+			children = (
+				7866C0296CE812A6FBEB505397ADF0B4 /* Pods-CoreDataProxy-acknowledgements.markdown */,
+				C5B4298BEA7B427C807A0C5D13A2B37D /* Pods-CoreDataProxy-acknowledgements.plist */,
+				EA6BD5B77C013BE8A371FCAFA881A880 /* Pods-CoreDataProxy-dummy.m */,
+				CD62EDA708600ACA0E0D6233E26CD8EA /* Pods-CoreDataProxy-frameworks.sh */,
+				C828AB567CD9A7A1B460B1A8BE5D111A /* Pods-CoreDataProxy-resources.sh */,
+				349EFFD4C0709A844F03C9CC756636D6 /* Pods-CoreDataProxy.appstore.xcconfig */,
+				143357F83058965BE66C58E26AFA1B6B /* Pods-CoreDataProxy.appstore debug.xcconfig */,
+				89B56E1EAAE4AFD84FAD799951935AD3 /* Pods-CoreDataProxy.debug.xcconfig */,
+				AFBB7DFA754CFDCABEAB30D4FA7D09CE /* Pods-CoreDataProxy.debug staging.xcconfig */,
+				1DBE132F8AEEBA6366428959BA124072 /* Pods-CoreDataProxy.release.xcconfig */,
+				9E9C57E54220BBB5F82EEBE9EECFEDC5 /* Pods-CoreDataProxy.release staging.xcconfig */,
+				920579C9B1C4CCCBF5EF3AA861363088 /* Pods-CoreDataProxy.test.xcconfig */,
+				3CA2B4375E2229B3B059CD1E899F1AA9 /* Pods-CoreDataProxy.test staging.xcconfig */,
+			);
+			name = "Pods-CoreDataProxy";
+			path = "Target Support Files/Pods-CoreDataProxy";
+			sourceTree = "<group>";
+		};
+		C0B8CCD0B762C79FDC43453595B6AEF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B56C94A0F9BC9904E21651EDB8C3453E /* Pods-acknowledgements.markdown */,
+				4E5A97B489B57551A33E85641464B994 /* Pods-acknowledgements.plist */,
+				CFFC815C68BB0D547D6F7E3ED6DB3199 /* Pods-dummy.m */,
+				80A5D1A6BAF38483E0D81EC8313D2BA7 /* Pods-frameworks.sh */,
+				23D7A03BA4186385297BAE004D1448B0 /* Pods-resources.sh */,
+				BEF97D3B1871E7A15F221EF7C1581CBB /* Pods.appstore.xcconfig */,
+				A981B21493CB751BB3A3ACC0BC892F09 /* Pods.appstore debug.xcconfig */,
+				5ADB1DB7304E0D73562CC1A8EDD8138C /* Pods.debug.xcconfig */,
+				C6C26B8CAA6FDB6E7B7016CE0774E5C3 /* Pods.debug staging.xcconfig */,
+				3275BAD322D02C2D8945CBC668EAA5AA /* Pods.release.xcconfig */,
+				E65C259C64BA1C3806813D8F6B6CF540 /* Pods.release staging.xcconfig */,
+				5BA6964E151BC9F1734FCF95694EA8CC /* Pods.test.xcconfig */,
+				CD7321D4D5E360226C958BF74072A11D /* Pods.test staging.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
 		C4D6DFBB026F60257C8F1322F160A1CF /* TGLStackedViewController */ = {
@@ -536,57 +630,31 @@
 			path = TGLStackedViewController;
 			sourceTree = "<group>";
 		};
-		D6973AB4DD1F0940FEF3CEDE335046DF /* Targets Support Files */ = {
+		E91AF048F7673C949F48FC95BAF3B225 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAC3747091A6FC7B39B06D5A173E28B2 /* Pods */,
-				DAFA99A7A4F5575360182C86033801AD /* Pods-Watch */,
-				3508807F16751E2B0AFE53E4D701734B /* Pods-WatchExtension */,
-				4CE2F6BC2D7B6F8638A4138C1E222AE7 /* Pods-Widget */,
+				4964C7AFD21DD027B3BF98810AFBD824 /* libM13Checkbox.a */,
+				047A088A7CE38EC206A24F0AE4F808C5 /* libMagicalRecord.a */,
+				F5B317EE4C5DE0E83B7108129721D45A /* libPods.a */,
+				3F066CB3A4C3A78C23B6FA4E22D3A450 /* libPods-CoreDataProxy.a */,
+				4C1A3C045B3DD22EF71BEAA9487E1DDC /* libPods-Watch.a */,
+				5576D64D4002C33B6EA09D8AC3648CDC /* libPods-WatchExtension.a */,
+				AEE972EA050575A8200CEF5CA4928106 /* libPods-Widget.a */,
+				E758ED0FCD1024EB8CF2C6CE9F09FDF0 /* libTGLStackedViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F637A424B53FA185BBE1625B5B4264F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0B8CCD0B762C79FDC43453595B6AEF2 /* Pods */,
+				8C87F0D3F06264D91B25E0FE5ED04C4A /* Pods-CoreDataProxy */,
+				1A3C4A3806FA380F73BE73C528854359 /* Pods-Watch */,
+				3A38AA5606F17C8D6DE7947055487E20 /* Pods-WatchExtension */,
+				2631DD902A42E22DB21B75C96F93A416 /* Pods-Widget */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DAFA99A7A4F5575360182C86033801AD /* Pods-Watch */ = {
-			isa = PBXGroup;
-			children = (
-				CCA14FBD1884D9727913B52BDE52F9EE /* Pods-Watch-acknowledgements.markdown */,
-				5E32F36E4DC7543795C9734EC2802414 /* Pods-Watch-acknowledgements.plist */,
-				705A6560510219AC8245F82E752878AA /* Pods-Watch-dummy.m */,
-				34BE050BBBDB726AC25BBF3B5CC1D346 /* Pods-Watch-frameworks.sh */,
-				5A469A850A0F8364E5F99607430A2446 /* Pods-Watch-resources.sh */,
-				1C3D8859AAF63F98ED713EDFC3955469 /* Pods-Watch.appstore.xcconfig */,
-				A346AD77D276B7C5461130983AB3B7F9 /* Pods-Watch.appstore debug.xcconfig */,
-				EE37AB3799C62E7932A06C92793B2C07 /* Pods-Watch.debug.xcconfig */,
-				C9580F0C091694AAB5E3C0F17E3924E0 /* Pods-Watch.debug staging.xcconfig */,
-				FE450EA8EA2EE1318BCB546E1722E767 /* Pods-Watch.release.xcconfig */,
-				3FC6615D3B902C96056EBF52E3F3313D /* Pods-Watch.release staging.xcconfig */,
-				B954DBEDC6C10C7222E7DD5E83D38C75 /* Pods-Watch.test.xcconfig */,
-				ED3C4F8E3BAE5F4AA8ED20C281D57113 /* Pods-Watch.test staging.xcconfig */,
-			);
-			name = "Pods-Watch";
-			path = "Target Support Files/Pods-Watch";
-			sourceTree = "<group>";
-		};
-		EAC3747091A6FC7B39B06D5A173E28B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BCC4CC6CAC2A54D6A95F354D3E37CE86 /* Pods-acknowledgements.markdown */,
-				2DB658E1900393D2245A6DBEE42CD13C /* Pods-acknowledgements.plist */,
-				8CAD41D9091C6ABB26037F344615169C /* Pods-dummy.m */,
-				2078F8A69161F7F4D99A35337E6A3800 /* Pods-frameworks.sh */,
-				66887726E538B4A8344F7806618AE15B /* Pods-resources.sh */,
-				2CBCAE9F45CF7D869D83BDB7C32D495D /* Pods.appstore.xcconfig */,
-				CA242DD67724FFDB3B0543F77AEFBC48 /* Pods.appstore debug.xcconfig */,
-				E74995DF2961077E620D688CC725F4A9 /* Pods.debug.xcconfig */,
-				EBB0EF62AB6C21FFD6D847B271469489 /* Pods.debug staging.xcconfig */,
-				ECEAA109298BF6105AF16E8DA9FA4FE6 /* Pods.release.xcconfig */,
-				8802A83645404E04136E9B845BBD2899 /* Pods.release staging.xcconfig */,
-				993CCE5C82C8FE341D42B6B45DB39E2B /* Pods.test.xcconfig */,
-				3F79D3999BEA54BAE75991417E551053 /* Pods.test staging.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
 		F88DCF1A4896BD8175FDCEF80E4AF67F /* Support Files */ = {
@@ -598,20 +666,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MagicalRecord";
-			sourceTree = "<group>";
-		};
-		FE9618DAB5501017E3BF25B88F03CD85 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				95E3C21BE403919E37A27F8726F42ABC /* libM13Checkbox.a */,
-				AFC92BF3FDA737A84DE8B521F1F03CFC /* libMagicalRecord.a */,
-				4C0DFBBF54C13F0D6CC5136A969D0702 /* libPods.a */,
-				BFB6D2FD9A3065AFF2F38CF27C26C951 /* libPods-Watch.a */,
-				0A78169528DDBC73D9039B6EA706371C /* libPods-WatchExtension.a */,
-				6DF9CAE965FAA44FB161469234A1A938 /* libPods-Widget.a */,
-				631A103DDFAE972B4A739275C1584DB8 /* libTGLStackedViewController.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,7 +746,7 @@
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 4C0DFBBF54C13F0D6CC5136A969D0702 /* libPods.a */;
+			productReference = F5B317EE4C5DE0E83B7108129721D45A /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6C74C428998711F5E77E28801D08BB62 /* TGLStackedViewController */ = {
@@ -709,7 +763,7 @@
 			);
 			name = TGLStackedViewController;
 			productName = TGLStackedViewController;
-			productReference = 631A103DDFAE972B4A739275C1584DB8 /* libTGLStackedViewController.a */;
+			productReference = E758ED0FCD1024EB8CF2C6CE9F09FDF0 /* libTGLStackedViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		79E1FCEFDF558283E6F12B5BA75A14D7 /* Pods-Watch */ = {
@@ -726,7 +780,7 @@
 			);
 			name = "Pods-Watch";
 			productName = "Pods-Watch";
-			productReference = BFB6D2FD9A3065AFF2F38CF27C26C951 /* libPods-Watch.a */;
+			productReference = 4C1A3C045B3DD22EF71BEAA9487E1DDC /* libPods-Watch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		85AE6BDA0887D6143BD6B57E3D68C893 /* Pods-WatchExtension */ = {
@@ -743,7 +797,7 @@
 			);
 			name = "Pods-WatchExtension";
 			productName = "Pods-WatchExtension";
-			productReference = 0A78169528DDBC73D9039B6EA706371C /* libPods-WatchExtension.a */;
+			productReference = 5576D64D4002C33B6EA09D8AC3648CDC /* libPods-WatchExtension.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C6C10FBC1B374482626BB335B0D22446 /* MagicalRecord */ = {
@@ -760,7 +814,7 @@
 			);
 			name = MagicalRecord;
 			productName = MagicalRecord;
-			productReference = AFC92BF3FDA737A84DE8B521F1F03CFC /* libMagicalRecord.a */;
+			productReference = 047A088A7CE38EC206A24F0AE4F808C5 /* libMagicalRecord.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E4EDC6A57CCEB85E961C6A53B31244F5 /* Pods-Widget */ = {
@@ -777,7 +831,24 @@
 			);
 			name = "Pods-Widget";
 			productName = "Pods-Widget";
-			productReference = 6DF9CAE965FAA44FB161469234A1A938 /* libPods-Widget.a */;
+			productReference = AEE972EA050575A8200CEF5CA4928106 /* libPods-Widget.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E75C29821C0BC5D81DC5A3010D522DD3 /* Pods-CoreDataProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C95809CE468AA18737C7D8B6345EC3A /* Build configuration list for PBXNativeTarget "Pods-CoreDataProxy" */;
+			buildPhases = (
+				1029D6C876419200EE1757CCC8F8E8CD /* Sources */,
+				B8DD00AF0A52856D5DBDE5EB1A676A2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49316F5E71E56DB00EC76A14A3FB2044 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoreDataProxy";
+			productName = "Pods-CoreDataProxy";
+			productReference = 3F066CB3A4C3A78C23B6FA4E22D3A450 /* libPods-CoreDataProxy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FCCF60D3AFC8A05F333CCB3275EC5B36 /* M13Checkbox */ = {
@@ -794,7 +865,7 @@
 			);
 			name = M13Checkbox;
 			productName = M13Checkbox;
-			productReference = 95E3C21BE403919E37A27F8726F42ABC /* libM13Checkbox.a */;
+			productReference = 4964C7AFD21DD027B3BF98810AFBD824 /* libM13Checkbox.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -814,13 +885,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FE9618DAB5501017E3BF25B88F03CD85 /* Products */;
+			productRefGroup = E91AF048F7673C949F48FC95BAF3B225 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FCCF60D3AFC8A05F333CCB3275EC5B36 /* M13Checkbox */,
 				C6C10FBC1B374482626BB335B0D22446 /* MagicalRecord */,
 				21E96E72A7B86890A9BB99AC83B5E1FE /* Pods */,
+				E75C29821C0BC5D81DC5A3010D522DD3 /* Pods-CoreDataProxy */,
 				79E1FCEFDF558283E6F12B5BA75A14D7 /* Pods-Watch */,
 				85AE6BDA0887D6143BD6B57E3D68C893 /* Pods-WatchExtension */,
 				E4EDC6A57CCEB85E961C6A53B31244F5 /* Pods-Widget */,
@@ -844,6 +916,14 @@
 			files = (
 				AD6DFEC288CF4BAAD0367AB41FD5BFC7 /* M13Checkbox-dummy.m in Sources */,
 				8A3778452884AEB6C324BEE38B02951A /* M13Checkbox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1029D6C876419200EE1757CCC8F8E8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E39C7440FA6D8B5481400C57229323 /* Pods-CoreDataProxy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +1012,12 @@
 			target = C6C10FBC1B374482626BB335B0D22446 /* MagicalRecord */;
 			targetProxy = 6683093BFEE9CC22244B9856BF0400B3 /* PBXContainerItemProxy */;
 		};
+		49316F5E71E56DB00EC76A14A3FB2044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MagicalRecord;
+			target = C6C10FBC1B374482626BB335B0D22446 /* MagicalRecord */;
+			targetProxy = 353A2B72FE03FC0F82DBF0C253A2AEEF /* PBXContainerItemProxy */;
+		};
 		4D99C46C59C035C13BED0D126159ABC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TGLStackedViewController;
@@ -961,7 +1047,7 @@
 /* Begin XCBuildConfiguration section */
 		01EE828AF3F1099010C842DD50034C56 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F954320A642491C368EC4C462BB5CD0 /* Pods-WatchExtension.test.xcconfig */;
+			baseConfigurationReference = ED00917435DD69AA14138608654F06A0 /* Pods-WatchExtension.test.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -979,7 +1065,7 @@
 		};
 		04AF9A00CA7B8470E8A591165B479431 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE450EA8EA2EE1318BCB546E1722E767 /* Pods-Watch.release.xcconfig */;
+			baseConfigurationReference = 28C1687C1879C782C69D4C2614E750F4 /* Pods-Watch.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -993,6 +1079,23 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		067411F525375976862891038050289B /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920579C9B1C4CCCBF5EF3AA861363088 /* Pods-CoreDataProxy.test.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Test;
 		};
 		07F7B05C6251C1E39EAB87A458AD5BCB /* AppStore Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1029,7 +1132,7 @@
 		};
 		0836CD945D69676A7D80DD01B80B70D5 /* Release Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D81D5BDF0D1E2CB5831C55E33CDA2E5 /* Pods-WatchExtension.release staging.xcconfig */;
+			baseConfigurationReference = EB95ED3C5F2B0F3311F67CC8EDCCA912 /* Pods-WatchExtension.release staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1047,7 +1150,7 @@
 		};
 		0A96CB545C44285D8469208FFBF05403 /* AppStore Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B64C87C2E510194E91BC7D3EA2235D /* Pods-WatchExtension.appstore debug.xcconfig */;
+			baseConfigurationReference = 775B4C3E3263BD00C3528104DA3389BB /* Pods-WatchExtension.appstore debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1135,7 +1238,7 @@
 		};
 		16ED178FF879053134CA0D07E623CAC9 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEAAE891C3A93E30D440A9E3037B3FA5 /* Pods-Widget.appstore.xcconfig */;
+			baseConfigurationReference = BA4CC2ED9D415B6A043B9D20BD23D26A /* Pods-Widget.appstore.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1153,7 +1256,7 @@
 		};
 		1D0D55A0AE0BC82E2DA3E64CD4E5C8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE37AB3799C62E7932A06C92793B2C07 /* Pods-Watch.debug.xcconfig */;
+			baseConfigurationReference = C2C575E17DEEEF079A198559E875B091 /* Pods-Watch.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1170,7 +1273,7 @@
 		};
 		1DD5AA17883B7A05097E3629BF6CDC4B /* AppStore Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A346AD77D276B7C5461130983AB3B7F9 /* Pods-Watch.appstore debug.xcconfig */;
+			baseConfigurationReference = DB693DB4A2FEAFE87217E06096DE71B3 /* Pods-Watch.appstore debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1205,7 +1308,7 @@
 		};
 		2790C7AB2D2E07B4ECD33F65D9E0E583 /* Debug Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBB0EF62AB6C21FFD6D847B271469489 /* Pods.debug staging.xcconfig */;
+			baseConfigurationReference = C6C26B8CAA6FDB6E7B7016CE0774E5C3 /* Pods.debug staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1222,7 +1325,7 @@
 		};
 		27DC113E8510E3109C417B0A12DB0583 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C3D8859AAF63F98ED713EDFC3955469 /* Pods-Watch.appstore.xcconfig */;
+			baseConfigurationReference = 92685747C42499E5C9127DEAC3B49CE3 /* Pods-Watch.appstore.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1236,6 +1339,23 @@
 				SKIP_INSTALL = YES;
 			};
 			name = AppStore;
+		};
+		2F570B9D584AEFFB194B0F97C8811357 /* AppStore Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 143357F83058965BE66C58E26AFA1B6B /* Pods-CoreDataProxy.appstore debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = "AppStore Debug";
 		};
 		311C84FE1EC96CFDDEB0F7E7DEEFB057 /* Test */ = {
 			isa = XCBuildConfiguration;
@@ -1255,9 +1375,43 @@
 			};
 			name = Test;
 		};
+		31D29BF66D06B316029EA68CEC3335B0 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349EFFD4C0709A844F03C9CC756636D6 /* Pods-CoreDataProxy.appstore.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = AppStore;
+		};
+		378280A9A6D671AD4C4921939E2B863E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBE132F8AEEBA6366428959BA124072 /* Pods-CoreDataProxy.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		38D3D60460C2D7E4A96E0167F33E9276 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 870E5C3019DA2C2FC4049003A954CA0D /* Pods-Widget.release.xcconfig */;
+			baseConfigurationReference = 9C3E34D9276949E42512B003D1ABEA81 /* Pods-Widget.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1290,6 +1444,23 @@
 				SKIP_INSTALL = YES;
 			};
 			name = "AppStore Debug";
+		};
+		3E2AD2A145D62F5741CD1A27CFF6CD17 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBB7DFA754CFDCABEAB30D4FA7D09CE /* Pods-CoreDataProxy.debug staging.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = "Debug Staging";
 		};
 		3ECCC8FC15F23B5761D89B27B7EF0ECC /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1345,7 +1516,7 @@
 		};
 		459CD70B757D035B32B213A1514E8542 /* Release Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C69DF29DA3F281A6F446EB0A0EF90C32 /* Pods-Widget.release staging.xcconfig */;
+			baseConfigurationReference = 9C0EB278BA5A862BAF06ABB8933DC446 /* Pods-Widget.release staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1363,7 +1534,7 @@
 		};
 		513F297D379813AEAD535A956B6D446F /* Debug Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9580F0C091694AAB5E3C0F17E3924E0 /* Pods-Watch.debug staging.xcconfig */;
+			baseConfigurationReference = FFD7FCBB65B31A27AAFB721E1FF9C146 /* Pods-Watch.debug staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1380,7 +1551,7 @@
 		};
 		5235D6193FF87D2CB725B12E0FFDAA57 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CBCAE9F45CF7D869D83BDB7C32D495D /* Pods.appstore.xcconfig */;
+			baseConfigurationReference = BEF97D3B1871E7A15F221EF7C1581CBB /* Pods.appstore.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1415,7 +1586,7 @@
 		};
 		55A4242A071AA01683B3C6A368EBB6AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8976D6EC5C9DD6EC562642B66091C7BE /* Pods-Widget.debug.xcconfig */;
+			baseConfigurationReference = B924186434133B60FAED6B36CD5925A7 /* Pods-Widget.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1470,7 +1641,7 @@
 		};
 		680DD6B960CA20AD902B23A14E71E2DF /* Release Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8802A83645404E04136E9B845BBD2899 /* Pods.release staging.xcconfig */;
+			baseConfigurationReference = E65C259C64BA1C3806813D8F6B6CF540 /* Pods.release staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1506,7 +1677,7 @@
 		};
 		7885596240F417CCEA39EF5FD6AE421E /* Test Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F79D3999BEA54BAE75991417E551053 /* Pods.test staging.xcconfig */;
+			baseConfigurationReference = CD7321D4D5E360226C958BF74072A11D /* Pods.test staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1595,9 +1766,26 @@
 			};
 			name = "Test Staging";
 		};
+		8CF914FF6020011D120CC4DAD506339D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B56E1EAAE4AFD84FAD799951935AD3 /* Pods-CoreDataProxy.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		9114B802C5009B5369C59BCAF9E36746 /* Test Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A1118A617992E44A9A205E755E5FFBD /* Pods-Widget.test staging.xcconfig */;
+			baseConfigurationReference = 94AA166A1224FC4998BDC7D9FD043F5A /* Pods-Widget.test staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1651,7 +1839,7 @@
 		};
 		9EC7E1F948171F735FC1F87861E0122E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4AC0173EAF87954A8CA56D00449127C /* Pods-WatchExtension.release.xcconfig */;
+			baseConfigurationReference = C2BC7C39E1946884E02AC744548CD9BC /* Pods-WatchExtension.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1775,6 +1963,23 @@
 			};
 			name = Debug;
 		};
+		A83EE6DE2CBEBD1903BEF3E20C0DA149 /* Test Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA2B4375E2229B3B059CD1E899F1AA9 /* Pods-CoreDataProxy.test staging.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = "Test Staging";
+		};
 		AAE70E2ABA4784CACCD196FB785FA2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6F3F5B8F2A4D1AE5C9BC807397C488D /* TGLStackedViewController.xcconfig */;
@@ -1795,7 +2000,7 @@
 		};
 		AB34BA13D7BF0A23F8F219B303B91BCD /* Test Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED3C4F8E3BAE5F4AA8ED20C281D57113 /* Pods-Watch.test staging.xcconfig */;
+			baseConfigurationReference = F7ED7F531A2397820CB9A99DED05321B /* Pods-Watch.test staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1812,7 +2017,7 @@
 		};
 		AF171AAC13289F8F959DE08F4FF04A01 /* Release Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FC6615D3B902C96056EBF52E3F3313D /* Pods-Watch.release staging.xcconfig */;
+			baseConfigurationReference = F3B901063A038720BFD14DC8D34E2250 /* Pods-Watch.release staging.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1829,7 +2034,7 @@
 		};
 		B15FEF9F2CD97BF3F9829B0C0B18CFCD /* AppStore Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA242DD67724FFDB3B0543F77AEFBC48 /* Pods.appstore debug.xcconfig */;
+			baseConfigurationReference = A981B21493CB751BB3A3ACC0BC892F09 /* Pods.appstore debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1865,7 +2070,7 @@
 		};
 		B5AAA88888B05A787792331485726151 /* Test Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B844C3EF14402C65D67059E63B47E47F /* Pods-WatchExtension.test staging.xcconfig */;
+			baseConfigurationReference = DF8B7BC1D4BDF5CA7F2E17379902F7CA /* Pods-WatchExtension.test staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1883,7 +2088,7 @@
 		};
 		B7E3EBFD2BFEAB6B5687F2A372890590 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F85F7857F44A98847840A25FCE267228 /* Pods-WatchExtension.appstore.xcconfig */;
+			baseConfigurationReference = 46A9E744D62F9977920CCC9C3AD9213A /* Pods-WatchExtension.appstore.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1901,7 +2106,7 @@
 		};
 		C2ACEA9A175EEB1E080D2807E8BD1678 /* AppStore Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBE0481DEA6A43F319F28FD8B8F63604 /* Pods-Widget.appstore debug.xcconfig */;
+			baseConfigurationReference = 2732AD0CB0733468874498EF5AE89F35 /* Pods-Widget.appstore debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1919,7 +2124,7 @@
 		};
 		C475E6361CA54A2EA73B0B545A7079FC /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B954DBEDC6C10C7222E7DD5E83D38C75 /* Pods-Watch.test.xcconfig */;
+			baseConfigurationReference = 4F3723257D8113656663DE0B1E7B6B30 /* Pods-Watch.test.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1936,7 +2141,7 @@
 		};
 		CA0A27D238C4B849431F5CE886DA045D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECEAA109298BF6105AF16E8DA9FA4FE6 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 3275BAD322D02C2D8945CBC668EAA5AA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2005,7 +2210,7 @@
 		};
 		CE62BF39EE98AC119B8028B43B343EFD /* Debug Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BFBBF68B969B1359F369013AC5E45F2 /* Pods-Widget.debug staging.xcconfig */;
+			baseConfigurationReference = 65D023A7E264231DB7C5FB35BD27BE95 /* Pods-Widget.debug staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2021,9 +2226,26 @@
 			};
 			name = "Debug Staging";
 		};
+		D1DD6E8B7B7AD879E7890141194321CC /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9C57E54220BBB5F82EEBE9EECFEDC5 /* Pods-CoreDataProxy.release staging.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = "Release Staging";
+		};
 		D872F74C134B71C01B99EED5CBD86E7A /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F9F7298532FE2812524F4136EB8201B /* Pods-Widget.test.xcconfig */;
+			baseConfigurationReference = 1B6E31A6220C554C6C82DAB21859B7FF /* Pods-Widget.test.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2041,7 +2263,7 @@
 		};
 		DAB91E074A859C66EEC157C9E26C20B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D72F06D5BBAA889BBB1FDD4A1120B88 /* Pods-WatchExtension.debug.xcconfig */;
+			baseConfigurationReference = 332060AAA3637ACEF415F59D262D0DA6 /* Pods-WatchExtension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2059,7 +2281,7 @@
 		};
 		DCAF26C0BB4E8CB411066F0301D69D94 /* Debug Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BEC9DB2EA9C7B789FF88F71B9E80C06 /* Pods-WatchExtension.debug staging.xcconfig */;
+			baseConfigurationReference = 6AD26A63FF27C045CBE463D49F3C7E76 /* Pods-WatchExtension.debug staging.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2131,7 +2353,7 @@
 		};
 		F51072C7794603F229874AE1BCF21EF8 /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 993CCE5C82C8FE341D42B6B45DB39E2B /* Pods.test.xcconfig */;
+			baseConfigurationReference = 5BA6964E151BC9F1734FCF95694EA8CC /* Pods.test.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2215,7 +2437,7 @@
 		};
 		FC2797C6A760AA22479A95E329693751 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E74995DF2961077E620D688CC725F4A9 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 5ADB1DB7304E0D73562CC1A8EDD8138C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2334,6 +2556,21 @@
 				0836CD945D69676A7D80DD01B80B70D5 /* Release Staging */,
 				01EE828AF3F1099010C842DD50034C56 /* Test */,
 				B5AAA88888B05A787792331485726151 /* Test Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C95809CE468AA18737C7D8B6345EC3A /* Build configuration list for PBXNativeTarget "Pods-CoreDataProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D29BF66D06B316029EA68CEC3335B0 /* AppStore */,
+				2F570B9D584AEFFB194B0F97C8811357 /* AppStore Debug */,
+				8CF914FF6020011D120CC4DAD506339D /* Debug */,
+				3E2AD2A145D62F5741CD1A27CFF6CD17 /* Debug Staging */,
+				378280A9A6D671AD4C4921939E2B863E /* Release */,
+				D1DD6E8B7B7AD879E7890141194321CC /* Release Staging */,
+				067411F525375976862891038050289B /* Test */,
+				A83EE6DE2CBEBD1903BEF3E20C0DA149 /* Test Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

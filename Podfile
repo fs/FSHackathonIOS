@@ -25,3 +25,8 @@ end
 target 'Widget', :exclusive => true do
     pod 'M13Checkbox'
 end
+
+target 'CoreDataProxy', :exclusive => true do
+    pod 'MagicalRecord'
+end
+
