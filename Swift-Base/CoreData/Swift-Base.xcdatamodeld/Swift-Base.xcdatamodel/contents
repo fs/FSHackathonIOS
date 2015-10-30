@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,7 +15,7 @@
     <entity name="List" representedClassName="List" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListedItem" inverseName="list" inverseEntity="ListedItem" syncable="YES"/>
+        <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ListedItem" inverseName="list" inverseEntity="ListedItem" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="date"/>
         </userInfo>
@@ -30,7 +30,7 @@
     </entity>
     <elements>
         <element name="Item" positionX="-126" positionY="-36" width="128" height="150"/>
-        <element name="List" positionX="-596" positionY="-279" width="128" height="90"/>
+        <element name="List" positionX="-596" positionY="-279" width="128" height="88"/>
         <element name="ListedItem" positionX="-344" positionY="-150" width="128" height="135"/>
     </elements>
 </model>

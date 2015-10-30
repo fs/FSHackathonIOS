@@ -51,38 +51,38 @@ class _List: NSManagedObject {
     // MARK: - Relationships
 
     @NSManaged
-    var listedItems: NSSet
+    var listedItems: NSOrderedSet
 
-    func listedItemsSet() -> NSMutableSet {
-        return self.listedItems.mutableCopy() as! NSMutableSet
+    func listedItemsSet() -> NSMutableOrderedSet {
+        return self.listedItems.mutableCopy() as! NSMutableOrderedSet
     }
 
 }
 
 extension _List {
 
-    func addListedItems(objects: NSSet) {
-        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
-        mutable.unionSet(objects as Set<NSObject>)
-        self.listedItems = mutable.copy() as! NSSet
+    func addListedItems(objects: NSOrderedSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableOrderedSet
+        mutable.unionOrderedSet(objects)
+        self.listedItems = mutable.copy() as! NSOrderedSet
     }
 
-    func removeListedItems(objects: NSSet) {
-        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
-        mutable.minusSet(objects as Set<NSObject>)
-        self.listedItems = mutable.copy() as! NSSet
+    func removeListedItems(objects: NSOrderedSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableOrderedSet
+        mutable.minusOrderedSet(objects)
+        self.listedItems = mutable.copy() as! NSOrderedSet
     }
 
     func addListedItemsObject(value: ListedItem!) {
-        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        let mutable = self.listedItems.mutableCopy() as! NSMutableOrderedSet
         mutable.addObject(value)
-        self.listedItems = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSOrderedSet
     }
 
     func removeListedItemsObject(value: ListedItem!) {
-        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        let mutable = self.listedItems.mutableCopy() as! NSMutableOrderedSet
         mutable.removeObject(value)
-        self.listedItems = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSOrderedSet
     }
 
 }
