@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rX0-qI-oxO" id="D8T-r0-gAj">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -97,6 +97,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="customImageView" destination="KXP-6t-Kfv" id="XYB-p1-aer"/>
+                                            <outlet property="detailLabel" destination="rKw-sz-tt7" id="dON-bo-Z1q"/>
+                                            <outlet property="titleLabel" destination="QK1-7H-v25" id="ZtK-bx-21l"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

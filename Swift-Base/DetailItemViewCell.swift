@@ -10,6 +10,10 @@ import UIKit
 
 class DetailItemViewCell: UITableViewCell {
 
+    @IBOutlet weak var customImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,26 +25,10 @@ class DetailItemViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-//    func prepareCell(list: List) {
-//        if let date = order.createdAt {
-//            self.nameLabel.text = OrdersHistoryCell.HistoryCellDateFormatter.stringFromDate(date)
-//        }
-//        
-//        let orderedDishesArray = order.orderedDishes.array as! [SHOrderedDish]
-//        var dishesString = ""
-//        for i in 0 ..< orderedDishesArray.count {
-//            if let lDish = orderedDishesArray[i].dish {
-//                if let lDishTitle = lDish.title {
-//                    if dishesString == "" {
-//                        dishesString = lDishTitle
-//                    } else {
-//                        dishesString = [dishesString, lDishTitle].joinWithSeparator(", ")
-//                    }
-//                }
-//            }
-//        }
-//        
-//        dishesLabel.text = dishesString
-//    }
+    func prepareCell(item: Item) {
+//        self.customImageView.image = item.image
+        self.titleLabel.text = item.title
+//        self.detailLabel.text = item.title
+    }
     
 }
