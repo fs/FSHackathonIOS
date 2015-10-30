@@ -34,7 +34,7 @@ class DetailItemViewCell: UITableViewCell {
         self.titleLabel.text = listedItem.item?.title
         
         // checkbox
-//        self.checkbox.checkState = listedItem.selected.boolValue ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
+        self.checkbox.checkState = listedItem.selected!.boolValue ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
         
         // detail
         let count = "\((listedItem.count?.doubleValue)!) \(listedItem.unit)"
