@@ -51,38 +51,38 @@ class _List: NSManagedObject {
     // MARK: - Relationships
 
     @NSManaged
-    var items: NSSet
+    var items: NSOrderedSet
 
-    func itemsSet() -> NSMutableSet {
-        return self.items.mutableCopy() as! NSMutableSet
+    func itemsSet() -> NSMutableOrderedSet {
+        return self.items.mutableCopy() as! NSMutableOrderedSet
     }
 
 }
 
 extension _List {
 
-    func addItems(objects: NSSet) {
-        let mutable = self.items.mutableCopy() as! NSMutableSet
-        mutable.unionSet(objects as Set<NSObject>)
-        self.items = mutable.copy() as! NSSet
+    func addItems(objects: NSOrderedSet) {
+        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
+        mutable.unionOrderedSet(objects)
+        self.items = mutable.copy() as! NSOrderedSet
     }
 
-    func removeItems(objects: NSSet) {
-        let mutable = self.items.mutableCopy() as! NSMutableSet
-        mutable.minusSet(objects as Set<NSObject>)
-        self.items = mutable.copy() as! NSSet
+    func removeItems(objects: NSOrderedSet) {
+        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
+        mutable.minusOrderedSet(objects)
+        self.items = mutable.copy() as! NSOrderedSet
     }
 
     func addItemsObject(value: Item!) {
-        let mutable = self.items.mutableCopy() as! NSMutableSet
+        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
         mutable.addObject(value)
-        self.items = mutable.copy() as! NSSet
+        self.items = mutable.copy() as! NSOrderedSet
     }
 
     func removeItemsObject(value: Item!) {
-        let mutable = self.items.mutableCopy() as! NSMutableSet
+        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
         mutable.removeObject(value)
-        self.items = mutable.copy() as! NSSet
+        self.items = mutable.copy() as! NSOrderedSet
     }
 
 }
