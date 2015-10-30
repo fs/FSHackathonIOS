@@ -53,6 +53,36 @@
 		21A143371B99A479004116B8 /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432D1B99A479004116B8 /* FSHelpers.swift */; };
 		21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A565FF1BB2BF7600A96C23 /* FSE+UIImage.swift */; };
 		21B3D1A119E6E2D700EF0D52 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B3D1A019E6E2D700EF0D52 /* Crashlytics.framework */; };
+		21BA3B3E1BE4089E00D6FE1F /* TGLExposedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF411BE390E400B03AE4 /* TGLExposedLayout.m */; };
+		21BA3B3F1BE408A200D6FE1F /* TGLStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF431BE390E400B03AE4 /* TGLStackedLayout.m */; };
+		21BA3B401BE408A500D6FE1F /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF451BE390E400B03AE4 /* TGLStackedViewController.m */; };
+		21BA3B411BE408B900D6FE1F /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED41BE3906D00B03AE4 /* MagicalRecord+Actions.m */; };
+		21BA3B421BE408B900D6FE1F /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED61BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.m */; };
+		21BA3B431BE408B900D6FE1F /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED81BE3906D00B03AE4 /* MagicalRecord+iCloud.m */; };
+		21BA3B441BE408B900D6FE1F /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDA1BE3906D00B03AE4 /* MagicalRecord+Options.m */; };
+		21BA3B451BE408B900D6FE1F /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDC1BE3906D00B03AE4 /* MagicalRecord+Setup.m */; };
+		21BA3B461BE408B900D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDE1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.m */; };
+		21BA3B471BE408B900D6FE1F /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEE11BE3906D00B03AE4 /* MagicalRecordInternal.m */; };
+		21BA3B481BE408C000D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECD1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.m */; };
+		21BA3B491BE408C000D6FE1F /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECF1BE3906D00B03AE4 /* NSPersistentStore+MagicalRecord.m */; };
+		21BA3B4A1BE408C000D6FE1F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED11BE3906D00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		21BA3B4B1BE408C800D6FE1F /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC31BE3906D00B03AE4 /* NSManagedObjectContext+MagicalChainSave.m */; };
+		21BA3B4C1BE408C800D6FE1F /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC51BE3906D00B03AE4 /* NSManagedObjectContext+MagicalObserving.m */; };
+		21BA3B4D1BE408C800D6FE1F /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC71BE3906D00B03AE4 /* NSManagedObjectContext+MagicalRecord.m */; };
+		21BA3B4E1BE408C800D6FE1F /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC91BE3906D00B03AE4 /* NSManagedObjectContext+MagicalSaves.m */; };
+		21BA3B4F1BE408C800D6FE1F /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECB1BE3906D00B03AE4 /* NSManagedObjectContext+MagicalThreading.m */; };
+		21BA3B501BE408D000D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB81BE3906D00B03AE4 /* NSManagedObject+MagicalAggregation.m */; };
+		21BA3B511BE408D000D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBA1BE3906D00B03AE4 /* NSManagedObject+MagicalDataImport.m */; };
+		21BA3B521BE408D000D6FE1F /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBC1BE3906D00B03AE4 /* NSManagedObject+MagicalFinders.m */; };
+		21BA3B531BE408D000D6FE1F /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBE1BE3906D00B03AE4 /* NSManagedObject+MagicalRecord.m */; };
+		21BA3B541BE408D000D6FE1F /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC01BE3906D00B03AE4 /* NSManagedObject+MagicalRequests.m */; };
+		21BA3B551BE408D900D6FE1F /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */; };
+		21BA3B561BE408D900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAB1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m */; };
+		21BA3B571BE408D900D6FE1F /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAD1BE3906D00B03AE4 /* NSEntityDescription+MagicalDataImport.m */; };
+		21BA3B581BE408D900D6FE1F /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAF1BE3906D00B03AE4 /* NSNumber+MagicalDataImport.m */; };
+		21BA3B591BE408D900D6FE1F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB11BE3906D00B03AE4 /* NSObject+MagicalDataImport.m */; };
+		21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB31BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m */; };
+		21BA3B5B1BE408D900D6FE1F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB51BE3906D00B03AE4 /* NSString+MagicalDataImport.m */; };
 		21D1E1CD1BE3A0FD009378E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CB1BE3A0FD009378E3 /* Interface.storyboard */; };
 		21D1E1CF1BE3A0FD009378E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CE1BE3A0FD009378E3 /* Assets.xcassets */; };
 		21D1E1D61BE3A0FD009378E3 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21D1E1D51BE3A0FD009378E3 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -65,84 +95,18 @@
 		21DB304919DD2D6D003A418D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB304819DD2D6D003A418D /* Constants.swift */; };
 		21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157E11BB3EDF40041FCE4 /* FSTestHelpers.swift */; };
 		21E7AEA81BE3E25B00264DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E7AEA71BE3E25B00264DC9 /* Images.xcassets */; };
-		A432CF001BE3907200B03AE4 /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE41BE3906D00B03AE4 /* MagicalRecord.h */; };
-		A432CF121BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECC1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.h */; };
-		A432CF131BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECD1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.m */; };
-		A432CF141BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECE1BE3906D00B03AE4 /* NSPersistentStore+MagicalRecord.h */; };
-		A432CF151BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECF1BE3906D00B03AE4 /* NSPersistentStore+MagicalRecord.m */; };
-		A432CF161BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED01BE3906D00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.h */; };
-		A432CF171BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED11BE3906D00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
-		A432CF181BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEC21BE3906D00B03AE4 /* NSManagedObjectContext+MagicalChainSave.h */; };
-		A432CF191BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC31BE3906D00B03AE4 /* NSManagedObjectContext+MagicalChainSave.m */; };
-		A432CF1A1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEC41BE3906D00B03AE4 /* NSManagedObjectContext+MagicalObserving.h */; };
-		A432CF1B1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC51BE3906D00B03AE4 /* NSManagedObjectContext+MagicalObserving.m */; };
-		A432CF1C1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEC61BE3906D00B03AE4 /* NSManagedObjectContext+MagicalRecord.h */; };
-		A432CF1D1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC71BE3906D00B03AE4 /* NSManagedObjectContext+MagicalRecord.m */; };
-		A432CF1E1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEC81BE3906D00B03AE4 /* NSManagedObjectContext+MagicalSaves.h */; };
-		A432CF1F1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC91BE3906D00B03AE4 /* NSManagedObjectContext+MagicalSaves.m */; };
-		A432CF201BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECA1BE3906D00B03AE4 /* NSManagedObjectContext+MagicalThreading.h */; };
-		A432CF211BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECB1BE3906D00B03AE4 /* NSManagedObjectContext+MagicalThreading.m */; };
-		A432CF221BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEB71BE3906D00B03AE4 /* NSManagedObject+MagicalAggregation.h */; };
-		A432CF231BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB81BE3906D00B03AE4 /* NSManagedObject+MagicalAggregation.m */; };
-		A432CF241BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEB91BE3906D00B03AE4 /* NSManagedObject+MagicalDataImport.h */; };
-		A432CF251BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBA1BE3906D00B03AE4 /* NSManagedObject+MagicalDataImport.m */; };
-		A432CF261BE3908800B03AE4 /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEBB1BE3906D00B03AE4 /* NSManagedObject+MagicalFinders.h */; };
-		A432CF271BE3908800B03AE4 /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBC1BE3906D00B03AE4 /* NSManagedObject+MagicalFinders.m */; };
-		A432CF281BE3908800B03AE4 /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEBD1BE3906D00B03AE4 /* NSManagedObject+MagicalRecord.h */; };
-		A432CF291BE3908800B03AE4 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEBE1BE3906D00B03AE4 /* NSManagedObject+MagicalRecord.m */; };
-		A432CF2A1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEBF1BE3906D00B03AE4 /* NSManagedObject+MagicalRequests.h */; };
-		A432CF2B1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEC01BE3906D00B03AE4 /* NSManagedObject+MagicalRequests.m */; };
-		A432CF2C1BE3908D00B03AE4 /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEA81BE3906D00B03AE4 /* MagicalImportFunctions.h */; };
-		A432CF2D1BE3908D00B03AE4 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */; };
-		A432CF2E1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEAA1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h */; };
-		A432CF2F1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAB1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m */; };
-		A432CF301BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEAC1BE3906D00B03AE4 /* NSEntityDescription+MagicalDataImport.h */; };
-		A432CF311BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAD1BE3906D00B03AE4 /* NSEntityDescription+MagicalDataImport.m */; };
-		A432CF321BE3908D00B03AE4 /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEAE1BE3906D00B03AE4 /* NSNumber+MagicalDataImport.h */; };
-		A432CF331BE3908D00B03AE4 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEAF1BE3906D00B03AE4 /* NSNumber+MagicalDataImport.m */; };
-		A432CF341BE3908D00B03AE4 /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEB01BE3906D00B03AE4 /* NSObject+MagicalDataImport.h */; };
-		A432CF351BE3908D00B03AE4 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB11BE3906D00B03AE4 /* NSObject+MagicalDataImport.m */; };
-		A432CF361BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEB21BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.h */; };
-		A432CF371BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB31BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m */; };
-		A432CF381BE3908D00B03AE4 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEB41BE3906D00B03AE4 /* NSString+MagicalDataImport.h */; };
-		A432CF391BE3908D00B03AE4 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB51BE3906D00B03AE4 /* NSString+MagicalDataImport.m */; };
+		21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432D1B99A479004116B8 /* FSHelpers.swift */; };
 		A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
 		A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
-		A4461A2E1BE38537006FC8C7 /* CoreDataProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A4461A2D1BE38537006FC8C7 /* CoreDataProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4461A321BE38537006FC8C7 /* CoreDataProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */; };
-		A4461A331BE38537006FC8C7 /* CoreDataProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4461A4C1BE386C5006FC8C7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4461A4B1BE386C5006FC8C7 /* DataManager.swift */; };
-		A4461A4E1BE386E7006FC8C7 /* WatchCoreDataProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4461A4D1BE386E7006FC8C7 /* WatchCoreDataProxy.swift */; };
-		A4461A501BE38902006FC8C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4461A4F1BE38902006FC8C7 /* Foundation.framework */; };
 		A4A069821BE37F79004F0999 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A069811BE37F79004F0999 /* NotificationCenter.framework */; };
 		A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069841BE37F79004F0999 /* TodayViewController.swift */; };
 		A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A069861BE37F79004F0999 /* MainInterface.storyboard */; };
 		A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069801BE37F78004F0999 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
-		E7457E0D1BE3B680001780E2 /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF451BE390E400B03AE4 /* TGLStackedViewController.m */; };
-		E7457E0E1BE3B685001780E2 /* TGLStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF431BE390E400B03AE4 /* TGLStackedLayout.m */; };
-		E7457E0F1BE3B688001780E2 /* TGLExposedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF411BE390E400B03AE4 /* TGLExposedLayout.m */; };
 		E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
 		E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
 		E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; };
-		E7A30FD51BE39E1600CF27A4 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED31BE3906D00B03AE4 /* MagicalRecord+Actions.h */; };
-		E7A30FD61BE39E1600CF27A4 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED41BE3906D00B03AE4 /* MagicalRecord+Actions.m */; };
-		E7A30FD71BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED51BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.h */; };
-		E7A30FD81BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED61BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.m */; };
-		E7A30FD91BE39E1600CF27A4 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED71BE3906D00B03AE4 /* MagicalRecord+iCloud.h */; };
-		E7A30FDA1BE39E1600CF27A4 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED81BE3906D00B03AE4 /* MagicalRecord+iCloud.m */; };
-		E7A30FDB1BE39E1600CF27A4 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED91BE3906D00B03AE4 /* MagicalRecord+Options.h */; };
-		E7A30FDC1BE39E1600CF27A4 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDA1BE3906D00B03AE4 /* MagicalRecord+Options.m */; };
-		E7A30FDD1BE39E1600CF27A4 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDB1BE3906D00B03AE4 /* MagicalRecord+Setup.h */; };
-		E7A30FDE1BE39E1600CF27A4 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDC1BE3906D00B03AE4 /* MagicalRecord+Setup.m */; };
-		E7A30FDF1BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDD1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.h */; };
-		E7A30FE01BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDE1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.m */; };
-		E7A30FE11BE39E1600CF27A4 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDF1BE3906D00B03AE4 /* MagicalRecordDeprecationMacros.h */; };
-		E7A30FE21BE39E1600CF27A4 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE01BE3906D00B03AE4 /* MagicalRecordInternal.h */; };
-		E7A30FE31BE39E1600CF27A4 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEE11BE3906D00B03AE4 /* MagicalRecordInternal.m */; };
-		E7A30FE41BE39E1600CF27A4 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE21BE3906D00B03AE4 /* MagicalRecordLogging.h */; };
-		E7A30FE51BE39E1600CF27A4 /* MagicalRecordShorthandMethodAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE31BE3906D00B03AE4 /* MagicalRecordShorthandMethodAliases.h */; };
 		E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069781BE37C30004F0999 /* _Item.swift */; };
 		E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069791BE37C30004F0999 /* _List.swift */; };
 		E7F7AE331BE3C42500BF3261 /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
@@ -186,13 +150,6 @@
 			remoteGlobalIDString = 21D1E1C81BE3A0FD009378E3;
 			remoteInfo = watch;
 		};
-		A4461A301BE38537006FC8C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 21DB300719DD2289003A418D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4461A2A1BE38537006FC8C7;
-			remoteInfo = CoreDataProxy;
-		};
 		A4A0698A1BE37F79004F0999 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21DB300719DD2289003A418D /* Project object */;
@@ -220,7 +177,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4461A331BE38537006FC8C7 /* CoreDataProxy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,11 +360,6 @@
 		A432CF431BE390E400B03AE4 /* TGLStackedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLStackedLayout.m; sourceTree = "<group>"; };
 		A432CF441BE390E400B03AE4 /* TGLStackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLStackedViewController.h; sourceTree = "<group>"; };
 		A432CF451BE390E400B03AE4 /* TGLStackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLStackedViewController.m; sourceTree = "<group>"; };
-		A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDataProxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4461A2D1BE38537006FC8C7 /* CoreDataProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataProxy.h; sourceTree = "<group>"; };
-		A4461A2F1BE38537006FC8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4461A4B1BE386C5006FC8C7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		A4461A4D1BE386E7006FC8C7 /* WatchCoreDataProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchCoreDataProxy.swift; sourceTree = "<group>"; };
 		A4461A4F1BE38902006FC8C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4A069701BE37B31004F0999 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A4A069711BE37B31004F0999 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
@@ -439,17 +390,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4461A321BE38537006FC8C7 /* CoreDataProxy.framework in Frameworks */,
 				213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */,
 				21B3D1A119E6E2D700EF0D52 /* Crashlytics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4461A271BE38537006FC8C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4461A501BE38902006FC8C7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +608,6 @@
 				21DB301119DD2289003A418D /* Swift-Base */,
 				212D01801BB1977100B34340 /* Tests */,
 				A4A069831BE37F79004F0999 /* Widget */,
-				A4461A2C1BE38537006FC8C7 /* CoreDataProxy */,
 				21D1E1CA1BE3A0FD009378E3 /* watch */,
 				21D1E1D91BE3A0FD009378E3 /* watch Extension */,
 				21DB301019DD2289003A418D /* Products */,
@@ -679,7 +620,6 @@
 			children = (
 				21DB300F19DD2289003A418D /* Swift-Base.app */,
 				A4A069801BE37F78004F0999 /* Widget.appex */,
-				A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */,
 				21D1E1C91BE3A0FD009378E3 /* watch.app */,
 				21D1E1D51BE3A0FD009378E3 /* watch Extension.appex */,
 			);
@@ -870,23 +810,12 @@
 			path = TGLStackedViewController/TGLStackedViewController;
 			sourceTree = "<group>";
 		};
-		A4461A2C1BE38537006FC8C7 /* CoreDataProxy */ = {
-			isa = PBXGroup;
-			children = (
-				A4461A2D1BE38537006FC8C7 /* CoreDataProxy.h */,
-				A4461A2F1BE38537006FC8C7 /* Info.plist */,
-				A4461A4B1BE386C5006FC8C7 /* DataManager.swift */,
-				A4461A4D1BE386E7006FC8C7 /* WatchCoreDataProxy.swift */,
-			);
-			path = CoreDataProxy;
-			sourceTree = "<group>";
-		};
 		A4A069831BE37F79004F0999 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
 				A4A069CB1BE381DF004F0999 /* Widget.entitlements */,
-				A4A069841BE37F79004F0999 /* TodayViewController.swift */,
 				A4A069861BE37F79004F0999 /* MainInterface.storyboard */,
+				A4A069841BE37F79004F0999 /* TodayViewController.swift */,
 				A4A069891BE37F79004F0999 /* Info.plist */,
 				21E7AEA71BE3E25B00264DC9 /* Images.xcassets */,
 			);
@@ -928,48 +857,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		A4461A281BE38537006FC8C7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A432CF201BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.h in Headers */,
-				A432CF301BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.h in Headers */,
-				E7A30FD71BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.h in Headers */,
-				A432CF1E1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
-				A432CF001BE3907200B03AE4 /* MagicalRecord.h in Headers */,
-				E7A30FE21BE39E1600CF27A4 /* MagicalRecordInternal.h in Headers */,
-				A432CF341BE3908D00B03AE4 /* NSObject+MagicalDataImport.h in Headers */,
-				E7A30FD91BE39E1600CF27A4 /* MagicalRecord+iCloud.h in Headers */,
-				A432CF361BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
-				A432CF181BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
-				A432CF121BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.h in Headers */,
-				A432CF1A1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
-				E7A30FE11BE39E1600CF27A4 /* MagicalRecordDeprecationMacros.h in Headers */,
-				A432CF2E1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h in Headers */,
-				E7A30FD51BE39E1600CF27A4 /* MagicalRecord+Actions.h in Headers */,
-				A432CF241BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.h in Headers */,
-				E7A30FE41BE39E1600CF27A4 /* MagicalRecordLogging.h in Headers */,
-				A432CF161BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
-				A432CF221BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.h in Headers */,
-				A432CF141BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.h in Headers */,
-				E7A30FDB1BE39E1600CF27A4 /* MagicalRecord+Options.h in Headers */,
-				E7A30FDF1BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.h in Headers */,
-				E7A30FE51BE39E1600CF27A4 /* MagicalRecordShorthandMethodAliases.h in Headers */,
-				A432CF281BE3908800B03AE4 /* NSManagedObject+MagicalRecord.h in Headers */,
-				A432CF1C1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
-				A432CF381BE3908D00B03AE4 /* NSString+MagicalDataImport.h in Headers */,
-				A432CF321BE3908D00B03AE4 /* NSNumber+MagicalDataImport.h in Headers */,
-				A432CF2A1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.h in Headers */,
-				A432CF261BE3908800B03AE4 /* NSManagedObject+MagicalFinders.h in Headers */,
-				E7A30FDD1BE39E1600CF27A4 /* MagicalRecord+Setup.h in Headers */,
-				A4461A2E1BE38537006FC8C7 /* CoreDataProxy.h in Headers */,
-				A432CF2C1BE3908D00B03AE4 /* MagicalImportFunctions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		21D1E1C81BE3A0FD009378E3 /* watch */ = {
@@ -1024,31 +911,12 @@
 			);
 			dependencies = (
 				A4A0698B1BE37F79004F0999 /* PBXTargetDependency */,
-				A4461A311BE38537006FC8C7 /* PBXTargetDependency */,
 				21D1E1E21BE3A0FD009378E3 /* PBXTargetDependency */,
 			);
 			name = "Swift-Base";
 			productName = "Swift-Base";
 			productReference = 21DB300F19DD2289003A418D /* Swift-Base.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A4461A2A1BE38537006FC8C7 /* CoreDataProxy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4461A3C1BE38537006FC8C7 /* Build configuration list for PBXNativeTarget "CoreDataProxy" */;
-			buildPhases = (
-				A4461A261BE38537006FC8C7 /* Sources */,
-				A4461A271BE38537006FC8C7 /* Frameworks */,
-				A4461A281BE38537006FC8C7 /* Headers */,
-				A4461A291BE38537006FC8C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CoreDataProxy;
-			productName = CoreDataProxy;
-			productReference = A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		A4A0697F1BE37F78004F0999 /* Widget */ = {
 			isa = PBXNativeTarget;
@@ -1106,10 +974,6 @@
 							};
 						};
 					};
-					A4461A2A1BE38537006FC8C7 = {
-						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = Y49MTY8CU2;
-					};
 					A4A0697F1BE37F78004F0999 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = Y49MTY8CU2;
@@ -1137,7 +1001,6 @@
 			targets = (
 				21DB300E19DD2289003A418D /* Swift-Base */,
 				A4A0697F1BE37F78004F0999 /* Widget */,
-				A4461A2A1BE38537006FC8C7 /* CoreDataProxy */,
 				21D1E1C81BE3A0FD009378E3 /* watch */,
 				21D1E1D41BE3A0FD009378E3 /* watch Extension */,
 			);
@@ -1197,13 +1060,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4461A291BE38537006FC8C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A4A0697E1BE37F78004F0999 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1248,71 +1104,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */,
+				21BA3B431BE408B900D6FE1F /* MagicalRecord+iCloud.m in Sources */,
+				21BA3B511BE408D000D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */,
+				21BA3B441BE408B900D6FE1F /* MagicalRecord+Options.m in Sources */,
 				E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */,
+				21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				21BA3B461BE408B900D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */,
+				21BA3B481BE408C000D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */,
+				21BA3B561BE408D900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				21BA3B591BE408D900D6FE1F /* NSObject+MagicalDataImport.m in Sources */,
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
 				21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */,
+				21BA3B581BE408D900D6FE1F /* NSNumber+MagicalDataImport.m in Sources */,
 				21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */,
+				21BA3B3E1BE4089E00D6FE1F /* TGLExposedLayout.m in Sources */,
+				21BA3B531BE408D000D6FE1F /* NSManagedObject+MagicalRecord.m in Sources */,
 				E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */,
 				E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */,
 				E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */,
+				21BA3B5B1BE408D900D6FE1F /* NSString+MagicalDataImport.m in Sources */,
 				21A143331B99A479004116B8 /* FSE+UIColor.swift in Sources */,
 				190B851C1BE3A02000BCFA20 /* ListedItem.swift in Sources */,
+				21BA3B451BE408B900D6FE1F /* MagicalRecord+Setup.m in Sources */,
+				21BA3B401BE408A500D6FE1F /* TGLStackedViewController.m in Sources */,
 				190B851A1BE3A01600BCFA20 /* _ListedItem.swift in Sources */,
+				21BA3B501BE408D000D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */,
 				21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */,
+				21BA3B3F1BE408A200D6FE1F /* TGLStackedLayout.m in Sources */,
 				21A143321B99A479004116B8 /* FSE+String.swift in Sources */,
+				21BA3B411BE408B900D6FE1F /* MagicalRecord+Actions.m in Sources */,
+				21BA3B551BE408D900D6FE1F /* MagicalImportFunctions.m in Sources */,
+				21BA3B4D1BE408C800D6FE1F /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				21BA3B571BE408D900D6FE1F /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */,
 				190B85211BE3BB3500BCFA20 /* ItemsListViewController.swift in Sources */,
 				21DB301519DD2289003A418D /* AppDelegate.swift in Sources */,
+				21BA3B4C1BE408C800D6FE1F /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
 				21A143371B99A479004116B8 /* FSHelpers.swift in Sources */,
 				E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
+				21BA3B4B1BE408C800D6FE1F /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
+				21BA3B541BE408D000D6FE1F /* NSManagedObject+MagicalRequests.m in Sources */,
+				21BA3B4E1BE408C800D6FE1F /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				190B85231BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift in Sources */,
+				21BA3B4F1BE408C800D6FE1F /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
 				E7F7AE331BE3C42500BF3261 /* Swift-Base.xcdatamodeld in Sources */,
+				21BA3B521BE408D000D6FE1F /* NSManagedObject+MagicalFinders.m in Sources */,
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
+				21BA3B4A1BE408C000D6FE1F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				21A143301B99A479004116B8 /* FSE+Double.swift in Sources */,
 				E73888731BE381D7002FC003 /* ListViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4461A261BE38537006FC8C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A432CF131BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
-				A4461A4E1BE386E7006FC8C7 /* WatchCoreDataProxy.swift in Sources */,
-				A432CF371BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
-				A432CF2F1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
-				A432CF271BE3908800B03AE4 /* NSManagedObject+MagicalFinders.m in Sources */,
-				E7457E0D1BE3B680001780E2 /* TGLStackedViewController.m in Sources */,
-				E7A30FDA1BE39E1600CF27A4 /* MagicalRecord+iCloud.m in Sources */,
-				E7457E0E1BE3B685001780E2 /* TGLStackedLayout.m in Sources */,
-				E7A30FD61BE39E1600CF27A4 /* MagicalRecord+Actions.m in Sources */,
-				A432CF331BE3908D00B03AE4 /* NSNumber+MagicalDataImport.m in Sources */,
-				A432CF1F1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
-				E7A30FDE1BE39E1600CF27A4 /* MagicalRecord+Setup.m in Sources */,
-				A432CF1D1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
-				E7A30FE01BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.m in Sources */,
-				A432CF291BE3908800B03AE4 /* NSManagedObject+MagicalRecord.m in Sources */,
-				A4461A4C1BE386C5006FC8C7 /* DataManager.swift in Sources */,
-				A432CF251BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.m in Sources */,
-				A432CF211BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
-				A432CF151BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.m in Sources */,
-				E7457E0F1BE3B688001780E2 /* TGLExposedLayout.m in Sources */,
-				A432CF171BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
-				E7A30FDC1BE39E1600CF27A4 /* MagicalRecord+Options.m in Sources */,
-				A432CF311BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.m in Sources */,
-				A432CF231BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.m in Sources */,
-				A432CF391BE3908D00B03AE4 /* NSString+MagicalDataImport.m in Sources */,
-				A432CF191BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
-				A432CF2D1BE3908D00B03AE4 /* MagicalImportFunctions.m in Sources */,
-				A432CF351BE3908D00B03AE4 /* NSObject+MagicalDataImport.m in Sources */,
-				E7A30FE31BE39E1600CF27A4 /* MagicalRecordInternal.m in Sources */,
-				A432CF2B1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.m in Sources */,
-				A432CF1B1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
-				E7A30FD81BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.m in Sources */,
+				21BA3B471BE408B900D6FE1F /* MagicalRecordInternal.m in Sources */,
+				21BA3B421BE408B900D6FE1F /* MagicalRecord+ErrorHandling.m in Sources */,
+				21BA3B491BE408C000D6FE1F /* NSPersistentStore+MagicalRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,6 +1167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */,
 				A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */,
 				A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */,
 			);
@@ -1337,11 +1185,6 @@
 			isa = PBXTargetDependency;
 			target = 21D1E1C81BE3A0FD009378E3 /* watch */;
 			targetProxy = 21D1E1E11BE3A0FD009378E3 /* PBXContainerItemProxy */;
-		};
-		A4461A311BE38537006FC8C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4461A2A1BE38537006FC8C7 /* CoreDataProxy */;
-			targetProxy = A4461A301BE38537006FC8C7 /* PBXContainerItemProxy */;
 		};
 		A4A0698B1BE37F79004F0999 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2315,238 +2158,6 @@
 			};
 			name = "Release Staging";
 		};
-		A4461A341BE38537006FC8C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A4461A351BE38537006FC8C7 /* AppStore Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "AppStore Debug";
-		};
-		A4461A361BE38537006FC8C7 /* Debug Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Debug Staging";
-		};
-		A4461A371BE38537006FC8C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4461A381BE38537006FC8C7 /* Test */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Test;
-		};
-		A4461A391BE38537006FC8C7 /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = AppStore;
-		};
-		A4461A3A1BE38537006FC8C7 /* Release Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Release Staging";
-		};
-		A4461A3B1BE38537006FC8C7 /* Test Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = CoreDataProxy/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.proxy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Test Staging";
-		};
 		A4A0698E1BE37F79004F0999 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2857,21 +2468,6 @@
 				E736C5DF1A25320400B8986E /* AppStore */,
 				21DB305019DD3B48003A418D /* Release Staging */,
 				212D01841BB1978B00B34340 /* Test Staging */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4461A3C1BE38537006FC8C7 /* Build configuration list for PBXNativeTarget "CoreDataProxy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4461A341BE38537006FC8C7 /* Debug */,
-				A4461A351BE38537006FC8C7 /* AppStore Debug */,
-				A4461A361BE38537006FC8C7 /* Debug Staging */,
-				A4461A371BE38537006FC8C7 /* Release */,
-				A4461A381BE38537006FC8C7 /* Test */,
-				A4461A391BE38537006FC8C7 /* AppStore */,
-				A4461A3A1BE38537006FC8C7 /* Release Staging */,
-				A4461A3B1BE38537006FC8C7 /* Test Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
