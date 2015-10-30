@@ -9,6 +9,7 @@
 import UIKit
 
 class ListViewController: TGLStackedViewController {
+    
     private enum SectionIndex : Int {
         case List
         
@@ -21,8 +22,16 @@ class ListViewController: TGLStackedViewController {
         case List = "List"
     }
     
+    enum SegueIdentifier: String {
+        case NewList = "NewList"
+    }
+    
     //MARK: - params
-    var listOfLists: [List] = []
+    var listOfLists: [List] = [] {
+        didSet {
+            self.collectionView?.reloadData()
+        }
+    }
     
     //MARK: - life cycle
     override func loadView() {
@@ -44,6 +53,20 @@ class ListViewController: TGLStackedViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
+    }
+    
+    //MARK: - actions
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let identifier = segue.identifier else { return }
+        switch identifier {
+        case SegueIdentifier.NewList.rawValue:
+            let destinationViewController = segue.destinationViewController as! NewListViewController
+            destinationViewController.transitioningDelegate = destinationViewController.popoverDelegate
+            destinationViewController.modalPresentationStyle = .Custom
+            
+        default:
+            super.prepareForSegue(segue, sender: sender)
+        }
     }
 }
 

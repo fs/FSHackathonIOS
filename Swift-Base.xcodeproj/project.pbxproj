@@ -118,6 +118,8 @@
 		A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069841BE37F79004F0999 /* TodayViewController.swift */; };
 		A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A069861BE37F79004F0999 /* MainInterface.storyboard */; };
 		A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069801BE37F78004F0999 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E70876711BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */; };
+		E70876731BE409E50083BBFC /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876721BE409E50083BBFC /* NewListViewController.swift */; };
 		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
 		E7457E0D1BE3B680001780E2 /* TGLStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF451BE390E400B03AE4 /* TGLStackedViewController.m */; };
 		E7457E0E1BE3B685001780E2 /* TGLStackedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF431BE390E400B03AE4 /* TGLStackedLayout.m */; };
@@ -422,6 +424,8 @@
 		A4A069CA1BE381CD004F0999 /* Swift-Base.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Swift-Base.entitlements"; sourceTree = "<group>"; };
 		A4A069CB1BE381DF004F0999 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
 		A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchExtension.entitlements; sourceTree = "<group>"; };
+		E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPopoverAnimatedTransitioningDelegate.swift; sourceTree = "<group>"; };
+		E70876721BE409E50083BBFC /* NewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
 		E73888721BE381D7002FC003 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7566DA01A1F85CB00DE3010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -507,6 +511,7 @@
 		196D6E161BAB0736000B7997 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */,
 				21A143221B99A479004116B8 /* FSHelpers */,
 			);
 			name = Helpers;
@@ -923,6 +928,7 @@
 				E73888721BE381D7002FC003 /* ListViewController.swift */,
 				E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */,
 				1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */,
+				E70876721BE409E50083BBFC /* NewListViewController.swift */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -1248,6 +1254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */,
+				E70876731BE409E50083BBFC /* NewListViewController.swift in Sources */,
 				E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */,
 				21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */,
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
@@ -1256,6 +1263,7 @@
 				E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */,
 				E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */,
 				E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */,
+				E70876711BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift in Sources */,
 				21A143331B99A479004116B8 /* FSE+UIColor.swift in Sources */,
 				190B851C1BE3A02000BCFA20 /* ListedItem.swift in Sources */,
 				190B851A1BE3A01600BCFA20 /* _ListedItem.swift in Sources */,
