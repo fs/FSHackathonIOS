@@ -60,7 +60,7 @@
         <!--List Detail View Controller-->
         <scene sceneID="kKb-0T-IXD">
             <objects>
-                <viewController id="ho4-5o-SdX" customClass="ListDetailViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ho4-5o-SdX" customClass="ListDetailViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fJb-52-CKv"/>
                         <viewControllerLayoutGuide type="bottom" id="QQG-pL-sJR"/>
@@ -69,12 +69,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGN-EW-Lye">
+                                <rect key="frame" x="0.0" y="205" width="320" height="150"/>
+                                <string key="text">Добавьте сюда вещи,
+которые хотите купить</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="onb-gT-dXC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailItemViewCell" rowHeight="70" id="Dgg-eb-Qu7" customClass="DetailItemViewCell" customModule="Swift_Base" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dgg-eb-Qu7" id="xPq-Xc-39E">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
@@ -119,11 +127,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="onb-gT-dXC" secondAttribute="trailing" id="2Gd-aG-3M2"/>
+                            <constraint firstItem="QQG-pL-sJR" firstAttribute="top" secondItem="vGN-EW-Lye" secondAttribute="bottom" constant="213" id="5J8-4z-OwV"/>
                             <constraint firstItem="QQG-pL-sJR" firstAttribute="top" secondItem="onb-gT-dXC" secondAttribute="bottom" id="9fA-td-PUO"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="EL1-kW-uMU"/>
-                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="zqh-AS-b4M" secondAttribute="top" id="Qsj-ux-p21"/>
+                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="zqh-AS-b4M" secondAttribute="top" constant="64" id="Qsj-ux-p21"/>
+                            <constraint firstAttribute="trailing" secondItem="vGN-EW-Lye" secondAttribute="trailing" id="Uco-2P-19n"/>
+                            <constraint firstItem="vGN-EW-Lye" firstAttribute="top" secondItem="zqh-AS-b4M" secondAttribute="top" constant="205" id="XtY-0D-5YJ"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="cl1-U1-nWs"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="leading" secondItem="zqh-AS-b4M" secondAttribute="leading" id="lQj-DL-DKP"/>
+                            <constraint firstItem="vGN-EW-Lye" firstAttribute="leading" secondItem="zqh-AS-b4M" secondAttribute="leading" id="rWC-d1-wi4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -138,13 +150,14 @@
                                 <action selector="doneTapped:" destination="ho4-5o-SdX" id="K8I-B2-7z9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="add" id="pNr-gX-4PO">
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" id="pNr-gX-4PO">
                             <connections>
                                 <segue destination="Nr3-Se-VDD" kind="show" id="Uci-TK-aKz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="noItemsLabel" destination="vGN-EW-Lye" id="P9a-Om-iBs"/>
                         <outlet property="tableView" destination="onb-gT-dXC" id="PP5-pQ-Nob"/>
                     </connections>
                 </viewController>

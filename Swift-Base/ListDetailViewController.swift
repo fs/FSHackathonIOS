@@ -11,13 +11,23 @@ import UIKit
 class ListDetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noItemsLabel: UILabel!
     
-//    var list: List?
+    var list: List?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let lList = list {
+            if lList.listedItem.count > 0 {
+                self.noItemsLabel.hidden = true
+                self.tableView.hidden = false
+            } else {
+                self.noItemsLabel.hidden = false
+                self.tableView.hidden = true
+            }
+            self.navigationItem.title = lList.title
+        }
     }
 
     override func didReceiveMemoryWarning() {
