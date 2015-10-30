@@ -59,7 +59,7 @@ extension ItemsListViewController: UICollectionViewDelegate
         listedItem.count = 12
         listedItem.unit = Unit.Kilogramm.numberValue
         
-        self.listViewController.listOfLists[self.listIndex].addListedItemObject(listedItem)
+        self.listViewController.listOfLists[self.listIndex].addListedItemsObject(listedItem)
         self.listViewController.collectionView?.reloadData()
         self.navigationController?.popViewControllerAnimated(true)
     }

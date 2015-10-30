@@ -9,7 +9,7 @@ enum ListAttributes: String {
 }
 
 enum ListRelationships: String {
-    case listedItem = "listedItem"
+    case listedItems = "listedItems"
 }
 
 @objc
@@ -51,38 +51,38 @@ class _List: NSManagedObject {
     // MARK: - Relationships
 
     @NSManaged
-    var listedItem: NSSet
+    var listedItems: NSSet
 
-    func listedItemSet() -> NSMutableSet {
-        return self.listedItem.mutableCopy() as! NSMutableSet
+    func listedItemsSet() -> NSMutableSet {
+        return self.listedItems.mutableCopy() as! NSMutableSet
     }
 
 }
 
 extension _List {
 
-    func addListedItem(objects: NSSet) {
-        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+    func addListedItems(objects: NSSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.unionSet(objects as Set<NSObject>)
-        self.listedItem = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSSet
     }
 
-    func removeListedItem(objects: NSSet) {
-        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+    func removeListedItems(objects: NSSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.minusSet(objects as Set<NSObject>)
-        self.listedItem = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSSet
     }
 
-    func addListedItemObject(value: ListedItem!) {
-        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+    func addListedItemsObject(value: ListedItem!) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.addObject(value)
-        self.listedItem = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSSet
     }
 
-    func removeListedItemObject(value: ListedItem!) {
-        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+    func removeListedItemsObject(value: ListedItem!) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
         mutable.removeObject(value)
-        self.listedItem = mutable.copy() as! NSSet
+        self.listedItems = mutable.copy() as! NSSet
     }
 
 }

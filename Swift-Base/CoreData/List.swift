@@ -3,7 +3,7 @@ class List: _List {
 
     override func awakeFromInsert() {
         super.awakeFromInsert()
-        self.date = NSDate.init()
+        self.date = NSDate()
     }
 
 }
