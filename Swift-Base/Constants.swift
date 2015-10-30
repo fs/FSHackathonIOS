@@ -72,6 +72,17 @@ enum Unit: String {
         }
     }
     
+    var long: String {
+        
+        switch self {
+        case .Kilogramm   : return "килограммы"
+        case .Volume      : return "литры"
+        case .Count       : return "штуки"
+        case .Gramm       : return "граммы"
+        case .Undefined   : return ""
+        }
+    }
+    
     init?(intValue: Int16) {
         
         switch intValue {
