@@ -35,7 +35,6 @@
 		190B85521BE3D36A00BCFA20 /* Хлеб.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853A1BE3D36A00BCFA20 /* Хлеб.jpg */; };
 		190B85531BE3D36A00BCFA20 /* Шоколад.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853B1BE3D36A00BCFA20 /* Шоколад.jpg */; };
 		190B85541BE3D36A00BCFA20 /* Яблоки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853C1BE3D36A00BCFA20 /* Яблоки.jpg */; };
-		1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D49E1BE381B60011B37B /* ListDetailViewController.swift */; };
 		1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */; };
 		213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B89BE19F01A1E005D3749 /* CoreGraphics.framework */; };
 		2158286D1A91E2F200833BE6 /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2158286B1A91E2F200833BE6 /* mogend.sh */; };
@@ -280,7 +279,6 @@
 		190B853B1BE3D36A00BCFA20 /* Шоколад.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Шоколад.jpg"; sourceTree = "<group>"; };
 		190B853C1BE3D36A00BCFA20 /* Яблоки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Яблоки.jpg"; sourceTree = "<group>"; };
 		194478471AAF90AF00A34744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1991D49E1BE381B60011B37B /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemViewCell.swift; sourceTree = "<group>"; };
 		19D856C11AB5ED2E0014C459 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = build.sh; path = Scripts/build.sh; sourceTree = "<group>"; };
 		19D856C51AB5ED2E0014C459 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = test.sh; path = Scripts/test.sh; sourceTree = "<group>"; };
@@ -924,7 +922,6 @@
 			children = (
 				E73888721BE381D7002FC003 /* ListViewController.swift */,
 				E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */,
-				1991D49E1BE381B60011B37B /* ListDetailViewController.swift */,
 				1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */,
 			);
 			name = List;
@@ -1270,7 +1267,6 @@
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
 				21A143371B99A479004116B8 /* FSHelpers.swift in Sources */,
 				E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */,
-				1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
 				190B85231BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
