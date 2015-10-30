@@ -98,7 +98,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-NA-HRp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayCell" id="dZN-BI-9tJ" customClass="TodayCell" customModule="Widget" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
@@ -120,11 +120,12 @@
                                                     <rect key="frame" x="50" y="12" width="262" height="20.5"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="vP1-Gg-T90" firstAttribute="leading" secondItem="JTh-Sr-SI0" secondAttribute="leading" constant="8" id="ANO-ig-nrn"/>
                                                 <constraint firstItem="uaU-Pi-R7X" firstAttribute="centerY" secondItem="JTh-Sr-SI0" secondAttribute="centerY" id="Mkl-M3-dIh"/>
@@ -134,12 +135,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="checkbox" destination="vP1-Gg-T90" id="85i-u9-zl4"/>
                                             <outlet property="titleLabel" destination="uaU-Pi-R7X" id="uMO-U9-Kt1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M4Y-Lb-cyx" id="c8n-Nf-NDJ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -163,6 +168,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="400"/>
+                    <connections>
+                        <outlet property="tableView" destination="wF9-NA-HRp" id="C7m-IZ-hA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="E7u-f5-0w2"/>

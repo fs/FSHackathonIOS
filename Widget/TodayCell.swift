@@ -24,8 +24,8 @@ class TodayCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepareCell () {
-        
+    func prepareCell (element: Element) {
+        self.titleLabel.text = element.title
     }
 
 }

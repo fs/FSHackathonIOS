@@ -75,7 +75,48 @@ class List {
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    var lists: [List] = {
+    @IBOutlet weak var tableView: UITableView!
+    
+    var lists: [List] = []
+    
+    private var _currentIndex: Int = 0
+    var currentIndex: Int {
+        
+        set (value) {
+            if value >= self.lists.count {
+                self._currentIndex = 0
+            } else {
+                self.currentIndex = value
+            }
+            self.reloadData()
+        }
+        
+        get {
+            return self._currentIndex
+        }
+    }
+    
+    var currentList: List? {
+        guard self.lists.count > 0 else {return nil}
+        return self.lists[self.currentIndex]
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.lists = self.getLists()
+        self.reloadData()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsetsZero
+    }
+    
+    func getLists () -> [List] {
         var lists: [List] = []
         for i in 0 ..< 5 {
             var arr: [Element] = []
@@ -87,16 +128,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
         
         return lists
-    }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func reloadData () {
+        self.tableView.reloadData()
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
@@ -107,16 +142,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's an update, use NCUpdateResult.NewData
 
         completionHandler(NCUpdateResult.NewData)
+        self.lists = self.getLists()
+        self.currentIndex = 0
     }
     
 }
 
 extension TodayViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        guard let list = self.currentList else {return 0}
+        return list.elements.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let list = self.currentList!
+        let cell = tableView.dequeueReusableCellWithIdentifier("TodayCell") as! TodayCell
+        cell.prepareCell(list.elements[indexPath.row])
+        return cell
     }
 }
