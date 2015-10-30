@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
-    
+class ListViewController: TGLStackedViewController {
     private enum SectionIndex : Int {
         case List
         
@@ -22,107 +21,41 @@ class ListViewController: UIViewController {
         case List = "List"
     }
     
-    //MARK: - UI
-    @IBOutlet weak var tableView: UITableView!
-    
     //MARK: - params
-    private lazy var listsFetchedResultsController: NSFetchedResultsController = { [weak self] in
-        
-        let defaultContext = NSManagedObjectContext.MR_defaultContext()
-        let request = List.MR_requestAllInContext(defaultContext)
-        request.fetchBatchSize = Int(List.MR_defaultBatchSize())
-        
-        let sortDescription = NSSortDescriptor(key: ListAttributes.date.rawValue, ascending: false)
-        request.sortDescriptors = [sortDescription]
-        
-        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: defaultContext, sectionNameKeyPath: nil, cacheName: nil)
-        controller.delegate = self
-        NSManagedObject.MR_performFetch(controller)
-        
-        return controller
-        }()
+    var listOfLists: [List] = []
     
-    var listOfLists: [List] {
-        return self.listsFetchedResultsController.fetchedObjects as? [List] ?? []
+    //MARK: - life cycle
+    override func loadView() {
+        super.loadView()
+        
+        self.collectionView!.delegate = self
+        self.collectionView!.dataSource = self
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
     }
 }
 
-//MARK: - UITableViewDataSource
-extension ListViewController: UITableViewDataSource {
+//MARK: - UICollectionViewDataSource
+extension ListViewController {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.listOfLists.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let currentList = self.listOfLists[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! ListTableViewCell
-        cell.prepareCell(currentList)
-        return cell
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! List
+        
     }
 }
 
-//MARK: - UITableViewDelegate
-extension ListViewController: UITableViewDelegate {
+//MARK: - UICollectionViewDelegate
+extension ListViewController {
     
 }
-
-
-//MARK: - NSFetchedResultsControllerDelegate
-extension ListViewController : NSFetchedResultsControllerDelegate {
-    
-    func controllerWillChangeContent(controller: NSFetchedResultsController) {
-        self.tableView.beginUpdates()
-    }
-    
-    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
-        
-        var sectionIndex = -1
-        let tableView = self.tableView
-        
-        switch controller {
-        case self.listsFetchedResultsController :
-            sectionIndex = SectionIndex.List.rawValue
-            
-        default :
-            return
-        }
-        
-        var updatedIndexPath: NSIndexPath? = nil
-        if let indexPathStrong = indexPath {
-            updatedIndexPath = NSIndexPath(forRow: indexPathStrong.row, inSection: sectionIndex)
-        }
-        
-        var updatedNewIndexPath: NSIndexPath? = nil
-        if let newIndexPathStrong = newIndexPath {
-            updatedNewIndexPath = NSIndexPath(forRow: newIndexPathStrong.row, inSection: sectionIndex)
-        }
-        
-        switch type {
-            
-        case NSFetchedResultsChangeType.Insert :
-            tableView.insertRowsAtIndexPaths([updatedNewIndexPath!], withRowAnimation: UITableViewRowAnimation.Automatic)
-            
-        case NSFetchedResultsChangeType.Delete :
-            tableView.deleteRowsAtIndexPaths([updatedIndexPath!], withRowAnimation: UITableViewRowAnimation.Automatic)
-            
-        case NSFetchedResultsChangeType.Update :
-            tableView.reloadRowsAtIndexPaths([updatedIndexPath!], withRowAnimation: UITableViewRowAnimation.None)
-            
-        case NSFetchedResultsChangeType.Move :
-            
-            if updatedIndexPath != updatedNewIndexPath {
-                tableView.moveRowAtIndexPath(updatedIndexPath!, toIndexPath: updatedNewIndexPath!)
-            }
-        }
-    }
-    
-    func controllerDidChangeContent(controller: NSFetchedResultsController) {
-        self.tableView.endUpdates()
-    }
-}
-

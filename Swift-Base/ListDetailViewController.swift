@@ -11,13 +11,21 @@ import UIKit
 class ListDetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noItemsLabel: UILabel!
     
-//    var list: List?
+//    var list: List!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+//        if self.list.listedItem.count > 0 {
+//            self.noItemsLabel.hidden = true
+//            self.tableView.hidden = false
+//        } else {
+//            self.noItemsLabel.hidden = false
+//            self.tableView.hidden = true
+//        }
+//        self.navigationItem.title = self.list.title
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,7 +79,7 @@ extension ListDetailViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-//        let item = self.list?.items[indexPath.row] as! Item
+//        let item = self.list.listedItem.allObjects[indexPath.row] as! ListedItem
 //        cell.prepareCell(item)
         return cell
     }

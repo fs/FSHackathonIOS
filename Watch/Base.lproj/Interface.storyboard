@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="203" y="337"/>
         </scene>
-        <!--List Controller-->
+        <!--ListController-->
         <scene sceneID="WhC-E0-Xgy">
             <objects>
-                <controller id="HU8-rw-gFP" customClass="ListController" customModule="watch_Extension">
+                <controller identifier="ListController" id="HU8-rw-gFP" customClass="ListController" customModule="watch_Extension">
                     <items>
                         <table alignment="left" id="5eV-KJ-KVB">
                             <items>
