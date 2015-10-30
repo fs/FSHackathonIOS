@@ -62,6 +62,8 @@
 		A4A069AF1BE37FF8004F0999 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069AE1BE37FF8004F0999 /* GlanceController.swift */; };
 		A4A069B11BE37FF8004F0999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A069B01BE37FF8004F0999 /* Assets.xcassets */; };
 		A4A069B51BE37FF8004F0999 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A4A069991BE37FF7004F0999 /* Watch.app */; };
+		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
+		E73888751BE381E8002FC003 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888741BE381E8002FC003 /* ListTableViewCell.swift */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -262,6 +264,8 @@
 		DFD196DFC6871E0F3BD371AC /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
 		E00778AD96982EA8683968AD /* Pods-Watch.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release staging.xcconfig"; sourceTree = "<group>"; };
 		E5B4AB98E91FC036401DD5AC /* Pods-WatchExtension.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.debug staging.xcconfig"; sourceTree = "<group>"; };
+		E73888721BE381D7002FC003 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E73888741BE381E8002FC003 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		E7566DA01A1F85CB00DE3010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Storyboard.storyboard; sourceTree = "<group>"; };
 		F82345A19DE34E5AAF1E63AE /* Pods-Watch.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.appstore debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		F8A711618090005837F16FFA /* Pods-Watch.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.test.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.test.xcconfig"; sourceTree = "<group>"; };
@@ -617,10 +621,20 @@
 		E736C5A41A252B1500B8986E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E73888711BE381B7002FC003 /* List */,
 				1991D49D1BE3817F0011B37B /* Detail controller */,
 				2124DF9F1A8DF48000422313 /* ViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E73888711BE381B7002FC003 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E73888721BE381D7002FC003 /* ListViewController.swift */,
+				E73888741BE381E8002FC003 /* ListTableViewCell.swift */,
+			);
+			name = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1071,6 +1085,7 @@
 				21A143321B99A479004116B8 /* FSE+String.swift in Sources */,
 				A4A0697B1BE37C30004F0999 /* _List.swift in Sources */,
 				21DB301519DD2289003A418D /* AppDelegate.swift in Sources */,
+				E73888751BE381E8002FC003 /* ListTableViewCell.swift in Sources */,
 				A4A069721BE37B31004F0999 /* Item.swift in Sources */,
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
 				A4A0697A1BE37C30004F0999 /* _Item.swift in Sources */,
@@ -1081,6 +1096,7 @@
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
 				A4A069731BE37B31004F0999 /* List.swift in Sources */,
 				21A143301B99A479004116B8 /* FSE+Double.swift in Sources */,
+				E73888731BE381D7002FC003 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
