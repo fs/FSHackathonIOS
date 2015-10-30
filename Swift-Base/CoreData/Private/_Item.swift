@@ -5,14 +5,14 @@ import CoreData
 
 enum ItemAttributes: String {
     case category = "category"
+    case image = "image"
     case maxPrice = "maxPrice"
     case minPrice = "minPrice"
     case title = "title"
-    case unit = "unit"
 }
 
 enum ItemRelationships: String {
-    case list = "list"
+    case listedItems = "listedItems"
 }
 
 @objc
@@ -47,6 +47,11 @@ class _Item: NSManagedObject {
     // func validateCategory(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged
+    var image: String?
+
+    // func validateImage(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged
     var maxPrice: NSNumber?
 
     // func validateMaxPrice(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
@@ -61,17 +66,42 @@ class _Item: NSManagedObject {
 
     // func validateTitle(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
-    @NSManaged
-    var unit: String?
-
-    // func validateUnit(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
-
     // MARK: - Relationships
 
     @NSManaged
-    var list: List?
+    var listedItems: NSSet
 
-    // func validateList(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+    func listedItemsSet() -> NSMutableSet {
+        return self.listedItems.mutableCopy() as! NSMutableSet
+    }
+
+}
+
+extension _Item {
+
+    func addListedItems(objects: NSSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        mutable.unionSet(objects as Set<NSObject>)
+        self.listedItems = mutable.copy() as! NSSet
+    }
+
+    func removeListedItems(objects: NSSet) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        mutable.minusSet(objects as Set<NSObject>)
+        self.listedItems = mutable.copy() as! NSSet
+    }
+
+    func addListedItemsObject(value: ListadItam!) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        mutable.addObject(value)
+        self.listedItems = mutable.copy() as! NSSet
+    }
+
+    func removeListedItemsObject(value: ListadItam!) {
+        let mutable = self.listedItems.mutableCopy() as! NSMutableSet
+        mutable.removeObject(value)
+        self.listedItems = mutable.copy() as! NSSet
+    }
 
 }
 

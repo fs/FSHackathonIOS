@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="15A284" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1021" minimumToolsVersion="Automatic">
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maxPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="items" inverseEntity="List" syncable="YES"/>
+        <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListadItam" inverseName="item" inverseEntity="ListadItam" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="title"/>
         </userInfo>
@@ -15,13 +14,20 @@
     <entity name="List" representedClassName="List" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Item" inverseName="list" inverseEntity="Item" syncable="YES"/>
+        <relationship name="listedItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListadItam" inverseName="list" inverseEntity="ListadItam" syncable="YES"/>
         <userInfo>
             <entry key="relatedByAttribute" value="date"/>
         </userInfo>
     </entity>
+    <entity name="ListadItam" representedClassName="ListadItam" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="listedItems" inverseEntity="Item" syncable="YES"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="listedItem" inverseEntity="List" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Item" positionX="-225" positionY="-144" width="128" height="148"/>
-        <element name="List" positionX="-470" positionY="-306" width="128" height="88"/>
+        <element name="Item" positionX="-126" positionY="-36" width="128" height="133"/>
+        <element name="List" positionX="-630" positionY="18" width="128" height="90"/>
+        <element name="ListadItam" positionX="-387" positionY="-171" width="128" height="103"/>
     </elements>
 </model>

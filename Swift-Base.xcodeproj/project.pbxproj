@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190B851A1BE3A01600BCFA20 /* _ListadItam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85191BE3A01600BCFA20 /* _ListadItam.swift */; };
+		190B851C1BE3A02000BCFA20 /* ListadItam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListadItam.swift */; };
 		1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D49E1BE381B60011B37B /* ListDetailViewController.swift */; };
 		1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */; };
 		2124DFA01A8DF48000422313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF9F1A8DF48000422313 /* ViewController.swift */; };
@@ -188,6 +190,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		190B85191BE3A01600BCFA20 /* _ListadItam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ListadItam.swift; sourceTree = "<group>"; };
+		190B851B1BE3A02000BCFA20 /* ListadItam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadItam.swift; sourceTree = "<group>"; };
 		194478471AAF90AF00A34744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1991D49E1BE381B60011B37B /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemViewCell.swift; sourceTree = "<group>"; };
@@ -451,6 +455,7 @@
 			children = (
 				A4A069701BE37B31004F0999 /* Item.swift */,
 				A4A069711BE37B31004F0999 /* List.swift */,
+				190B851B1BE3A02000BCFA20 /* ListadItam.swift */,
 				218C64B51BA078BA00EEEDF1 /* Private */,
 				218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */,
 			);
@@ -462,6 +467,7 @@
 			children = (
 				A4A069781BE37C30004F0999 /* _Item.swift */,
 				A4A069791BE37C30004F0999 /* _List.swift */,
+				190B85191BE3A01600BCFA20 /* _ListadItam.swift */,
 			);
 			path = Private;
 			sourceTree = "<group>";
@@ -1007,6 +1013,8 @@
 				21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */,
 				2124DFA01A8DF48000422313 /* ViewController.swift in Sources */,
 				21A143331B99A479004116B8 /* FSE+UIColor.swift in Sources */,
+				190B851C1BE3A02000BCFA20 /* ListadItam.swift in Sources */,
+				190B851A1BE3A01600BCFA20 /* _ListadItam.swift in Sources */,
 				21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */,
 				21A143321B99A479004116B8 /* FSE+String.swift in Sources */,
 				A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */,

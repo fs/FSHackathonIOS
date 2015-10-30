@@ -9,7 +9,7 @@ enum ListAttributes: String {
 }
 
 enum ListRelationships: String {
-    case items = "items"
+    case listedItem = "listedItem"
 }
 
 @objc
@@ -51,38 +51,38 @@ class _List: NSManagedObject {
     // MARK: - Relationships
 
     @NSManaged
-    var items: NSOrderedSet
+    var listedItem: NSSet
 
-    func itemsSet() -> NSMutableOrderedSet {
-        return self.items.mutableCopy() as! NSMutableOrderedSet
+    func listedItemSet() -> NSMutableSet {
+        return self.listedItem.mutableCopy() as! NSMutableSet
     }
 
 }
 
 extension _List {
 
-    func addItems(objects: NSOrderedSet) {
-        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
-        mutable.unionOrderedSet(objects)
-        self.items = mutable.copy() as! NSOrderedSet
+    func addListedItem(objects: NSSet) {
+        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+        mutable.unionSet(objects as Set<NSObject>)
+        self.listedItem = mutable.copy() as! NSSet
     }
 
-    func removeItems(objects: NSOrderedSet) {
-        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
-        mutable.minusOrderedSet(objects)
-        self.items = mutable.copy() as! NSOrderedSet
+    func removeListedItem(objects: NSSet) {
+        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
+        mutable.minusSet(objects as Set<NSObject>)
+        self.listedItem = mutable.copy() as! NSSet
     }
 
-    func addItemsObject(value: Item!) {
-        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
+    func addListedItemObject(value: ListadItam!) {
+        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
         mutable.addObject(value)
-        self.items = mutable.copy() as! NSOrderedSet
+        self.listedItem = mutable.copy() as! NSSet
     }
 
-    func removeItemsObject(value: Item!) {
-        let mutable = self.items.mutableCopy() as! NSMutableOrderedSet
+    func removeListedItemObject(value: ListadItam!) {
+        let mutable = self.listedItem.mutableCopy() as! NSMutableSet
         mutable.removeObject(value)
-        self.items = mutable.copy() as! NSOrderedSet
+        self.listedItem = mutable.copy() as! NSSet
     }
 
 }
