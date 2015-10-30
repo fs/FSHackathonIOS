@@ -21,6 +21,8 @@ class DetailItemViewCell: UITableViewCell {
         super.awakeFromNib()
         self.checkbox = M13Checkbox(frame: self.checkboxView.bounds)
         self.checkboxView.addSubview(self.checkbox)
+        
+        self.customImageView.layer.cornerRadius = self.customImageView.bounds.width * 0.5
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -30,16 +32,19 @@ class DetailItemViewCell: UITableViewCell {
     }
     
     func prepareCell(listedItem: ListedItem) {
-        self.customImageView.image = UIImage(named: (listedItem.item?.title)!)
-        self.titleLabel.text = listedItem.item?.title
+        if let title = listedItem.item?.title {
+            self.customImageView.image = UIImage(named: "\(title).jpg")
+        }
+        
+        self.titleLabel.text = listedItem.item?.title ?? "I don't know!"
         
         // checkbox
         self.checkbox.checkState = listedItem.selected!.boolValue ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
         
         // detail
-        let count = "\((listedItem.count?.doubleValue)!) \(listedItem.unit)"
+        let count = "\((listedItem.count?.doubleValue)!) \(Unit.init(intValue: Int16(listedItem.unit!.integerValue))!.short)"
         let price = "\((listedItem.count?.doubleValue)! * (listedItem.item?.minPrice?.doubleValue)!)"
-        self.detailLabel.text = "Количество: \(count), примерная стоимость: \(price)"
+        self.detailLabel.text = "Количество: \(count), \nПримерная стоимость: \(price)"
     }
     
 }

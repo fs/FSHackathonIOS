@@ -179,27 +179,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             item24!.minPrice = NSNumber(float: 402.0)
             item24!.maxPrice = NSNumber(float: 1230.0)
             
-            let list = List.MR_createEntity()
-            list!.title = "New List"
-            list!.date = NSDate()
             
-            let listedItem1 = ListedItem.MR_createEntity()
-            listedItem1!.count =  NSNumber(float: 2.0)
-            listedItem1!.unit = Unit.Kilogramm.numberValue
-            listedItem1!.item = item13;
-            
-            let listedItem2 = ListedItem.MR_createEntity()
-            listedItem2!.count =  NSNumber(float: 2.0)
-            listedItem2!.unit = Unit.Gramm.numberValue
-            listedItem2!.item = item15;
-            
-            let listedItem3 = ListedItem.MR_createEntity()
-            listedItem3!.count =  NSNumber(float: 2.0)
-            listedItem3!.unit = Unit.Count.numberValue
-            listedItem3!.item = item11;
-            
-            list!.listedItem = NSSet(array: [listedItem1!, listedItem2!, listedItem3!])
-            
+            //test lists
+            for i in 0 ... 5 {
+                let list = List.MR_createEntity()
+                list!.title = "New List \(i + 1)"
+                list!.date = NSDate()
+                
+                let listedItem1 = ListedItem.MR_createEntity()
+                listedItem1!.count =  NSNumber(float: 2.0)
+                listedItem1!.unit = Unit.Kilogramm.numberValue
+                listedItem1!.item = item13;
+                
+                let listedItem2 = ListedItem.MR_createEntity()
+                listedItem2!.count =  NSNumber(float: 2.0)
+                listedItem2!.unit = Unit.Gramm.numberValue
+                listedItem2!.item = item15;
+                
+                let listedItem3 = ListedItem.MR_createEntity()
+                listedItem3!.count =  NSNumber(float: 2.0)
+                listedItem3!.unit = Unit.Count.numberValue
+                listedItem3!.item = item11;
+                
+                list!.listedItem = NSSet(array: [listedItem1!, listedItem2!, listedItem3!])
+            }
+
             NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         }
     }

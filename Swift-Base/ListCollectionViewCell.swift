@@ -14,6 +14,17 @@ class ListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.layer.borderColor = UIColor.lightGrayColor().CGColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 15
+        
+        self.tableView.estimatedRowHeight = 90
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
     //MARK: - params
     private(set) var list: List! = nil {
         didSet {
@@ -40,11 +51,6 @@ extension ListCollectionViewCell: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 90
-    }
-    
 }
 
 //MARK: - UITableViewDataSource
@@ -60,8 +66,8 @@ extension ListCollectionViewCell: UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-        //        let item = self.list.listedItem.count as! ListedItam
-        //        cell.prepareCell(item)
+        let item = self.list.listedItem.allObjects[indexPath.row] as! ListedItem
+        cell.prepareCell(item)
         return cell
     }
     
