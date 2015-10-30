@@ -32,6 +32,15 @@ class ListViewController: TGLStackedViewController {
         self.collectionView!.dataSource = self
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.exposedTopOverlap = 20.0
+        self.exposedBottomOverlap = 20.0
+        self.stackedLayout.layoutMargin = UIEdgeInsetsZero
+        self.exposedLayoutMargin = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
@@ -50,8 +59,11 @@ extension ListViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! List
+        let list = self.listOfLists[indexPath.row]
         
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! ListCollectionViewCell
+        cell.prepareCell(list)
+        return cell
     }
 }
 

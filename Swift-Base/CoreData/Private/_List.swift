@@ -39,7 +39,7 @@ class _List: NSManagedObject {
     // MARK: - Properties
 
     @NSManaged
-    var date: NSNumber?
+    var date: NSDate?
 
     // func validateDate(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
