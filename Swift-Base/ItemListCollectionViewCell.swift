@@ -39,6 +39,8 @@ class ItemListCollectionViewCell: UICollectionViewCell {
         self.titleLabel.textAlignment = NSTextAlignment.Center
         self.titleLabel.minimumScaleFactor = 0.6
         self.titleLabel.adjustsFontSizeToFitWidth = true
+        self.titleLabel.shadowOffset = CGSizeMake(1, 0)
+        self.titleLabel.shadowColor = UIColor.darkGrayColor()
         
         visualEffect.addSubview(self.titleLabel)
         
