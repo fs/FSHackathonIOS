@@ -1,30 +1,16 @@
 PODS:
-  - AFNetworking (2.6.0):
-    - AFNetworking/NSURLConnection (= 2.6.0)
-    - AFNetworking/NSURLSession (= 2.6.0)
-    - AFNetworking/Reachability (= 2.6.0)
-    - AFNetworking/Security (= 2.6.0)
-    - AFNetworking/Serialization (= 2.6.0)
-    - AFNetworking/UIKit (= 2.6.0)
-  - AFNetworking/NSURLConnection (2.6.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.0)
-  - AFNetworking/Security (2.6.0)
-  - AFNetworking/Serialization (2.6.0)
-  - AFNetworking/UIKit (2.6.0):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
+  - M13Checkbox (1.1.2)
+  - MagicalRecord (2.3.0)
+  - TGLStackedViewController (1.1.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.6)
+  - M13Checkbox
+  - MagicalRecord
+  - TGLStackedViewController
 
 SPEC CHECKSUMS:
-  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  M13Checkbox: 0c0bb08dcd144c4ea33f883b68270f3f56908ea2
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  TGLStackedViewController: 2edc69ada1f9ed269d982d9936d7ff567890e634
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

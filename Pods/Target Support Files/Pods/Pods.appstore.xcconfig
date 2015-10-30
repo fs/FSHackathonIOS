@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/M13Checkbox" "${PODS_ROOT}/Headers/Public/MagicalRecord" "${PODS_ROOT}/Headers/Public/TGLStackedViewController"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/M13Checkbox" -isystem "${PODS_ROOT}/Headers/Public/MagicalRecord" -isystem "${PODS_ROOT}/Headers/Public/TGLStackedViewController"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"M13Checkbox" -l"MagicalRecord" -l"TGLStackedViewController" -framework "CoreData" -framework "CoreGraphics" -framework "Foundation" -framework "UIKit"
 PODS_ROOT = ${SRCROOT}/Pods
