@@ -36,6 +36,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="d6e-zD-7D1"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="downButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Glc-TH-zYr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqy-LH-gc3" userLabel="Up">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -43,6 +46,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="ZGU-ks-WiM"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="upButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="h1y-zQ-PZl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -94,13 +100,16 @@
                                     <constraint firstAttribute="height" constant="50" id="fDJ-Pn-EU4"/>
                                     <constraint firstItem="kh2-2a-LfK" firstAttribute="top" secondItem="Xrf-Nd-doc" secondAttribute="top" constant="8" id="iYt-wP-ICa"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="E7u-f5-0w2" appends="YES" id="jim-8y-lH3"/>
+                                </connections>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-NA-HRp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-NA-HRp">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayCell" id="dZN-BI-9tJ" customClass="TodayCell" customModule="Widget" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TodayCell" id="dZN-BI-9tJ" customClass="TodayCell" customModule="Widget" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dZN-BI-9tJ" id="JTh-Sr-SI0">
@@ -158,9 +167,6 @@
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="Xrf-Nd-doc" secondAttribute="bottom" id="lQ5-KU-Ahy"/>
                             <constraint firstItem="Xrf-Nd-doc" firstAttribute="top" secondItem="wF9-NA-HRp" secondAttribute="bottom" id="pVa-ib-khI"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="E7u-f5-0w2" appends="YES" id="aUJ-Ju-8gi"/>
-                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -175,7 +181,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="E7u-f5-0w2"/>
+                <tapGestureRecognizer id="E7u-f5-0w2">
+                    <connections>
+                        <action selector="tappedInView:" destination="M4Y-Lb-cyx" id="Zzf-SG-ofW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="516" y="285"/>
         </scene>
