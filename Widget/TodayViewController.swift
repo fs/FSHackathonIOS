@@ -77,6 +77,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var listTitleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     var lists: [List] = []
     
     private var _currentIndex: Int = 0
@@ -86,7 +89,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             if value >= self.lists.count {
                 self._currentIndex = 0
             } else {
-                self.currentIndex = value
+                self._currentIndex = value
             }
             self.reloadData()
         }
@@ -131,6 +134,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func reloadData () {
+        if let list = self.currentList {
+            self.listTitleLabel.text = list.title
+            self.priceLabel.text = "От \(Int(list.minPrice)) до \(Int(list.maxPrice)) рублей"
+        }
+        
         self.tableView.reloadData()
     }
     

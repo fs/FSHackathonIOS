@@ -23,18 +23,11 @@
                                         <rect key="frame" x="220" y="0.0" width="100" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_up" translatesAutoresizingMaskIntoConstraints="NO" id="Ssq-N7-ngY">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="10" y="0.0" width="30" height="50"/>
                                                 <animations/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqy-LH-gc3" userLabel="Up">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <animations/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="ZGU-ks-WiM"/>
-                                                </constraints>
-                                            </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="UDo-dF-GZr">
-                                                <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="60" y="0.0" width="30" height="50"/>
                                                 <animations/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdN-bY-bm8" userLabel="Down">
@@ -42,6 +35,13 @@
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="d6e-zD-7D1"/>
+                                                </constraints>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqy-LH-gc3" userLabel="Up">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="ZGU-ks-WiM"/>
                                                 </constraints>
                                             </button>
                                         </subviews>
@@ -53,12 +53,12 @@
                                             <constraint firstItem="zdN-bY-bm8" firstAttribute="leading" secondItem="Lqy-LH-gc3" secondAttribute="trailing" id="BG2-tF-wZP"/>
                                             <constraint firstAttribute="bottom" secondItem="zdN-bY-bm8" secondAttribute="bottom" id="Ehd-x9-K7e"/>
                                             <constraint firstItem="Lqy-LH-gc3" firstAttribute="top" secondItem="bPU-SS-hBL" secondAttribute="top" id="EpL-Re-J0P"/>
-                                            <constraint firstItem="UDo-dF-GZr" firstAttribute="leading" secondItem="zdN-bY-bm8" secondAttribute="leading" id="Imq-Ja-tfL"/>
-                                            <constraint firstItem="Ssq-N7-ngY" firstAttribute="leading" secondItem="Lqy-LH-gc3" secondAttribute="leading" id="Iwm-Ta-Jr2"/>
+                                            <constraint firstItem="UDo-dF-GZr" firstAttribute="leading" secondItem="zdN-bY-bm8" secondAttribute="leading" constant="10" id="Imq-Ja-tfL"/>
+                                            <constraint firstItem="Ssq-N7-ngY" firstAttribute="leading" secondItem="Lqy-LH-gc3" secondAttribute="leading" constant="10" id="Iwm-Ta-Jr2"/>
                                             <constraint firstAttribute="trailing" secondItem="zdN-bY-bm8" secondAttribute="trailing" id="KG3-7P-wnV"/>
-                                            <constraint firstItem="UDo-dF-GZr" firstAttribute="trailing" secondItem="zdN-bY-bm8" secondAttribute="trailing" id="PNb-Qj-dzs"/>
+                                            <constraint firstItem="UDo-dF-GZr" firstAttribute="trailing" secondItem="zdN-bY-bm8" secondAttribute="trailing" constant="-10" id="PNb-Qj-dzs"/>
                                             <constraint firstItem="UDo-dF-GZr" firstAttribute="top" secondItem="zdN-bY-bm8" secondAttribute="top" id="QBP-AU-lxd"/>
-                                            <constraint firstItem="Ssq-N7-ngY" firstAttribute="trailing" secondItem="Lqy-LH-gc3" secondAttribute="trailing" id="az0-8x-fyI"/>
+                                            <constraint firstItem="Ssq-N7-ngY" firstAttribute="trailing" secondItem="Lqy-LH-gc3" secondAttribute="trailing" constant="-10" id="az0-8x-fyI"/>
                                             <constraint firstItem="Ssq-N7-ngY" firstAttribute="bottom" secondItem="Lqy-LH-gc3" secondAttribute="bottom" id="boE-qi-Lfq"/>
                                             <constraint firstItem="Ssq-N7-ngY" firstAttribute="top" secondItem="Lqy-LH-gc3" secondAttribute="top" id="cR3-h7-pfr"/>
                                             <constraint firstItem="UDo-dF-GZr" firstAttribute="bottom" secondItem="zdN-bY-bm8" secondAttribute="bottom" id="cpp-nE-Hee"/>
@@ -107,10 +107,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vP1-Gg-T90" customClass="M13Checkbox">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vP1-Gg-T90">
                                                     <rect key="frame" x="8" y="7" width="30" height="30"/>
                                                     <animations/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="Smv-4s-LQy"/>
                                                         <constraint firstAttribute="height" constant="30" id="wvd-Hh-RG3"/>
@@ -137,7 +137,7 @@
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="checkbox" destination="vP1-Gg-T90" id="85i-u9-zl4"/>
+                                            <outlet property="checkboxContainer" destination="vP1-Gg-T90" id="Z7s-DW-Xj8"/>
                                             <outlet property="titleLabel" destination="uaU-Pi-R7X" id="uMO-U9-Kt1"/>
                                         </connections>
                                     </tableViewCell>
@@ -169,6 +169,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="400"/>
                     <connections>
+                        <outlet property="listTitleLabel" destination="kh2-2a-LfK" id="tDh-zz-acv"/>
+                        <outlet property="priceLabel" destination="SI1-Pj-y0a" id="OpM-b9-ZC8"/>
                         <outlet property="tableView" destination="wF9-NA-HRp" id="C7m-IZ-hA4"/>
                     </connections>
                 </viewController>
