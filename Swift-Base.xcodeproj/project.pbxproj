@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D49E1BE381B60011B37B /* ListDetailViewController.swift */; };
+		1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */; };
 		2124DFA01A8DF48000422313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF9F1A8DF48000422313 /* ViewController.swift */; };
 		212D018E1BB1986B00B34340 /* Swift_BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D018D1BB1986B00B34340 /* Swift_BaseTests.swift */; };
-		212D019E1BB198A500B34340 /* FSHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D019D1BB198A500B34340 /* FSHelpersTests.swift */; settings = {ASSET_TAGS = (); }; };
+		212D019E1BB198A500B34340 /* FSHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D019D1BB198A500B34340 /* FSHelpersTests.swift */; };
 		213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B89BE19F01A1E005D3749 /* CoreGraphics.framework */; };
 		2158286D1A91E2F200833BE6 /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2158286B1A91E2F200833BE6 /* mogend.sh */; };
 		218C64B81BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
@@ -24,7 +26,7 @@
 		21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432B1B99A479004116B8 /* FSE+UITextView.swift */; };
 		21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432C1B99A479004116B8 /* FSE+UIView.swift */; };
 		21A143371B99A479004116B8 /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432D1B99A479004116B8 /* FSHelpers.swift */; };
-		21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A565FF1BB2BF7600A96C23 /* FSE+UIImage.swift */; settings = {ASSET_TAGS = (); }; };
+		21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A565FF1BB2BF7600A96C23 /* FSE+UIImage.swift */; };
 		21B3D1A119E6E2D700EF0D52 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B3D1A019E6E2D700EF0D52 /* Crashlytics.framework */; };
 		21DB301519DD2289003A418D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB301419DD2289003A418D /* AppDelegate.swift */; };
 		21DB301F19DD2289003A418D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DB301E19DD2289003A418D /* Images.xcassets */; };
@@ -156,6 +158,8 @@
 /* Begin PBXFileReference section */
 		0B854B6014D9DDA9A596C69D /* Pods-Swift-BaseTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.debug staging.xcconfig"; sourceTree = "<group>"; };
 		194478471AAF90AF00A34744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1991D49E1BE381B60011B37B /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemViewCell.swift; sourceTree = "<group>"; };
 		19D856C11AB5ED2E0014C459 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = build.sh; path = Scripts/build.sh; sourceTree = "<group>"; };
 		19D856C51AB5ED2E0014C459 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = test.sh; path = Scripts/test.sh; sourceTree = "<group>"; };
 		19D856C71AB5EDDF0014C459 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
@@ -317,6 +321,15 @@
 				21A143221B99A479004116B8 /* FSHelpers */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1991D49D1BE3817F0011B37B /* Detail controller */ = {
+			isa = PBXGroup;
+			children = (
+				1991D49E1BE381B60011B37B /* ListDetailViewController.swift */,
+				1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */,
+			);
+			name = "Detail controller";
 			sourceTree = "<group>";
 		};
 		19D856BF1AB5ECF50014C459 /* Travis CI */ = {
@@ -604,6 +617,7 @@
 		E736C5A41A252B1500B8986E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1991D49D1BE3817F0011B37B /* Detail controller */,
 				2124DF9F1A8DF48000422313 /* ViewController.swift */,
 			);
 			name = Controllers;
@@ -1045,6 +1059,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */,
 				21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */,
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
 				21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */,
@@ -1060,6 +1075,7 @@
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
 				A4A0697A1BE37C30004F0999 /* _Item.swift in Sources */,
 				21A143371B99A479004116B8 /* FSHelpers.swift in Sources */,
+				1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
