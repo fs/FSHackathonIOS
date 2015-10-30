@@ -13,7 +13,7 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var listCollectionViewCell: ListCollectionViewCell!
+    var listIndex: Int!
     
     lazy var items = {
         return Item.MR_findAll() as! [Item]

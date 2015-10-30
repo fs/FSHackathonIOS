@@ -53,9 +53,8 @@ class ListViewController: TGLStackedViewController {
     // Get the new view controller using segue.destinationViewController.
     // Pass the selected object to the new view controller.
         if let lSender = sender as? UIButton {
-            let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: NSIndexPath(forRow: lSender.tag, inSection: 0)) as! ListCollectionViewCell
             let itemsList = segue.destinationViewController as! ItemsListViewController
-            itemsList.listCollectionViewCell = cell
+            itemsList.listIndex = lSender.tag
         }
     }
 }
