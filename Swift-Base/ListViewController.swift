@@ -45,6 +45,19 @@ class ListViewController: TGLStackedViewController {
         super.viewWillAppear(animated)
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
     }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+        if let lSender = sender as? UIButton {
+            let cell = self.collectionView!.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: NSIndexPath(forRow: lSender.tag, inSection: 0)) as! ListCollectionViewCell
+            let itemsList = segue.destinationViewController as! ItemsListViewController
+            itemsList.listCollectionViewCell = cell
+        }
+    }
 }
 
 //MARK: - UICollectionViewDataSource
@@ -63,6 +76,7 @@ extension ListViewController {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! ListCollectionViewCell
         cell.prepareCell(list)
+        cell.addItemButton.tag = indexPath.row
         return cell
     }
 }

@@ -13,7 +13,7 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var list: List!
+    var listCollectionViewCell: ListCollectionViewCell!
     
     lazy var items = {
         return Item.MR_findAll() as! [Item]
@@ -51,6 +51,7 @@ extension ItemsListViewController: UICollectionViewDelegate
     //MARK: Cells
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
