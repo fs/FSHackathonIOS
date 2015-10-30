@@ -11,6 +11,30 @@
 		190B851C1BE3A02000BCFA20 /* ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListedItem.swift */; };
 		190B85211BE3BB3500BCFA20 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */; };
 		190B85231BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */; };
+		190B853D1BE3D36A00BCFA20 /* Батон.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85251BE3D36A00BCFA20 /* Батон.jpg */; };
+		190B853E1BE3D36A00BCFA20 /* Виноград.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85261BE3D36A00BCFA20 /* Виноград.jpg */; };
+		190B853F1BE3D36A00BCFA20 /* Груши.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85271BE3D36A00BCFA20 /* Груши.jpg */; };
+		190B85401BE3D36A00BCFA20 /* Йогурт.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85281BE3D36A00BCFA20 /* Йогурт.jpg */; };
+		190B85411BE3D36A00BCFA20 /* Икра.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85291BE3D36A00BCFA20 /* Икра.jpg */; };
+		190B85421BE3D36A00BCFA20 /* Катык.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852A1BE3D36A00BCFA20 /* Катык.jpg */; };
+		190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852B1BE3D36A00BCFA20 /* Кефир.jpg */; };
+		190B85441BE3D36A00BCFA20 /* Колбаса.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */; };
+		190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */; };
+		190B85461BE3D36A00BCFA20 /* Майонез.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */; };
+		190B85471BE3D36A00BCFA20 /* Масло растительное.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */; };
+		190B85481BE3D36A00BCFA20 /* Мед.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85301BE3D36A00BCFA20 /* Мед.jpg */; };
+		190B85491BE3D36A00BCFA20 /* Молоко.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85311BE3D36A00BCFA20 /* Молоко.jpg */; };
+		190B854A1BE3D36A00BCFA20 /* Мука.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85321BE3D36A00BCFA20 /* Мука.jpg */; };
+		190B854B1BE3D36A00BCFA20 /* Огурцы.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85331BE3D36A00BCFA20 /* Огурцы.jpg */; };
+		190B854C1BE3D36A00BCFA20 /* Персики.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85341BE3D36A00BCFA20 /* Персики.jpg */; };
+		190B854D1BE3D36A00BCFA20 /* Помидоры.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85351BE3D36A00BCFA20 /* Помидоры.jpg */; };
+		190B854E1BE3D36A00BCFA20 /* Рыба соленая.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85361BE3D36A00BCFA20 /* Рыба соленая.jpg */; };
+		190B854F1BE3D36A00BCFA20 /* Сало.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85371BE3D36A00BCFA20 /* Сало.jpg */; };
+		190B85501BE3D36A00BCFA20 /* Сосиски.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85381BE3D36A00BCFA20 /* Сосиски.jpg */; };
+		190B85511BE3D36A00BCFA20 /* Торты.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85391BE3D36A00BCFA20 /* Торты.jpg */; };
+		190B85521BE3D36A00BCFA20 /* Хлеб.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853A1BE3D36A00BCFA20 /* Хлеб.jpg */; };
+		190B85531BE3D36A00BCFA20 /* Шоколад.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853B1BE3D36A00BCFA20 /* Шоколад.jpg */; };
+		190B85541BE3D36A00BCFA20 /* Яблоки.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B853C1BE3D36A00BCFA20 /* Яблоки.jpg */; };
 		1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D49E1BE381B60011B37B /* ListDetailViewController.swift */; };
 		1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */; };
 		213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B89BE19F01A1E005D3749 /* CoreGraphics.framework */; };
@@ -230,6 +254,30 @@
 		190B851B1BE3A02000BCFA20 /* ListedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedItem.swift; sourceTree = "<group>"; };
 		190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListCollectionViewCell.swift; sourceTree = "<group>"; };
+		190B85251BE3D36A00BCFA20 /* Батон.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Батон.jpg"; sourceTree = "<group>"; };
+		190B85261BE3D36A00BCFA20 /* Виноград.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Виноград.jpg"; sourceTree = "<group>"; };
+		190B85271BE3D36A00BCFA20 /* Груши.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Груши.jpg"; sourceTree = "<group>"; };
+		190B85281BE3D36A00BCFA20 /* Йогурт.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Йогурт.jpg"; sourceTree = "<group>"; };
+		190B85291BE3D36A00BCFA20 /* Икра.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Икра.jpg"; sourceTree = "<group>"; };
+		190B852A1BE3D36A00BCFA20 /* Катык.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Катык.jpg"; sourceTree = "<group>"; };
+		190B852B1BE3D36A00BCFA20 /* Кефир.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Кефир.jpg"; sourceTree = "<group>"; };
+		190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Колбаса.jpg"; sourceTree = "<group>"; };
+		190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Конфеты.jpg"; sourceTree = "<group>"; };
+		190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Майонез.jpeg"; sourceTree = "<group>"; };
+		190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Масло растительное.jpg"; sourceTree = "<group>"; };
+		190B85301BE3D36A00BCFA20 /* Мед.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мед.jpg"; sourceTree = "<group>"; };
+		190B85311BE3D36A00BCFA20 /* Молоко.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Молоко.jpg"; sourceTree = "<group>"; };
+		190B85321BE3D36A00BCFA20 /* Мука.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мука.jpg"; sourceTree = "<group>"; };
+		190B85331BE3D36A00BCFA20 /* Огурцы.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Огурцы.jpg"; sourceTree = "<group>"; };
+		190B85341BE3D36A00BCFA20 /* Персики.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Персики.jpg"; sourceTree = "<group>"; };
+		190B85351BE3D36A00BCFA20 /* Помидоры.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Помидоры.jpg"; sourceTree = "<group>"; };
+		190B85361BE3D36A00BCFA20 /* Рыба соленая.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Рыба соленая.jpg"; sourceTree = "<group>"; };
+		190B85371BE3D36A00BCFA20 /* Сало.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Сало.jpg"; sourceTree = "<group>"; };
+		190B85381BE3D36A00BCFA20 /* Сосиски.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Сосиски.jpg"; sourceTree = "<group>"; };
+		190B85391BE3D36A00BCFA20 /* Торты.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Торты.jpg"; sourceTree = "<group>"; };
+		190B853A1BE3D36A00BCFA20 /* Хлеб.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Хлеб.jpg"; sourceTree = "<group>"; };
+		190B853B1BE3D36A00BCFA20 /* Шоколад.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Шоколад.jpg"; sourceTree = "<group>"; };
+		190B853C1BE3D36A00BCFA20 /* Яблоки.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Яблоки.jpg"; sourceTree = "<group>"; };
 		194478471AAF90AF00A34744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1991D49E1BE381B60011B37B /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemViewCell.swift; sourceTree = "<group>"; };
@@ -425,6 +473,37 @@
 			name = ItemsList;
 			sourceTree = "<group>";
 		};
+		190B85241BE3D36A00BCFA20 /* Content Images */ = {
+			isa = PBXGroup;
+			children = (
+				190B85251BE3D36A00BCFA20 /* Батон.jpg */,
+				190B85261BE3D36A00BCFA20 /* Виноград.jpg */,
+				190B85271BE3D36A00BCFA20 /* Груши.jpg */,
+				190B85281BE3D36A00BCFA20 /* Йогурт.jpg */,
+				190B85291BE3D36A00BCFA20 /* Икра.jpg */,
+				190B852A1BE3D36A00BCFA20 /* Катык.jpg */,
+				190B852B1BE3D36A00BCFA20 /* Кефир.jpg */,
+				190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */,
+				190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */,
+				190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */,
+				190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */,
+				190B85301BE3D36A00BCFA20 /* Мед.jpg */,
+				190B85311BE3D36A00BCFA20 /* Молоко.jpg */,
+				190B85321BE3D36A00BCFA20 /* Мука.jpg */,
+				190B85331BE3D36A00BCFA20 /* Огурцы.jpg */,
+				190B85341BE3D36A00BCFA20 /* Персики.jpg */,
+				190B85351BE3D36A00BCFA20 /* Помидоры.jpg */,
+				190B85361BE3D36A00BCFA20 /* Рыба соленая.jpg */,
+				190B85371BE3D36A00BCFA20 /* Сало.jpg */,
+				190B85381BE3D36A00BCFA20 /* Сосиски.jpg */,
+				190B85391BE3D36A00BCFA20 /* Торты.jpg */,
+				190B853A1BE3D36A00BCFA20 /* Хлеб.jpg */,
+				190B853B1BE3D36A00BCFA20 /* Шоколад.jpg */,
+				190B853C1BE3D36A00BCFA20 /* Яблоки.jpg */,
+			);
+			path = "Content Images";
+			sourceTree = "<group>";
+		};
 		196D6E161BAB0736000B7997 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -615,6 +694,7 @@
 				21DB301419DD2289003A418D /* AppDelegate.swift */,
 				E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */,
 				21DB301E19DD2289003A418D /* Images.xcassets */,
+				190B85241BE3D36A00BCFA20 /* Content Images */,
 				196D6E161BAB0736000B7997 /* Helpers */,
 				E731DC7A1A1CF1B700E12CBA /* Models */,
 				E731DC711A1CB30C00E12CBA /* Views */,
@@ -1086,10 +1166,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190B85541BE3D36A00BCFA20 /* Яблоки.jpg in Resources */,
+				190B85461BE3D36A00BCFA20 /* Майонез.jpeg in Resources */,
 				E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */,
+				190B854A1BE3D36A00BCFA20 /* Мука.jpg in Resources */,
 				218C64C01BA07DDE00EEEDF1 /* Localizable.strings in Resources */,
+				190B85411BE3D36A00BCFA20 /* Икра.jpg in Resources */,
+				190B85501BE3D36A00BCFA20 /* Сосиски.jpg in Resources */,
+				190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */,
 				2158286D1A91E2F200833BE6 /* mogend.sh in Resources */,
+				190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */,
+				190B85531BE3D36A00BCFA20 /* Шоколад.jpg in Resources */,
+				190B853F1BE3D36A00BCFA20 /* Груши.jpg in Resources */,
+				190B854C1BE3D36A00BCFA20 /* Персики.jpg in Resources */,
 				21DB301F19DD2289003A418D /* Images.xcassets in Resources */,
+				190B85511BE3D36A00BCFA20 /* Торты.jpg in Resources */,
+				190B85491BE3D36A00BCFA20 /* Молоко.jpg in Resources */,
+				190B853D1BE3D36A00BCFA20 /* Батон.jpg in Resources */,
+				190B854F1BE3D36A00BCFA20 /* Сало.jpg in Resources */,
+				190B85421BE3D36A00BCFA20 /* Катык.jpg in Resources */,
+				190B85481BE3D36A00BCFA20 /* Мед.jpg in Resources */,
+				190B854D1BE3D36A00BCFA20 /* Помидоры.jpg in Resources */,
+				190B85521BE3D36A00BCFA20 /* Хлеб.jpg in Resources */,
+				190B85401BE3D36A00BCFA20 /* Йогурт.jpg in Resources */,
+				190B853E1BE3D36A00BCFA20 /* Виноград.jpg in Resources */,
+				190B854B1BE3D36A00BCFA20 /* Огурцы.jpg in Resources */,
+				190B85441BE3D36A00BCFA20 /* Колбаса.jpg in Resources */,
+				190B854E1BE3D36A00BCFA20 /* Рыба соленая.jpg in Resources */,
+				190B85471BE3D36A00BCFA20 /* Масло растительное.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
