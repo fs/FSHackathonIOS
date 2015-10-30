@@ -102,39 +102,41 @@
                     <navigationItem key="navigationItem" id="9ba-1w-tZu"/>
                     <connections>
                         <outlet property="collectionView" destination="QA9-sC-nwI" id="hoC-hP-F5c"/>
+                        <segue destination="Nr3-Se-VDD" kind="show" id="eMH-Eh-XZo"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACJ-kv-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="899" y="359"/>
         </scene>
-        <!--View Controller-->
+        <!--Выберите покупку-->
         <scene sceneID="yKO-V2-pI4">
             <objects>
-                <viewController id="Nr3-Se-VDD" sceneMemberID="viewController">
+                <viewController id="Nr3-Se-VDD" customClass="ItemsListViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mzt-8f-lwE"/>
                         <viewControllerLayoutGuide type="bottom" id="kpc-tO-6D4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dbP-Ur-pto">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F1t-g1-Tt0">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UJK-US-dJJ">
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <animations/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Tr2-qT-aFj">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e1w-zJ-9ps">
+                                    <size key="itemSize" width="150" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vOt-1o-MSU">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemListCollectionViewCell" id="V8I-Qc-Bz3" customClass="ItemListCollectionViewCell" customModule="Swift_Base" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="150" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -143,24 +145,41 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="Nr3-Se-VDD" id="fSq-AX-E0b"/>
-                                    <outlet property="delegate" destination="Nr3-Se-VDD" id="XS3-58-AJF"/>
+                                    <outlet property="dataSource" destination="Nr3-Se-VDD" id="PP2-5D-0wY"/>
+                                    <outlet property="delegate" destination="Nr3-Se-VDD" id="qz1-L4-mge"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-IH-Vn0">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nr3-Se-VDD" id="3MN-WP-PME"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="F1t-g1-Tt0" secondAttribute="trailing" id="Lj3-dA-HRM"/>
-                            <constraint firstItem="F1t-g1-Tt0" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="nbw-K1-v3M"/>
-                            <constraint firstItem="F1t-g1-Tt0" firstAttribute="top" secondItem="dbP-Ur-pto" secondAttribute="top" id="o1H-n7-bco"/>
-                            <constraint firstItem="kpc-tO-6D4" firstAttribute="top" secondItem="F1t-g1-Tt0" secondAttribute="bottom" id="yQJ-do-XgJ"/>
+                            <constraint firstItem="KWC-IH-Vn0" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="XiN-96-vTa"/>
+                            <constraint firstItem="UJK-US-dJJ" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="ZnE-SH-js6"/>
+                            <constraint firstItem="UJK-US-dJJ" firstAttribute="top" secondItem="KWC-IH-Vn0" secondAttribute="bottom" id="akb-Xh-J9C"/>
+                            <constraint firstAttribute="trailing" secondItem="KWC-IH-Vn0" secondAttribute="trailing" id="fms-mX-5H2"/>
+                            <constraint firstItem="UJK-US-dJJ" firstAttribute="top" secondItem="KWC-IH-Vn0" secondAttribute="bottom" id="gYp-HP-mvu"/>
+                            <constraint firstItem="kpc-tO-6D4" firstAttribute="top" secondItem="UJK-US-dJJ" secondAttribute="bottom" id="hqb-jg-rZj"/>
+                            <constraint firstAttribute="trailing" secondItem="UJK-US-dJJ" secondAttribute="trailing" id="q9V-MI-2qg"/>
+                            <constraint firstItem="KWC-IH-Vn0" firstAttribute="top" secondItem="dbP-Ur-pto" secondAttribute="top" constant="64" id="tqe-q9-fC0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Выберите покупку" id="co5-pk-sgp"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UJK-US-dJJ" id="FLW-IA-yGh"/>
+                        <outlet property="searchBar" destination="KWC-IH-Vn0" id="MKf-Nx-4I1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMw-HH-jYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839" y="359"/>
+            <point key="canvasLocation" x="1327" y="359"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yyg-oJ-FDl">
