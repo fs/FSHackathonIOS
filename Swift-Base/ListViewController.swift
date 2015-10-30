@@ -35,10 +35,9 @@ class ListViewController: TGLStackedViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.exposedTopOverlap = 20.0
-        self.exposedBottomOverlap = 20.0
-        self.stackedLayout.layoutMargin = UIEdgeInsetsZero
-        self.exposedLayoutMargin = UIEdgeInsetsMake(20.0, 0.0, 0.0, 0.0)
+        self.exposedTopOverlap = 30.0
+        self.exposedBottomOverlap = 50.0
+        self.exposedLayoutMargin = UIEdgeInsetsMake(50.0, 0.0, 0.0, 0.0)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -62,6 +61,7 @@ extension ListViewController {
         let list = self.listOfLists[indexPath.row]
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! ListCollectionViewCell
+        cell.layer.cornerRadius = 5
         cell.prepareCell(list)
         return cell
     }

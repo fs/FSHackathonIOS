@@ -50,6 +50,9 @@ extension ItemsListViewController: UICollectionViewDelegate
 {
     //MARK: Cells
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 }
 
 //MARK: - UICollectionViewDataSource
@@ -64,12 +67,4 @@ extension ItemsListViewController: UICollectionViewDataSource {
         cell.prepareCell(self.items[indexPath.row])
         return cell
     }
-    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = collec.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-//        //        let item = self.list.listedItem.allObjects[indexPath.row] as! ListedItem
-//        //        cell.prepareCell(item)
-//        return cell
-//    }
-    
 }
