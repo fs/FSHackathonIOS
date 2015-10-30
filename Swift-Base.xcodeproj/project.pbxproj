@@ -32,23 +32,6 @@
 		21DB304919DD2D6D003A418D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB304819DD2D6D003A418D /* Constants.swift */; };
 		21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157E11BB3EDF40041FCE4 /* FSTestHelpers.swift */; };
 		A432CF001BE3907200B03AE4 /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE41BE3906D00B03AE4 /* MagicalRecord.h */; };
-		A432CF011BE3907A00B03AE4 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED31BE3906D00B03AE4 /* MagicalRecord+Actions.h */; };
-		A432CF021BE3907A00B03AE4 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED41BE3906D00B03AE4 /* MagicalRecord+Actions.m */; };
-		A432CF031BE3907A00B03AE4 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED51BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.h */; };
-		A432CF041BE3907A00B03AE4 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED61BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.m */; };
-		A432CF051BE3907A00B03AE4 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED71BE3906D00B03AE4 /* MagicalRecord+iCloud.h */; };
-		A432CF061BE3907A00B03AE4 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED81BE3906D00B03AE4 /* MagicalRecord+iCloud.m */; };
-		A432CF071BE3907A00B03AE4 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED91BE3906D00B03AE4 /* MagicalRecord+Options.h */; };
-		A432CF081BE3907A00B03AE4 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDA1BE3906D00B03AE4 /* MagicalRecord+Options.m */; };
-		A432CF091BE3907A00B03AE4 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDB1BE3906D00B03AE4 /* MagicalRecord+Setup.h */; };
-		A432CF0A1BE3907A00B03AE4 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDC1BE3906D00B03AE4 /* MagicalRecord+Setup.m */; };
-		A432CF0B1BE3907A00B03AE4 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDD1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.h */; };
-		A432CF0C1BE3907A00B03AE4 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDE1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.m */; };
-		A432CF0D1BE3907A00B03AE4 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDF1BE3906D00B03AE4 /* MagicalRecordDeprecationMacros.h */; };
-		A432CF0E1BE3907A00B03AE4 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE01BE3906D00B03AE4 /* MagicalRecordInternal.h */; };
-		A432CF0F1BE3907A00B03AE4 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEE11BE3906D00B03AE4 /* MagicalRecordInternal.m */; };
-		A432CF101BE3907A00B03AE4 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE21BE3906D00B03AE4 /* MagicalRecordLogging.h */; };
-		A432CF111BE3907A00B03AE4 /* MagicalRecordShorthandMethodAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE31BE3906D00B03AE4 /* MagicalRecordShorthandMethodAliases.h */; };
 		A432CF121BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECC1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.h */; };
 		A432CF131BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECD1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.m */; };
 		A432CF141BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECE1BE3906D00B03AE4 /* NSPersistentStore+MagicalRecord.h */; };
@@ -98,8 +81,6 @@
 		A4461A321BE38537006FC8C7 /* CoreDataProxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */; };
 		A4461A331BE38537006FC8C7 /* CoreDataProxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4461A2B1BE38537006FC8C7 /* CoreDataProxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4461A3E1BE385EA006FC8C7 /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
-		A4461A3F1BE385FA006FC8C7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; };
-		A4461A401BE385FA006FC8C7 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
 		A4461A411BE385FF006FC8C7 /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069781BE37C30004F0999 /* _Item.swift */; };
 		A4461A421BE385FF006FC8C7 /* _List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069791BE37C30004F0999 /* _List.swift */; };
 		A4461A4C1BE386C5006FC8C7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4461A4B1BE386C5006FC8C7 /* DataManager.swift */; };
@@ -112,6 +93,29 @@
 		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
 		E73888751BE381E8002FC003 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888741BE381E8002FC003 /* ListTableViewCell.swift */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
+		E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
+		E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; };
+		E7A30FD51BE39E1600CF27A4 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED31BE3906D00B03AE4 /* MagicalRecord+Actions.h */; };
+		E7A30FD61BE39E1600CF27A4 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED41BE3906D00B03AE4 /* MagicalRecord+Actions.m */; };
+		E7A30FD71BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED51BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.h */; };
+		E7A30FD81BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED61BE3906D00B03AE4 /* MagicalRecord+ErrorHandling.m */; };
+		E7A30FD91BE39E1600CF27A4 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED71BE3906D00B03AE4 /* MagicalRecord+iCloud.h */; };
+		E7A30FDA1BE39E1600CF27A4 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CED81BE3906D00B03AE4 /* MagicalRecord+iCloud.m */; };
+		E7A30FDB1BE39E1600CF27A4 /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CED91BE3906D00B03AE4 /* MagicalRecord+Options.h */; };
+		E7A30FDC1BE39E1600CF27A4 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDA1BE3906D00B03AE4 /* MagicalRecord+Options.m */; };
+		E7A30FDD1BE39E1600CF27A4 /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDB1BE3906D00B03AE4 /* MagicalRecord+Setup.h */; };
+		E7A30FDE1BE39E1600CF27A4 /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDC1BE3906D00B03AE4 /* MagicalRecord+Setup.m */; };
+		E7A30FDF1BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDD1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.h */; };
+		E7A30FE01BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEDE1BE3906D00B03AE4 /* MagicalRecord+ShorthandMethods.m */; };
+		E7A30FE11BE39E1600CF27A4 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEDF1BE3906D00B03AE4 /* MagicalRecordDeprecationMacros.h */; };
+		E7A30FE21BE39E1600CF27A4 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE01BE3906D00B03AE4 /* MagicalRecordInternal.h */; };
+		E7A30FE31BE39E1600CF27A4 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEE11BE3906D00B03AE4 /* MagicalRecordInternal.m */; };
+		E7A30FE41BE39E1600CF27A4 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE21BE3906D00B03AE4 /* MagicalRecordLogging.h */; };
+		E7A30FE51BE39E1600CF27A4 /* MagicalRecordShorthandMethodAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE31BE3906D00B03AE4 /* MagicalRecordShorthandMethodAliases.h */; };
+		E7A30FE61BE39EBF00CF27A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; };
+		E7A30FE71BE39EC300CF27A4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
+		E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069781BE37C30004F0999 /* _Item.swift */; };
+		E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069791BE37C30004F0999 /* _List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -803,36 +807,36 @@
 			files = (
 				A432CF201BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.h in Headers */,
 				A432CF301BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.h in Headers */,
+				E7A30FD71BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.h in Headers */,
 				A432CF1E1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
 				A432CF001BE3907200B03AE4 /* MagicalRecord.h in Headers */,
+				E7A30FE21BE39E1600CF27A4 /* MagicalRecordInternal.h in Headers */,
 				A432CF341BE3908D00B03AE4 /* NSObject+MagicalDataImport.h in Headers */,
-				A432CF051BE3907A00B03AE4 /* MagicalRecord+iCloud.h in Headers */,
+				E7A30FD91BE39E1600CF27A4 /* MagicalRecord+iCloud.h in Headers */,
 				A432CF361BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
-				A432CF0B1BE3907A00B03AE4 /* MagicalRecord+ShorthandMethods.h in Headers */,
-				A432CF011BE3907A00B03AE4 /* MagicalRecord+Actions.h in Headers */,
 				A432CF181BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
 				A432CF121BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.h in Headers */,
-				A432CF031BE3907A00B03AE4 /* MagicalRecord+ErrorHandling.h in Headers */,
 				A432CF1A1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
-				A432CF101BE3907A00B03AE4 /* MagicalRecordLogging.h in Headers */,
+				E7A30FE11BE39E1600CF27A4 /* MagicalRecordDeprecationMacros.h in Headers */,
 				A432CF2E1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h in Headers */,
-				A432CF111BE3907A00B03AE4 /* MagicalRecordShorthandMethodAliases.h in Headers */,
+				E7A30FD51BE39E1600CF27A4 /* MagicalRecord+Actions.h in Headers */,
 				A432CF241BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.h in Headers */,
-				A432CF0E1BE3907A00B03AE4 /* MagicalRecordInternal.h in Headers */,
+				E7A30FE41BE39E1600CF27A4 /* MagicalRecordLogging.h in Headers */,
 				A432CF161BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
 				A432CF221BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.h in Headers */,
-				A432CF091BE3907A00B03AE4 /* MagicalRecord+Setup.h in Headers */,
 				A432CF141BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.h in Headers */,
+				E7A30FDB1BE39E1600CF27A4 /* MagicalRecord+Options.h in Headers */,
+				E7A30FDF1BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.h in Headers */,
+				E7A30FE51BE39E1600CF27A4 /* MagicalRecordShorthandMethodAliases.h in Headers */,
 				A432CF281BE3908800B03AE4 /* NSManagedObject+MagicalRecord.h in Headers */,
 				A432CF1C1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
 				A432CF381BE3908D00B03AE4 /* NSString+MagicalDataImport.h in Headers */,
-				A432CF0D1BE3907A00B03AE4 /* MagicalRecordDeprecationMacros.h in Headers */,
 				A432CF321BE3908D00B03AE4 /* NSNumber+MagicalDataImport.h in Headers */,
 				A432CF2A1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.h in Headers */,
 				A432CF261BE3908800B03AE4 /* NSManagedObject+MagicalFinders.h in Headers */,
+				E7A30FDD1BE39E1600CF27A4 /* MagicalRecord+Setup.h in Headers */,
 				A4461A2E1BE38537006FC8C7 /* CoreDataProxy.h in Headers */,
 				A432CF2C1BE3908D00B03AE4 /* MagicalImportFunctions.h in Headers */,
-				A432CF071BE3907A00B03AE4 /* MagicalRecord+Options.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1015,9 @@
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
 				21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */,
 				21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */,
+				E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */,
+				E7A30FE91BE39ECE00CF27A4 /* _List.swift in Sources */,
+				E7A30FE81BE39ECA00CF27A4 /* _Item.swift in Sources */,
 				2124DFA01A8DF48000422313 /* ViewController.swift in Sources */,
 				21A143331B99A479004116B8 /* FSE+UIColor.swift in Sources */,
 				190B851C1BE3A02000BCFA20 /* ListadItam.swift in Sources */,
@@ -1025,6 +1032,7 @@
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
 				21A143371B99A479004116B8 /* FSHelpers.swift in Sources */,
 				A432CF471BE390E400B03AE4 /* TGLStackedLayout.m in Sources */,
+				E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */,
 				1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
@@ -1040,38 +1048,38 @@
 			files = (
 				A432CF131BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				A4461A4E1BE386E7006FC8C7 /* WatchCoreDataProxy.swift in Sources */,
-				A432CF061BE3907A00B03AE4 /* MagicalRecord+iCloud.m in Sources */,
 				A432CF371BE3908D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				A432CF2F1BE3908D00B03AE4 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				A432CF271BE3908800B03AE4 /* NSManagedObject+MagicalFinders.m in Sources */,
+				E7A30FDA1BE39E1600CF27A4 /* MagicalRecord+iCloud.m in Sources */,
+				E7A30FD61BE39E1600CF27A4 /* MagicalRecord+Actions.m in Sources */,
 				A432CF331BE3908D00B03AE4 /* NSNumber+MagicalDataImport.m in Sources */,
 				A432CF1F1BE3908300B03AE4 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				E7A30FDE1BE39E1600CF27A4 /* MagicalRecord+Setup.m in Sources */,
 				A432CF1D1BE3908300B03AE4 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				A4461A411BE385FF006FC8C7 /* _Item.swift in Sources */,
+				E7A30FE01BE39E1600CF27A4 /* MagicalRecord+ShorthandMethods.m in Sources */,
 				A432CF291BE3908800B03AE4 /* NSManagedObject+MagicalRecord.m in Sources */,
 				A4461A4C1BE386C5006FC8C7 /* DataManager.swift in Sources */,
-				A432CF081BE3907A00B03AE4 /* MagicalRecord+Options.m in Sources */,
-				A432CF0C1BE3907A00B03AE4 /* MagicalRecord+ShorthandMethods.m in Sources */,
 				A432CF251BE3908800B03AE4 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				A432CF211BE3908300B03AE4 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
-				A432CF021BE3907A00B03AE4 /* MagicalRecord+Actions.m in Sources */,
-				A4461A3F1BE385FA006FC8C7 /* Item.swift in Sources */,
 				A432CF151BE3907F00B03AE4 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				A4461A3E1BE385EA006FC8C7 /* Swift-Base.xcdatamodeld in Sources */,
 				A4461A421BE385FF006FC8C7 /* _List.swift in Sources */,
-				A432CF0A1BE3907A00B03AE4 /* MagicalRecord+Setup.m in Sources */,
 				A432CF171BE3907F00B03AE4 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
-				A4461A401BE385FA006FC8C7 /* List.swift in Sources */,
+				E7A30FE71BE39EC300CF27A4 /* List.swift in Sources */,
+				E7A30FDC1BE39E1600CF27A4 /* MagicalRecord+Options.m in Sources */,
 				A432CF311BE3908D00B03AE4 /* NSEntityDescription+MagicalDataImport.m in Sources */,
-				A432CF0F1BE3907A00B03AE4 /* MagicalRecordInternal.m in Sources */,
 				A432CF231BE3908800B03AE4 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				A432CF391BE3908D00B03AE4 /* NSString+MagicalDataImport.m in Sources */,
-				A432CF041BE3907A00B03AE4 /* MagicalRecord+ErrorHandling.m in Sources */,
 				A432CF191BE3908300B03AE4 /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
 				A432CF2D1BE3908D00B03AE4 /* MagicalImportFunctions.m in Sources */,
 				A432CF351BE3908D00B03AE4 /* NSObject+MagicalDataImport.m in Sources */,
+				E7A30FE61BE39EBF00CF27A4 /* Item.swift in Sources */,
+				E7A30FE31BE39E1600CF27A4 /* MagicalRecordInternal.m in Sources */,
 				A432CF2B1BE3908800B03AE4 /* NSManagedObject+MagicalRequests.m in Sources */,
 				A432CF1B1BE3908300B03AE4 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				E7A30FD81BE39E1600CF27A4 /* MagicalRecord+ErrorHandling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

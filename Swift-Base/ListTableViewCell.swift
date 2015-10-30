@@ -19,7 +19,7 @@ class ListTableViewCell: UITableViewCell {
         self.nameLabel.text = nil
     }
     
-//    func prepareCell(list: List) {
-//        self.nameLabel.text = list.title
-//    }
+    func prepareCell(list: List) {
+        self.nameLabel.text = list.title
+    }
 }
