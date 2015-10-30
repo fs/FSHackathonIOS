@@ -61,6 +61,8 @@ extension ItemsListViewController: UICollectionViewDelegate
         
         self.listViewController.listOfLists[self.listIndex].addListedItemsObject(listedItem)
         self.listViewController.collectionView?.reloadData()
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
