@@ -86,17 +86,16 @@
             </objects>
             <point key="canvasLocation" x="401" y="337"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Detail Controller-->
         <scene sceneID="D9d-Y8-rXE">
             <objects>
-                <controller id="ulD-3c-trZ">
+                <controller id="ulD-3c-trZ" customClass="DetailController" customModule="watch_Extension">
                     <items>
                         <label alignment="left" text="Product title" id="ou1-z7-ehl"/>
                         <label alignment="left" text="Category" id="wQf-Vq-dJ8"/>
                         <group width="1" alignment="left" id="u7I-Q6-FH0">
                             <items>
                                 <label alignment="left" text="Count" id="5KP-F4-kAl"/>
-                                <label alignment="right" text="Unit" id="YyM-c2-XA1"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="ERs-Li-f97">
@@ -104,8 +103,19 @@
                                 <label alignment="left" text="Price" id="S7a-uv-B55"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" title="Done" id="JHz-pA-mas"/>
+                        <button width="1" alignment="left" title="Done" id="JHz-pA-mas">
+                            <connections>
+                                <action selector="actionButtonTapped" destination="ulD-3c-trZ" id="STZ-R3-E2l"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="actionButton" destination="JHz-pA-mas" id="AHq-pg-kA9"/>
+                        <outlet property="productCategory" destination="wQf-Vq-dJ8" id="Oio-X4-azj"/>
+                        <outlet property="productCount" destination="5KP-F4-kAl" id="LDh-CS-4PM"/>
+                        <outlet property="productPrice" destination="S7a-uv-B55" id="qhw-DB-YAZ"/>
+                        <outlet property="productTitle" destination="ou1-z7-ehl" id="Xqu-Yi-84T"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="595" y="337"/>

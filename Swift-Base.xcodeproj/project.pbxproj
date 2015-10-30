@@ -18,6 +18,7 @@
 		213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213B89BE19F01A1E005D3749 /* CoreGraphics.framework */; };
 		2158286D1A91E2F200833BE6 /* mogend.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2158286B1A91E2F200833BE6 /* mogend.sh */; };
 		218336B11BE3C3CC000BA709 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D2A2D1BE3BC000050C5D0 /* ListController.swift */; };
+		218336B31BE3C401000BA709 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218336B21BE3C401000BA709 /* DetailController.swift */; };
 		218C64C01BA07DDE00EEEDF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 218C64BD1BA07DDE00EEEDF1 /* Localizable.strings */; };
 		21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A143241B99A479004116B8 /* FSE+Array.swift */; };
 		21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A143251B99A479004116B8 /* FSE+Dictionary.swift */; };
@@ -249,6 +250,7 @@
 		213B89C019F01A40005D3749 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		21513BBD19EBCBFA00EE6273 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2158286B1A91E2F200833BE6 /* mogend.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = mogend.sh; path = Scripts/mogend.sh; sourceTree = "<group>"; };
+		218336B21BE3C401000BA709 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailController.swift; path = "Watch Extension/DetailController.swift"; sourceTree = SOURCE_ROOT; };
 		218C64B71BA078BA00EEEDF1 /* Swift-Base.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Swift-Base.xcdatamodel"; sourceTree = "<group>"; };
 		218C64BB1BA07D3800EEEDF1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main_Storyboard.strings; sourceTree = "<group>"; };
 		218C64C21BA07E1F00EEEDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -575,6 +577,7 @@
 				21D1E1F81BE3A191009378E3 /* watch Extension.entitlements */,
 				21D1E1DA1BE3A0FD009378E3 /* ListsController.swift */,
 				211D2A2D1BE3BC000050C5D0 /* ListController.swift */,
+				218336B21BE3C401000BA709 /* DetailController.swift */,
 				21D1E1DC1BE3A0FD009378E3 /* ExtensionDelegate.swift */,
 				21D1E1DE1BE3A0FD009378E3 /* Assets.xcassets */,
 				21D1E1E01BE3A0FD009378E3 /* Info.plist */,
@@ -1134,6 +1137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218336B31BE3C401000BA709 /* DetailController.swift in Sources */,
 				21D1E1DD1BE3A0FD009378E3 /* ExtensionDelegate.swift in Sources */,
 				21D1E1DB1BE3A0FD009378E3 /* ListsController.swift in Sources */,
 				218336B11BE3C3CC000BA709 /* ListController.swift in Sources */,

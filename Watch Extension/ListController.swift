@@ -24,6 +24,11 @@ class ElementCell: NSObject {
         self.countLabel.setText("\(element.count) \(element.unit)")
         self.priceLabel.setText("\(element.minPrice) - \(element.maxPrice)")
         
+        let color = element.checked ? UIColor.lightGrayColor() : UIColor.whiteColor()
+        self.titleLabel.setTextColor(color)
+        self.countLabel.setTextColor(color)
+        self.priceLabel.setTextColor(color)
+        
 //        self.tagGroup.setBackgroundColor(UIColor.blueColor())
     }
 }
@@ -46,6 +51,7 @@ class ListController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        self.prepareCells()
     }
     
     override func didDeactivate() {
