@@ -1,8 +1,8 @@
 //
 //  InterfaceController.swift
-//  Watch Extension
+//  watch Extension
 //
-//  Created by Aynur Galiev on 30.10.15.
+//  Created by Kruperfone on 30.10.15.
 //  Copyright © 2015 Flatstack. All rights reserved.
 //
 
