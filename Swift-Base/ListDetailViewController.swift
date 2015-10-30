@@ -10,6 +10,10 @@ import UIKit
 
 class ListDetailViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var list: List?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +36,40 @@ class ListDetailViewController: UIViewController {
     }
     */
 
+}
+
+//MARK: - UITableView -
+
+//MARK: - UITableViewDelegate
+extension ListDetailViewController: UITableViewDelegate
+{
+    //MARK: Cells
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 90
+    }
+    
+}
+
+//MARK: - UITableViewDataSource
+extension ListDetailViewController: UITableViewDataSource {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
+//        cell.prepareCell(List())
+        return cell
+    }
+    
 }
