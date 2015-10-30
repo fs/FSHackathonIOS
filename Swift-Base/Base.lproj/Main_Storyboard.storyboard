@@ -10,7 +10,7 @@
             <objects>
                 <collectionViewController automaticallyAdjustsScrollViewInsets="NO" id="vwP-6e-gmj" customClass="ListViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QA9-sC-nwI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -100,6 +100,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tdD-u6-Ckl" secondAttribute="trailing" constant="16" id="17N-ez-eQ3"/>
                                     <constraint firstItem="uc5-hD-mjb" firstAttribute="top" secondItem="tdD-u6-Ckl" secondAttribute="bottom" constant="8" id="2EP-Wv-aSl"/>
@@ -122,6 +123,7 @@
                             </collectionViewCell>
                         </cells>
                     </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="9ba-1w-tZu"/>
                     <connections>
                         <outlet property="collectionView" destination="QA9-sC-nwI" id="hoC-hP-F5c"/>
@@ -141,11 +143,11 @@
                         <viewControllerLayoutGuide type="bottom" id="kpc-tO-6D4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dbP-Ur-pto">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UJK-US-dJJ">
-                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="108" width="320" height="396"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e1w-zJ-9ps">
@@ -156,7 +158,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemListCollectionViewCell" id="V8I-Qc-Bz3" customClass="ItemListCollectionViewCell" customModule="Swift_Base" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="150" height="160"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="160"/>
@@ -208,9 +210,10 @@
         <scene sceneID="Yyg-oJ-FDl">
             <objects>
                 <navigationController id="RdE-Tj-MZe" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cpy-zb-LKP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cpy-zb-LKP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
