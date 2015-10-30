@@ -201,7 +201,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 listedItem3!.unit = Unit.Count.numberValue
                 listedItem3!.item = item11;
                 
-                list!.listedItem = NSSet(array: [listedItem1!, listedItem2!, listedItem3!])
+                list!.listedItems = NSSet(array: [listedItem1!, listedItem2!, listedItem3!])
             }
 
             NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()

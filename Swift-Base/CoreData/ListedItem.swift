@@ -1,6 +1,9 @@
 @objc(ListedItem)
 class ListedItem: _ListedItem {
 
-	// Custom logic goes here.
+    override func awakeFromInsert() {
+        super.awakeFromInsert()
+        self.date = NSDate()
+    }
 
 }
