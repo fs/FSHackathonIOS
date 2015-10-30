@@ -12,7 +12,6 @@ import Foundation
 class ElementCell: NSObject {
     
     @IBOutlet var titleLabel: WKInterfaceLabel!
-    @IBOutlet var countLabel: WKInterfaceLabel!
     @IBOutlet var priceLabel: WKInterfaceLabel!
     
     @IBOutlet var tagGroup: WKInterfaceGroup!
@@ -21,12 +20,11 @@ class ElementCell: NSObject {
     
     func prepareCell (element: Element) {
         self.titleLabel.setText(element.title)
-        self.countLabel.setText("\(element.count) \(element.unit)")
-        self.priceLabel.setText("\(element.minPrice) - \(element.maxPrice)")
+        let middle = (element.maxPrice + element.minPrice)/2
+        self.priceLabel.setText("\(element.count) x \(middle)")
         
         let color = element.checked ? UIColor.lightGrayColor() : UIColor.whiteColor()
         self.titleLabel.setTextColor(color)
-        self.countLabel.setTextColor(color)
         self.priceLabel.setTextColor(color)
         
         self.tagGroup.setBackgroundColor(element.categoryColor)

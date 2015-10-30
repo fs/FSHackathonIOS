@@ -55,20 +55,36 @@ class List {
         }
         return values
     }
+    
+    var minPrice: Double {
+        var value: Double = 0
+        for element in self.elements {
+            value += element.minPrice
+        }
+        return value
+    }
+    
+    var maxPrice: Double {
+        var value: Double = 0
+        for element in self.elements {
+            value += element.maxPrice
+        }
+        return value
+    }
 }
 
 class ListCell: NSObject {
     @IBOutlet var titleLabel: WKInterfaceLabel!
-    @IBOutlet var countLabel: WKInterfaceLabel!
+    @IBOutlet var priceLabel: WKInterfaceLabel!
     
     func prepareCell (list: List) {
         self.titleLabel.setText(list.title)
-        self.countLabel.setText("\(list.elements.count)")
+        self.priceLabel.setText("\(list.minPrice) - \(list.maxPrice)")
         
         let color = list.completed ? UIColor.lightGrayColor() : UIColor.whiteColor()
         
         self.titleLabel.setTextColor(color)
-        self.countLabel.setTextColor(color)
+        self.priceLabel.setTextColor(color)
     }
 }
 
