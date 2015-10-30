@@ -20,7 +20,7 @@
 		190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852B1BE3D36A00BCFA20 /* Кефир.jpg */; };
 		190B85441BE3D36A00BCFA20 /* Колбаса.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */; };
 		190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */; };
-		190B85461BE3D36A00BCFA20 /* Майонез.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */; };
+		190B85461BE3D36A00BCFA20 /* Майонез.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852E1BE3D36A00BCFA20 /* Майонез.jpg */; };
 		190B85471BE3D36A00BCFA20 /* Масло растительное.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */; };
 		190B85481BE3D36A00BCFA20 /* Мед.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85301BE3D36A00BCFA20 /* Мед.jpg */; };
 		190B85491BE3D36A00BCFA20 /* Молоко.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85311BE3D36A00BCFA20 /* Молоко.jpg */; };
@@ -131,6 +131,8 @@
 		21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157E11BB3EDF40041FCE4 /* FSTestHelpers.swift */; };
 		21E7AEA81BE3E25B00264DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E7AEA71BE3E25B00264DC9 /* Images.xcassets */; };
 		21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432D1B99A479004116B8 /* FSHelpers.swift */; };
+		4FBAC3061BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAC3031BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m */; };
+		4FBAC3071BE40E6F00AED116 /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAC3051BE40E6F00AED116 /* RACollectionViewTripletLayout.m */; };
 		A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
 		A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
 		A4A069821BE37F79004F0999 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A069811BE37F79004F0999 /* NotificationCenter.framework */; };
@@ -256,7 +258,7 @@
 		190B852B1BE3D36A00BCFA20 /* Кефир.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Кефир.jpg"; sourceTree = "<group>"; };
 		190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Колбаса.jpg"; sourceTree = "<group>"; };
 		190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Конфеты.jpg"; sourceTree = "<group>"; };
-		190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Майонез.jpeg"; sourceTree = "<group>"; };
+		190B852E1BE3D36A00BCFA20 /* Майонез.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Майонез.jpg"; sourceTree = "<group>"; };
 		190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Масло растительное.jpg"; sourceTree = "<group>"; };
 		190B85301BE3D36A00BCFA20 /* Мед.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мед.jpg"; sourceTree = "<group>"; };
 		190B85311BE3D36A00BCFA20 /* Молоко.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Молоко.jpg"; sourceTree = "<group>"; };
@@ -333,6 +335,10 @@
 		21E157F31BB3F2DE0041FCE4 /* FSE+UIViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIViewTests.swift"; sourceTree = "<group>"; };
 		21E157F51BB3F2E80041FCE4 /* FSE+UIImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIImageTests.swift"; sourceTree = "<group>"; };
 		21E7AEA71BE3E25B00264DC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4FBAC3021BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
+		4FBAC3031BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
+		4FBAC3041BE40E6F00AED116 /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
+		4FBAC3051BE40E6F00AED116 /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
 		A432CEA81BE3906D00B03AE4 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		A432CEAA1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -468,7 +474,7 @@
 				190B852B1BE3D36A00BCFA20 /* Кефир.jpg */,
 				190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */,
 				190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */,
-				190B852E1BE3D36A00BCFA20 /* Майонез.jpeg */,
+				190B852E1BE3D36A00BCFA20 /* Майонез.jpg */,
 				190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */,
 				190B85301BE3D36A00BCFA20 /* Мед.jpg */,
 				190B85311BE3D36A00BCFA20 /* Молоко.jpg */,
@@ -697,6 +703,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4FBAC3011BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4FBAC3021BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.h */,
+				4FBAC3031BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m */,
+				4FBAC3041BE40E6F00AED116 /* RACollectionViewTripletLayout.h */,
+				4FBAC3051BE40E6F00AED116 /* RACollectionViewTripletLayout.m */,
+			);
+			path = RACollectionViewReorderableTripletLayout;
+			sourceTree = "<group>";
+		};
 		5C5B41AD2B6E0DFDD4D53E6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,6 +732,7 @@
 		A432CDD31BE3901D00B03AE4 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				4FBAC3011BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout */,
 				A432CF3F1BE390E400B03AE4 /* TGLStackedViewController */,
 				A432CF3D1BE390BA00B03AE4 /* ChackBox */,
 				A432CEA51BE3906D00B03AE4 /* MagicalRecord */,
@@ -1075,7 +1093,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				190B85541BE3D36A00BCFA20 /* Яблоки.jpg in Resources */,
-				190B85461BE3D36A00BCFA20 /* Майонез.jpeg in Resources */,
+				190B85461BE3D36A00BCFA20 /* Майонез.jpg in Resources */,
 				E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */,
 				190B854A1BE3D36A00BCFA20 /* Мука.jpg in Resources */,
 				218C64C01BA07DDE00EEEDF1 /* Localizable.strings in Resources */,
@@ -1159,6 +1177,7 @@
 				21BA3B481BE408C000D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */,
 				21BA3B561BE408D900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				4FBAC3061BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m in Sources */,
 				21BA3B591BE408D900D6FE1F /* NSObject+MagicalDataImport.m in Sources */,
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
 				21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */,
@@ -1176,6 +1195,7 @@
 				21BA3B451BE408B900D6FE1F /* MagicalRecord+Setup.m in Sources */,
 				21BA3B401BE408A500D6FE1F /* TGLStackedViewController.m in Sources */,
 				190B851A1BE3A01600BCFA20 /* _ListedItem.swift in Sources */,
+				4FBAC3071BE40E6F00AED116 /* RACollectionViewTripletLayout.m in Sources */,
 				21BA3B501BE408D000D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */,
 				21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */,
 				21BA3B3F1BE408A200D6FE1F /* TGLStackedLayout.m in Sources */,
