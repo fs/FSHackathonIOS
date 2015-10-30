@@ -17,7 +17,7 @@ class ItemsListViewController: UIViewController {
     var listViewController: ListViewController!
     
     lazy var items = {
-        return Item.MR_findAll() as! [Item]
+        return Item.MR_findAllSortedBy(ItemAttributes.order.rawValue, ascending: true)  as! [Item]
     }()
     
     override func viewDidLoad() {
