@@ -83,6 +83,7 @@
 		21BA3B591BE408D900D6FE1F /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB11BE3906D00B03AE4 /* NSObject+MagicalDataImport.m */; };
 		21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB31BE3906D00B03AE4 /* NSRelationshipDescription+MagicalDataImport.m */; };
 		21BA3B5B1BE408D900D6FE1F /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CEB51BE3906D00B03AE4 /* NSString+MagicalDataImport.m */; };
+		21BA3B5D1BE40C8700D6FE1F /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BA3B5C1BE40C8700D6FE1F /* TodayCell.swift */; };
 		21D1E1CD1BE3A0FD009378E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CB1BE3A0FD009378E3 /* Interface.storyboard */; };
 		21D1E1CF1BE3A0FD009378E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CE1BE3A0FD009378E3 /* Assets.xcassets */; };
 		21D1E1D61BE3A0FD009378E3 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21D1E1D51BE3A0FD009378E3 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -264,6 +265,8 @@
 		21A1432D1B99A479004116B8 /* FSHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSHelpers.swift; sourceTree = "<group>"; };
 		21A565FF1BB2BF7600A96C23 /* FSE+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIImage.swift"; sourceTree = "<group>"; };
 		21B3D1A019E6E2D700EF0D52 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		21BA3B5C1BE40C8700D6FE1F /* TodayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		21BA3B5E1BE40D1C00D6FE1F /* TodayBridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayBridgeHeader.h; sourceTree = "<group>"; };
 		21C9F2DF19E833300084D18D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		21D1E1C91BE3A0FD009378E3 /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D1E1CC1BE3A0FD009378E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -816,8 +819,10 @@
 				A4A069CB1BE381DF004F0999 /* Widget.entitlements */,
 				A4A069861BE37F79004F0999 /* MainInterface.storyboard */,
 				A4A069841BE37F79004F0999 /* TodayViewController.swift */,
+				21BA3B5C1BE40C8700D6FE1F /* TodayCell.swift */,
 				A4A069891BE37F79004F0999 /* Info.plist */,
 				21E7AEA71BE3E25B00264DC9 /* Images.xcassets */,
+				21BA3B5E1BE40D1C00D6FE1F /* TodayBridgeHeader.h */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -1170,6 +1175,7 @@
 				21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */,
 				A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */,
 				A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */,
+				21BA3B5D1BE40C8700D6FE1F /* TodayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2179,7 +2185,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = Debug;
 		};
@@ -2200,7 +2206,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = "AppStore Debug";
 		};
@@ -2225,7 +2231,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = "Debug Staging";
 		};
@@ -2246,7 +2252,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = Release;
 		};
@@ -2267,7 +2273,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = Test;
 		};
@@ -2288,7 +2294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = AppStore;
 		};
@@ -2309,7 +2315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = "Release Staging";
 		};
@@ -2330,7 +2336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Widget/TodayBridgeHeader.h;
 			};
 			name = "Test Staging";
 		};
