@@ -11,6 +11,8 @@
 		190B851C1BE3A02000BCFA20 /* ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListedItem.swift */; };
 		190B851D1BE3A08A00BCFA20 /* ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListedItem.swift */; };
 		190B851E1BE3A08E00BCFA20 /* _ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85191BE3A01600BCFA20 /* _ListedItem.swift */; };
+		190B85211BE3BB3500BCFA20 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */; };
+		190B85231BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */; };
 		1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D49E1BE381B60011B37B /* ListDetailViewController.swift */; };
 		1991D4A11BE381F20011B37B /* DetailItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */; };
 		2124DFA01A8DF48000422313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2124DF9F1A8DF48000422313 /* ViewController.swift */; };
@@ -198,6 +200,8 @@
 /* Begin PBXFileReference section */
 		190B85191BE3A01600BCFA20 /* _ListedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ListedItem.swift; sourceTree = "<group>"; };
 		190B851B1BE3A02000BCFA20 /* ListedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListedItem.swift; sourceTree = "<group>"; };
+		190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListCollectionViewCell.swift; sourceTree = "<group>"; };
 		194478471AAF90AF00A34744 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1991D49E1BE381B60011B37B /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		1991D4A01BE381F20011B37B /* DetailItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItemViewCell.swift; sourceTree = "<group>"; };
@@ -374,6 +378,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190B851F1BE3BB1600BCFA20 /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+				190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */,
+				190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */,
+			);
+			name = ItemsList;
+			sourceTree = "<group>";
+		};
 		196D6E161BAB0736000B7997 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,6 +797,7 @@
 		E736C5A41A252B1500B8986E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				190B851F1BE3BB1600BCFA20 /* ItemsList */,
 				E73888711BE381B7002FC003 /* List */,
 				1991D49D1BE3817F0011B37B /* Detail controller */,
 				2124DF9F1A8DF48000422313 /* ViewController.swift */,
@@ -1029,6 +1043,7 @@
 				A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */,
 				A432CF481BE390E400B03AE4 /* TGLStackedViewController.m in Sources */,
 				A432CF461BE390E400B03AE4 /* TGLExposedLayout.m in Sources */,
+				190B85211BE3BB3500BCFA20 /* ItemsListViewController.swift in Sources */,
 				21DB301519DD2289003A418D /* AppDelegate.swift in Sources */,
 				E73888751BE381E8002FC003 /* ListTableViewCell.swift in Sources */,
 				21A143341B99A479004116B8 /* FSE+UITableView.swift in Sources */,
@@ -1037,6 +1052,7 @@
 				E7A30FD31BE39DC100CF27A4 /* List.swift in Sources */,
 				1991D49F1BE381B60011B37B /* ListDetailViewController.swift in Sources */,
 				21A143311B99A479004116B8 /* FSE+NSDate.swift in Sources */,
+				190B85231BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift in Sources */,
 				21A1432F1B99A479004116B8 /* FSE+Dictionary.swift in Sources */,
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
 				21A143301B99A479004116B8 /* FSE+Double.swift in Sources */,
