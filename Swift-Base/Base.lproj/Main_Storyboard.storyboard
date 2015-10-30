@@ -172,35 +172,47 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e1w-zJ-9ps">
-                                    <size key="itemSize" width="150" height="110"/>
+                                    <size key="itemSize" width="150" height="118"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemListCollectionViewCell" id="V8I-Qc-Bz3" customClass="ItemListCollectionViewCell" customModule="Swift_Base" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="118"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="110"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT3-uC-DHg">
-                                                    <rect key="frame" x="54" y="77" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT3-uC-DHg">
+                                                    <rect key="frame" x="8" y="77" width="134" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uxn-iX-ehY">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uxn-iX-ehY">
                                                     <rect key="frame" x="44" y="8" width="63" height="63"/>
                                                     <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="63" id="qvh-w5-qi8"/>
+                                                        <constraint firstAttribute="height" constant="63" id="xlO-IB-Wq7"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstItem="VT3-uC-DHg" firstAttribute="top" secondItem="Uxn-iX-ehY" secondAttribute="bottom" constant="6" id="4Rb-lg-VRU"/>
+                                            <constraint firstItem="VT3-uC-DHg" firstAttribute="centerX" secondItem="V8I-Qc-Bz3" secondAttribute="centerX" id="61w-gv-paL"/>
+                                            <constraint firstItem="VT3-uC-DHg" firstAttribute="leading" secondItem="V8I-Qc-Bz3" secondAttribute="leading" constant="8" id="6T7-d7-dXX"/>
+                                            <constraint firstItem="Uxn-iX-ehY" firstAttribute="top" secondItem="V8I-Qc-Bz3" secondAttribute="top" constant="8" id="Cfh-Oz-1ya"/>
+                                            <constraint firstItem="Uxn-iX-ehY" firstAttribute="centerX" secondItem="V8I-Qc-Bz3" secondAttribute="centerX" id="D1O-FD-j0D"/>
+                                            <constraint firstAttribute="trailing" secondItem="VT3-uC-DHg" secondAttribute="trailing" constant="8" id="RZa-Gf-Lv1"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="Uxn-iX-ehY" id="w4G-Zy-EBy"/>
                                             <outlet property="titleLabel" destination="VT3-uC-DHg" id="VAQ-J4-INu"/>
