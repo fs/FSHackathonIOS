@@ -40,11 +40,26 @@
 		21E157F21BB3F2CE0041FCE4 /* FSE+UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157F11BB3F2CE0041FCE4 /* FSE+UITextViewTests.swift */; settings = {ASSET_TAGS = (); }; };
 		21E157F41BB3F2DE0041FCE4 /* FSE+UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157F31BB3F2DE0041FCE4 /* FSE+UIViewTests.swift */; settings = {ASSET_TAGS = (); }; };
 		21E157F61BB3F2E80041FCE4 /* FSE+UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157F51BB3F2E80041FCE4 /* FSE+UIImageTests.swift */; settings = {ASSET_TAGS = (); }; };
+		306B922E0B22DD41F75B8EA0 /* libPods-WatchExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 435D6A1A42098C7797E29449 /* libPods-WatchExtension.a */; };
 		4F9EF46FAB7D320E12646B79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FC14334D96A97FADF44304 /* libPods.a */; };
+		90063ED19F9ACD8B1D4B59C8 /* libPods-Widget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC17C93734CCA0F6580E5498 /* libPods-Widget.a */; };
+		99ADFED013B91E99F62E3D9B /* libPods-Watch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CDA1DBD462E86E2188DD05 /* libPods-Watch.a */; };
 		A4A069721BE37B31004F0999 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069701BE37B31004F0999 /* Item.swift */; settings = {ASSET_TAGS = (); }; };
 		A4A069731BE37B31004F0999 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; settings = {ASSET_TAGS = (); }; };
 		A4A0697A1BE37C30004F0999 /* _Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069781BE37C30004F0999 /* _Item.swift */; settings = {ASSET_TAGS = (); }; };
 		A4A0697B1BE37C30004F0999 /* _List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069791BE37C30004F0999 /* _List.swift */; settings = {ASSET_TAGS = (); }; };
+		A4A069821BE37F79004F0999 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A069811BE37F79004F0999 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069841BE37F79004F0999 /* TodayViewController.swift */; };
+		A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A069861BE37F79004F0999 /* MainInterface.storyboard */; };
+		A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069801BE37F78004F0999 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4A0699D1BE37FF7004F0999 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0699B1BE37FF7004F0999 /* Interface.storyboard */; };
+		A4A0699F1BE37FF7004F0999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0699E1BE37FF7004F0999 /* Assets.xcassets */; };
+		A4A069A61BE37FF8004F0999 /* WatchExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069A51BE37FF7004F0999 /* WatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4A069AB1BE37FF8004F0999 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069AA1BE37FF8004F0999 /* InterfaceController.swift */; };
+		A4A069AD1BE37FF8004F0999 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069AC1BE37FF8004F0999 /* ExtensionDelegate.swift */; };
+		A4A069AF1BE37FF8004F0999 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069AE1BE37FF8004F0999 /* GlanceController.swift */; };
+		A4A069B11BE37FF8004F0999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A069B01BE37FF8004F0999 /* Assets.xcassets */; };
+		A4A069B51BE37FF8004F0999 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A4A069991BE37FF7004F0999 /* Watch.app */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +94,64 @@
 			remoteGlobalIDString = 21DB300E19DD2289003A418D;
 			remoteInfo = "Swift-Base";
 		};
+		A4A0698A1BE37F79004F0999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21DB300719DD2289003A418D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A0697F1BE37F78004F0999;
+			remoteInfo = Widget;
+		};
+		A4A069A71BE37FF8004F0999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21DB300719DD2289003A418D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A069A41BE37FF7004F0999;
+			remoteInfo = "Watch Extension";
+		};
+		A4A069B31BE37FF8004F0999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21DB300719DD2289003A418D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A069981BE37FF7004F0999;
+			remoteInfo = Watch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4A069961BE37F79004F0999 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069BF1BE37FF9004F0999 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4A069A61BE37FF8004F0999 /* WatchExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069C91BE37FF9004F0999 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A4A069B51BE37FF8004F0999 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B854B6014D9DDA9A596C69D /* Pods-Swift-BaseTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.debug staging.xcconfig"; sourceTree = "<group>"; };
@@ -130,20 +202,66 @@
 		21E157F11BB3F2CE0041FCE4 /* FSE+UITextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UITextViewTests.swift"; sourceTree = "<group>"; };
 		21E157F31BB3F2DE0041FCE4 /* FSE+UIViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIViewTests.swift"; sourceTree = "<group>"; };
 		21E157F51BB3F2E80041FCE4 /* FSE+UIImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIImageTests.swift"; sourceTree = "<group>"; };
+		22B5901BA1D5FCEE5CBBEE89 /* Pods-WatchExtension.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.test.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.test.xcconfig"; sourceTree = "<group>"; };
+		235075F758753271AB5C0986 /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		2900C0DB0F579B565AD4F9A8 /* Pods-Swift-BaseTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.release staging.xcconfig"; sourceTree = "<group>"; };
+		2AC017D376A8CA11E1D5DF0A /* Pods-WatchExtension.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.test staging.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.test staging.xcconfig"; sourceTree = "<group>"; };
+		2BEA4944EB3E3020BE5198DB /* Pods-Watch.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.test staging.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.test staging.xcconfig"; sourceTree = "<group>"; };
+		2C55E9B0167940A700CA15AF /* Pods-Widget.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.appstore.xcconfig"; sourceTree = "<group>"; };
+		2C68C88A8986B893BA11C8B2 /* Pods-Watch.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.appstore.xcconfig"; sourceTree = "<group>"; };
+		32177BF7A5CDBE0BB697B30B /* Pods-Watch.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug staging.xcconfig"; sourceTree = "<group>"; };
+		35C6E9036D80F7C0D295F44D /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		435D6A1A42098C7797E29449 /* libPods-WatchExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4888790F37E7DFBC54F68968 /* Pods-Widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.release.xcconfig"; sourceTree = "<group>"; };
+		4BDC8FC5E65A53A5EC35199C /* Pods-Widget.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.debug staging.xcconfig"; sourceTree = "<group>"; };
 		51E82C8EB8DB50ECF52AE69A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		55CE14ACDDF14593FCD934EC /* Pods-WatchExtension.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.release staging.xcconfig"; sourceTree = "<group>"; };
+		5CE15C3B250FD4B6A2C29DF1 /* Pods-WatchExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.release.xcconfig"; sourceTree = "<group>"; };
+		61E26B64D9DB8A1A56E66087 /* Pods-Widget.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.release staging.xcconfig"; sourceTree = "<group>"; };
 		67FC14334D96A97FADF44304 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7570731C5C4A951A2A3B3A1E /* libPods-Swift-BaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift-BaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E81FF18E25B1309C5670D5E /* Pods-WatchExtension.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.appstore debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.appstore debug.xcconfig"; sourceTree = "<group>"; };
+		909135B6E2EB1D2DF2DE4836 /* Pods-WatchExtension.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.appstore.xcconfig"; sourceTree = "<group>"; };
 		965DB253E03512431530CABA /* Pods-Swift-BaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B62AFD8847834B4FE5064BD /* Pods-Swift-BaseTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		A4A069701BE37B31004F0999 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A4A069711BE37B31004F0999 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A4A069781BE37C30004F0999 /* _Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Item.swift; sourceTree = "<group>"; };
 		A4A069791BE37C30004F0999 /* _List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _List.swift; sourceTree = "<group>"; };
+		A4A069801BE37F78004F0999 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A069811BE37F79004F0999 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A4A069841BE37F79004F0999 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A4A069871BE37F79004F0999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A4A069891BE37F79004F0999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A069991BE37FF7004F0999 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0699C1BE37FF7004F0999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A4A0699E1BE37FF7004F0999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A069A01BE37FF7004F0999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A069A51BE37FF7004F0999 /* WatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A069AA1BE37FF8004F0999 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A4A069AC1BE37FF8004F0999 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A4A069AE1BE37FF8004F0999 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A4A069B01BE37FF8004F0999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A069B21BE37FF8004F0999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A069CA1BE381CD004F0999 /* Swift-Base.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Swift-Base.entitlements"; sourceTree = "<group>"; };
+		A4A069CB1BE381DF004F0999 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
+		A4A069CC1BE381EF004F0999 /* Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Watch.entitlements; sourceTree = "<group>"; };
+		A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchExtension.entitlements; sourceTree = "<group>"; };
+		A5A641599EDACF933E11F3F0 /* Pods-WatchExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A8875B531505263273ECB3A1 /* Pods-Widget.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.appstore debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.appstore debug.xcconfig"; sourceTree = "<group>"; };
 		A9F31A1C12206DF94283F801 /* Pods-Swift-BaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-BaseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-BaseTests/Pods-Swift-BaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB848BC11E409F9A85D785F1 /* Pods.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.debug staging.xcconfig"; sourceTree = "<group>"; };
+		AC17C93734CCA0F6580E5498 /* libPods-Widget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Widget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3D1386A24F03EFD6364382 /* Pods-Widget.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.test.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.test.xcconfig"; sourceTree = "<group>"; };
 		CD792995EA1B8C035C9A51B2 /* Pods.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods.release staging.xcconfig"; path = "Pods/Target Support Files/Pods/Pods.release staging.xcconfig"; sourceTree = "<group>"; };
+		D0CDA1DBD462E86E2188DD05 /* libPods-Watch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Watch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD196DFC6871E0F3BD371AC /* Pods-Widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.debug.xcconfig"; sourceTree = "<group>"; };
+		E00778AD96982EA8683968AD /* Pods-Watch.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release staging.xcconfig"; sourceTree = "<group>"; };
+		E5B4AB98E91FC036401DD5AC /* Pods-WatchExtension.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchExtension.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension.debug staging.xcconfig"; sourceTree = "<group>"; };
 		E7566DA01A1F85CB00DE3010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Storyboard.storyboard; sourceTree = "<group>"; };
+		F82345A19DE34E5AAF1E63AE /* Pods-Watch.appstore debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.appstore debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.appstore debug.xcconfig"; sourceTree = "<group>"; };
+		F8A711618090005837F16FFA /* Pods-Watch.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.test.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.test.xcconfig"; sourceTree = "<group>"; };
+		FCFE5362731ECDFF4794A0C4 /* Pods-Widget.test staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Widget.test staging.xcconfig"; path = "Pods/Target Support Files/Pods-Widget/Pods-Widget.test staging.xcconfig"; sourceTree = "<group>"; };
 		FF3C7DA238EA7C51D060C78B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +280,31 @@
 				213B89BF19F01A1E005D3749 /* CoreGraphics.framework in Frameworks */,
 				21B3D1A119E6E2D700EF0D52 /* Crashlytics.framework in Frameworks */,
 				4F9EF46FAB7D320E12646B79 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0697D1BE37F78004F0999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A069821BE37F79004F0999 /* NotificationCenter.framework in Frameworks */,
+				90063ED19F9ACD8B1D4B59C8 /* libPods-Widget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069A21BE37FF7004F0999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306B922E0B22DD41F75B8EA0 /* libPods-WatchExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2F18F0A3A8C65467565FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99ADFED013B91E99F62E3D9B /* libPods-Watch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +441,12 @@
 		21DB300619DD2289003A418D = {
 			isa = PBXGroup;
 			children = (
+				A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */,
 				21DB301119DD2289003A418D /* Swift-Base */,
 				212D01801BB1977100B34340 /* Tests */,
+				A4A069831BE37F79004F0999 /* Widget */,
+				A4A0699A1BE37FF7004F0999 /* Watch */,
+				A4A069A91BE37FF8004F0999 /* Watch Extension */,
 				21DB301019DD2289003A418D /* Products */,
 				D9F12AAF93832B17BB391A0E /* Pods */,
 				5C5B41AD2B6E0DFDD4D53E6B /* Frameworks */,
@@ -311,6 +458,9 @@
 			children = (
 				21DB300F19DD2289003A418D /* Swift-Base.app */,
 				212D018B1BB1986B00B34340 /* Swift-BaseTests.xctest */,
+				A4A069801BE37F78004F0999 /* Widget.appex */,
+				A4A069991BE37FF7004F0999 /* Watch.app */,
+				A4A069A51BE37FF7004F0999 /* WatchExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +468,7 @@
 		21DB301119DD2289003A418D /* Swift-Base */ = {
 			isa = PBXGroup;
 			children = (
+				A4A069CA1BE381CD004F0999 /* Swift-Base.entitlements */,
 				21DB304819DD2D6D003A418D /* Constants.swift */,
 				21DB301419DD2289003A418D /* AppDelegate.swift */,
 				E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */,
@@ -353,8 +504,46 @@
 				21B3D1A019E6E2D700EF0D52 /* Crashlytics.framework */,
 				67FC14334D96A97FADF44304 /* libPods.a */,
 				7570731C5C4A951A2A3B3A1E /* libPods-Swift-BaseTests.a */,
+				A4A069811BE37F79004F0999 /* NotificationCenter.framework */,
+				D0CDA1DBD462E86E2188DD05 /* libPods-Watch.a */,
+				435D6A1A42098C7797E29449 /* libPods-WatchExtension.a */,
+				AC17C93734CCA0F6580E5498 /* libPods-Widget.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4A069831BE37F79004F0999 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A4A069CB1BE381DF004F0999 /* Widget.entitlements */,
+				A4A069841BE37F79004F0999 /* TodayViewController.swift */,
+				A4A069861BE37F79004F0999 /* MainInterface.storyboard */,
+				A4A069891BE37F79004F0999 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		A4A0699A1BE37FF7004F0999 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				A4A069CC1BE381EF004F0999 /* Watch.entitlements */,
+				A4A0699B1BE37FF7004F0999 /* Interface.storyboard */,
+				A4A0699E1BE37FF7004F0999 /* Assets.xcassets */,
+				A4A069A01BE37FF7004F0999 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		A4A069A91BE37FF8004F0999 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4A069AA1BE37FF8004F0999 /* InterfaceController.swift */,
+				A4A069AC1BE37FF8004F0999 /* ExtensionDelegate.swift */,
+				A4A069AE1BE37FF8004F0999 /* GlanceController.swift */,
+				A4A069B01BE37FF8004F0999 /* Assets.xcassets */,
+				A4A069B21BE37FF8004F0999 /* Info.plist */,
+			);
+			path = "Watch Extension";
 			sourceTree = "<group>";
 		};
 		D9F12AAF93832B17BB391A0E /* Pods */ = {
@@ -369,6 +558,30 @@
 				A9F31A1C12206DF94283F801 /* Pods-Swift-BaseTests.release.xcconfig */,
 				9B62AFD8847834B4FE5064BD /* Pods-Swift-BaseTests.appstore.xcconfig */,
 				2900C0DB0F579B565AD4F9A8 /* Pods-Swift-BaseTests.release staging.xcconfig */,
+				235075F758753271AB5C0986 /* Pods-Watch.debug.xcconfig */,
+				F82345A19DE34E5AAF1E63AE /* Pods-Watch.appstore debug.xcconfig */,
+				32177BF7A5CDBE0BB697B30B /* Pods-Watch.debug staging.xcconfig */,
+				35C6E9036D80F7C0D295F44D /* Pods-Watch.release.xcconfig */,
+				F8A711618090005837F16FFA /* Pods-Watch.test.xcconfig */,
+				2C68C88A8986B893BA11C8B2 /* Pods-Watch.appstore.xcconfig */,
+				E00778AD96982EA8683968AD /* Pods-Watch.release staging.xcconfig */,
+				2BEA4944EB3E3020BE5198DB /* Pods-Watch.test staging.xcconfig */,
+				A5A641599EDACF933E11F3F0 /* Pods-WatchExtension.debug.xcconfig */,
+				8E81FF18E25B1309C5670D5E /* Pods-WatchExtension.appstore debug.xcconfig */,
+				E5B4AB98E91FC036401DD5AC /* Pods-WatchExtension.debug staging.xcconfig */,
+				5CE15C3B250FD4B6A2C29DF1 /* Pods-WatchExtension.release.xcconfig */,
+				22B5901BA1D5FCEE5CBBEE89 /* Pods-WatchExtension.test.xcconfig */,
+				909135B6E2EB1D2DF2DE4836 /* Pods-WatchExtension.appstore.xcconfig */,
+				55CE14ACDDF14593FCD934EC /* Pods-WatchExtension.release staging.xcconfig */,
+				2AC017D376A8CA11E1D5DF0A /* Pods-WatchExtension.test staging.xcconfig */,
+				DFD196DFC6871E0F3BD371AC /* Pods-Widget.debug.xcconfig */,
+				A8875B531505263273ECB3A1 /* Pods-Widget.appstore debug.xcconfig */,
+				4BDC8FC5E65A53A5EC35199C /* Pods-Widget.debug staging.xcconfig */,
+				4888790F37E7DFBC54F68968 /* Pods-Widget.release.xcconfig */,
+				BC3D1386A24F03EFD6364382 /* Pods-Widget.test.xcconfig */,
+				2C55E9B0167940A700CA15AF /* Pods-Widget.appstore.xcconfig */,
+				61E26B64D9DB8A1A56E66087 /* Pods-Widget.release staging.xcconfig */,
+				FCFE5362731ECDFF4794A0C4 /* Pods-Widget.test staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -428,17 +641,81 @@
 				094CC2F0EF766D3A54F5369D /* Copy Pods Resources */,
 				21B3D19F19E6E2B700EF0D52 /* ShellScript */,
 				6A1523033878EADC0BA4CEA1 /* Embed Pods Frameworks */,
+				A4A069961BE37F79004F0999 /* Embed App Extensions */,
+				A4A069C91BE37FF9004F0999 /* Embed Watch Content */,
 			);
 			buildRules = (
 				21DB304B19DD32D9003A418D /* PBXBuildRule */,
 				21DB304A19DD32B1003A418D /* PBXBuildRule */,
 			);
 			dependencies = (
+				A4A0698B1BE37F79004F0999 /* PBXTargetDependency */,
+				A4A069B41BE37FF8004F0999 /* PBXTargetDependency */,
 			);
 			name = "Swift-Base";
 			productName = "Swift-Base";
 			productReference = 21DB300F19DD2289003A418D /* Swift-Base.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A4A0697F1BE37F78004F0999 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0698D1BE37F79004F0999 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				1A3A03BD6B4EB9FEB9301D54 /* Check Pods Manifest.lock */,
+				A4A0697C1BE37F78004F0999 /* Sources */,
+				A4A0697D1BE37F78004F0999 /* Frameworks */,
+				A4A0697E1BE37F78004F0999 /* Resources */,
+				B7798447AE58B48947EAA0FE /* Embed Pods Frameworks */,
+				61F64883EED2FAA2CAA5B03B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = A4A069801BE37F78004F0999 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A4A069981BE37FF7004F0999 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A069C01BE37FF9004F0999 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				E2579068425AA4350A447B93 /* Check Pods Manifest.lock */,
+				A4A069971BE37FF7004F0999 /* Resources */,
+				A4A069BF1BE37FF9004F0999 /* Embed App Extensions */,
+				FE2F18F0A3A8C65467565FD8 /* Frameworks */,
+				89F9EC63C8176E5B972655C1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A069A81BE37FF8004F0999 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = A4A069991BE37FF7004F0999 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A4A069A41BE37FF7004F0999 /* WatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A069B61BE37FF9004F0999 /* Build configuration list for PBXNativeTarget "WatchExtension" */;
+			buildPhases = (
+				BCB960B401DD4A2C2C6743B3 /* Check Pods Manifest.lock */,
+				A4A069A11BE37FF7004F0999 /* Sources */,
+				A4A069A21BE37FF7004F0999 /* Frameworks */,
+				A4A069A31BE37FF7004F0999 /* Resources */,
+				B44045B504439B8A4C50A0E8 /* Embed Pods Frameworks */,
+				43A4A37B6A03992CB504848E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchExtension;
+			productName = "Watch Extension";
+			productReference = A4A069A51BE37FF7004F0999 /* WatchExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -458,7 +735,39 @@
 					};
 					21DB300E19DD2289003A418D = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = UTXK29TA3W;
+						DevelopmentTeam = Y49MTY8CU2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A4A0697F1BE37F78004F0999 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = Y49MTY8CU2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A4A069981BE37FF7004F0999 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = Y49MTY8CU2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A4A069A41BE37FF7004F0999 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = Y49MTY8CU2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -478,6 +787,9 @@
 			targets = (
 				21DB300E19DD2289003A418D /* Swift-Base */,
 				212D018A1BB1986B00B34340 /* Swift-BaseTests */,
+				A4A0697F1BE37F78004F0999 /* Widget */,
+				A4A069981BE37FF7004F0999 /* Watch */,
+				A4A069A41BE37FF7004F0999 /* WatchExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -501,6 +813,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4A0697E1BE37F78004F0999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069971BE37FF7004F0999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0699F1BE37FF7004F0999 /* Assets.xcassets in Resources */,
+				A4A0699D1BE37FF7004F0999 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069A31BE37FF7004F0999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A069B11BE37FF8004F0999 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -519,6 +856,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1A3A03BD6B4EB9FEB9301D54 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		21B3D19F19E6E2B700EF0D52 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +883,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Crashlytics.framework/run 6d91dfaf0a36cfbef5733b3c2d89d2fe7f137706 558b2bcf0efee324101f8bf45f64c08b525998f57a01e3e46d584125bda9afa2";
+		};
+		43A4A37B6A03992CB504848E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61F64883EED2FAA2CAA5B03B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Widget/Pods-Widget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		6A1523033878EADC0BA4CEA1 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -545,6 +927,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F9EC63C8176E5B972655C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch/Pods-Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B44045B504439B8A4C50A0E8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatchExtension/Pods-WatchExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7798447AE58B48947EAA0FE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Widget/Pods-Widget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB960B401DD4A2C2C6743B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2579068425AA4350A447B93 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F968CFE5EFDC266BFE5EBE7A /* Check Pods Manifest.lock */ = {
@@ -611,6 +1068,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4A0697C1BE37F78004F0999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A069851BE37F79004F0999 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A069A11BE37FF7004F0999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A069AD1BE37FF8004F0999 /* ExtensionDelegate.swift in Sources */,
+				A4A069AB1BE37FF8004F0999 /* InterfaceController.swift in Sources */,
+				A4A069AF1BE37FF8004F0999 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -618,6 +1093,21 @@
 			isa = PBXTargetDependency;
 			target = 21DB300E19DD2289003A418D /* Swift-Base */;
 			targetProxy = 212D01901BB1986B00B34340 /* PBXContainerItemProxy */;
+		};
+		A4A0698B1BE37F79004F0999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A0697F1BE37F78004F0999 /* Widget */;
+			targetProxy = A4A0698A1BE37F79004F0999 /* PBXContainerItemProxy */;
+		};
+		A4A069A81BE37FF8004F0999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A069A41BE37FF7004F0999 /* WatchExtension */;
+			targetProxy = A4A069A71BE37FF8004F0999 /* PBXContainerItemProxy */;
+		};
+		A4A069B41BE37FF8004F0999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A069981BE37FF7004F0999 /* Watch */;
+			targetProxy = A4A069B31BE37FF8004F0999 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,6 +1119,22 @@
 				218C64C31BA07E4300EEEDF1 /* ru */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A4A069861BE37F79004F0999 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A069871BE37F79004F0999 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		A4A0699B1BE37FF7004F0999 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A0699C1BE37FF7004F0999 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 		E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */ = {
@@ -689,8 +1195,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +1208,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -710,6 +1218,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -767,8 +1276,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -778,7 +1289,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -788,6 +1299,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -848,8 +1360,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -859,7 +1373,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -868,8 +1382,9 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5298a4be-aef1-4002-98ac-89539ebeb6a3";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Base/BridgeHeader.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1115,8 +1630,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1126,7 +1643,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1135,8 +1652,9 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5298a4be-aef1-4002-98ac-89539ebeb6a3";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Base/BridgeHeader.h";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1152,8 +1670,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1161,7 +1681,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1170,6 +1690,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1229,8 +1750,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1240,7 +1763,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1249,6 +1772,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1305,8 +1829,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1314,7 +1840,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1323,6 +1849,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1331,6 +1858,546 @@
 				URL_HOST = "https://apple.com";
 			};
 			name = "Release Staging";
+		};
+		A4A0698E1BE37F79004F0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD196DFC6871E0F3BD371AC /* Pods-Widget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa6d3b6a-29b5-4a05-b386-34305cc1fcd1";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A4A0698F1BE37F79004F0999 /* AppStore Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8875B531505263273ECB3A1 /* Pods-Widget.appstore debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa6d3b6a-29b5-4a05-b386-34305cc1fcd1";
+				SKIP_INSTALL = YES;
+			};
+			name = "AppStore Debug";
+		};
+		A4A069901BE37F79004F0999 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDC8FC5E65A53A5EC35199C /* Pods-Widget.debug staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Debug Staging";
+		};
+		A4A069911BE37F79004F0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4888790F37E7DFBC54F68968 /* Pods-Widget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A4A069921BE37F79004F0999 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3D1386A24F03EFD6364382 /* Pods-Widget.test.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Test;
+		};
+		A4A069931BE37F79004F0999 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C55E9B0167940A700CA15AF /* Pods-Widget.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = AppStore;
+		};
+		A4A069941BE37F79004F0999 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E26B64D9DB8A1A56E66087 /* Pods-Widget.release staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release Staging";
+		};
+		A4A069951BE37F79004F0999 /* Test Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFE5362731ECDFF4794A0C4 /* Pods-Widget.test staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Test Staging";
+		};
+		A4A069B71BE37FF9004F0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A641599EDACF933E11F3F0 /* Pods-WatchExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A4A069B81BE37FF9004F0999 /* AppStore Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E81FF18E25B1309C5670D5E /* Pods-WatchExtension.appstore debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "AppStore Debug";
+		};
+		A4A069B91BE37FF9004F0999 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B4AB98E91FC036401DD5AC /* Pods-WatchExtension.debug staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Debug Staging";
+		};
+		A4A069BA1BE37FF9004F0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE15C3B250FD4B6A2C29DF1 /* Pods-WatchExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A4A069BB1BE37FF9004F0999 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B5901BA1D5FCEE5CBBEE89 /* Pods-WatchExtension.test.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Test;
+		};
+		A4A069BC1BE37FF9004F0999 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909135B6E2EB1D2DF2DE4836 /* Pods-WatchExtension.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = AppStore;
+		};
+		A4A069BD1BE37FF9004F0999 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CE14ACDDF14593FCD934EC /* Pods-WatchExtension.release staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Release Staging";
+		};
+		A4A069BE1BE37FF9004F0999 /* Test Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC017D376A8CA11E1D5DF0A /* Pods-WatchExtension.test staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WatchExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Test Staging";
+		};
+		A4A069C11BE37FF9004F0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235075F758753271AB5C0986 /* Pods-Watch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "be000007-6a57-4537-92b5-b2c5c34ba855";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A4A069C21BE37FF9004F0999 /* AppStore Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82345A19DE34E5AAF1E63AE /* Pods-Watch.appstore debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "be000007-6a57-4537-92b5-b2c5c34ba855";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "AppStore Debug";
+		};
+		A4A069C31BE37FF9004F0999 /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32177BF7A5CDBE0BB697B30B /* Pods-Watch.debug staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Debug Staging";
+		};
+		A4A069C41BE37FF9004F0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C6E9036D80F7C0D295F44D /* Pods-Watch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A4A069C51BE37FF9004F0999 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A711618090005837F16FFA /* Pods-Watch.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Test;
+		};
+		A4A069C61BE37FF9004F0999 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C68C88A8986B893BA11C8B2 /* Pods-Watch.appstore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = AppStore;
+		};
+		A4A069C71BE37FF9004F0999 /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00778AD96982EA8683968AD /* Pods-Watch.release staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Release Staging";
+		};
+		A4A069C81BE37FF9004F0999 /* Test Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEA4944EB3E3020BE5198DB /* Pods-Watch.test staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Watch/Watch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.watch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = "Test Staging";
 		};
 		E736C5DE1A25320400B8986E /* AppStore */ = {
 			isa = XCBuildConfiguration;
@@ -1378,8 +2445,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
+				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1387,7 +2456,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Swift-Base/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1396,6 +2465,7 @@
 					"\"QuartzCore\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = group.flatstack.hackathon.app;
 				PRODUCT_NAME = "Swift-Base";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -1449,6 +2519,51 @@
 				E736C5DF1A25320400B8986E /* AppStore */,
 				21DB305019DD3B48003A418D /* Release Staging */,
 				212D01841BB1978B00B34340 /* Test Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0698D1BE37F79004F0999 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0698E1BE37F79004F0999 /* Debug */,
+				A4A0698F1BE37F79004F0999 /* AppStore Debug */,
+				A4A069901BE37F79004F0999 /* Debug Staging */,
+				A4A069911BE37F79004F0999 /* Release */,
+				A4A069921BE37F79004F0999 /* Test */,
+				A4A069931BE37F79004F0999 /* AppStore */,
+				A4A069941BE37F79004F0999 /* Release Staging */,
+				A4A069951BE37F79004F0999 /* Test Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A069B61BE37FF9004F0999 /* Build configuration list for PBXNativeTarget "WatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A069B71BE37FF9004F0999 /* Debug */,
+				A4A069B81BE37FF9004F0999 /* AppStore Debug */,
+				A4A069B91BE37FF9004F0999 /* Debug Staging */,
+				A4A069BA1BE37FF9004F0999 /* Release */,
+				A4A069BB1BE37FF9004F0999 /* Test */,
+				A4A069BC1BE37FF9004F0999 /* AppStore */,
+				A4A069BD1BE37FF9004F0999 /* Release Staging */,
+				A4A069BE1BE37FF9004F0999 /* Test Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A069C01BE37FF9004F0999 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A069C11BE37FF9004F0999 /* Debug */,
+				A4A069C21BE37FF9004F0999 /* AppStore Debug */,
+				A4A069C31BE37FF9004F0999 /* Debug Staging */,
+				A4A069C41BE37FF9004F0999 /* Release */,
+				A4A069C51BE37FF9004F0999 /* Test */,
+				A4A069C61BE37FF9004F0999 /* AppStore */,
+				A4A069C71BE37FF9004F0999 /* Release Staging */,
+				A4A069C81BE37FF9004F0999 /* Test Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

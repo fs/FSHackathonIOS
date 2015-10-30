@@ -7,3 +7,4 @@
 //
 
 #import <MagicalRecord.h>
+#import <M13Checkbox.h>
