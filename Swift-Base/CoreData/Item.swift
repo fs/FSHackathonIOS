@@ -7,5 +7,8 @@ class Item: _Item {
         let maxIndex = itemWithMaxOrder.order?.intValue
         self.order = NSNumber(int: maxIndex! + 1)
     }
-
+    
+    var color: UIColor {
+        return UIColor(hexString: self.categoryColor!)!
+    }
 }

@@ -5,6 +5,7 @@ import CoreData
 
 enum ItemAttributes: String {
     case category = "category"
+    case categoryColor = "categoryColor"
     case image = "image"
     case maxPrice = "maxPrice"
     case minPrice = "minPrice"
@@ -46,6 +47,11 @@ class _Item: NSManagedObject {
     var category: String?
 
     // func validateCategory(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged
+    var categoryColor: String?
+
+    // func validateCategoryColor(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged
     var image: String?

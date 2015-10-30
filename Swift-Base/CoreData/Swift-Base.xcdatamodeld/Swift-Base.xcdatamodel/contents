@@ -2,6 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryColor" optional="YES" attributeType="String" defaultValueString="000000" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maxPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -29,7 +30,7 @@
         <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="listedItems" inverseEntity="List" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-126" positionY="-36" width="128" height="148"/>
+        <element name="Item" positionX="-126" positionY="-36" width="128" height="163"/>
         <element name="List" positionX="-596" positionY="-279" width="128" height="90"/>
         <element name="ListedItem" positionX="-344" positionY="-150" width="128" height="120"/>
     </elements>

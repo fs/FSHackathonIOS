@@ -118,6 +118,7 @@
 		21BA3B7E1BE4214900D6FE1F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A069711BE37B31004F0999 /* List.swift */; };
 		21BA3B7F1BE4214900D6FE1F /* ListedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B851B1BE3A02000BCFA20 /* ListedItem.swift */; };
 		21BA3B801BE424C700D6FE1F /* Swift-Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 218C64B61BA078BA00EEEDF1 /* Swift-Base.xcdatamodeld */; };
+		21BA3B811BE4319100D6FE1F /* FSE+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A143291B99A479004116B8 /* FSE+UIColor.swift */; };
 		21D1E1CD1BE3A0FD009378E3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CB1BE3A0FD009378E3 /* Interface.storyboard */; };
 		21D1E1CF1BE3A0FD009378E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D1E1CE1BE3A0FD009378E3 /* Assets.xcassets */; };
 		21D1E1D61BE3A0FD009378E3 /* watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21D1E1D51BE3A0FD009378E3 /* watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -1248,6 +1249,7 @@
 				21BA3B741BE4212900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				21BA3B801BE424C700D6FE1F /* Swift-Base.xcdatamodeld in Sources */,
 				21BA3B6A1BE4211800D6FE1F /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				21BA3B811BE4319100D6FE1F /* FSE+UIColor.swift in Sources */,
 				21BA3B5D1BE40C8700D6FE1F /* TodayCell.swift in Sources */,
 				21BA3B6E1BE4211F00D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */,
 				21BA3B721BE4211F00D6FE1F /* NSManagedObject+MagicalRequests.m in Sources */,

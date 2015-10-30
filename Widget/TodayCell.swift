@@ -49,8 +49,8 @@ class TodayCell: UITableViewCell {
         self.titleLabel.text = element.item!.title
         self.checkbox.checkState = element.selected!.boolValue ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
         
-//        self.checkbox.strokeColor = element.categoryColor
-//        self.checkbox.checkColor = element.categoryColor
+        self.checkbox.strokeColor = element.item!.color
+        self.checkbox.checkColor = element.item!.color
     }
     
     @IBAction func checkboxTapped (sender: AnyObject?) {
