@@ -29,7 +29,7 @@ class ElementCell: NSObject {
         self.countLabel.setTextColor(color)
         self.priceLabel.setTextColor(color)
         
-//        self.tagGroup.setBackgroundColor(UIColor.blueColor())
+        self.tagGroup.setBackgroundColor(element.categoryColor)
     }
 }
 
@@ -37,6 +37,8 @@ class ListController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
     var list: List!
+    
+    var showChecked = false
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -60,16 +62,29 @@ class ListController: WKInterfaceController {
     }
     
     func prepareCells () {
-        self.table.setNumberOfRows(self.list.elements.count, withRowType: "ElementCell")
         
-        for i in 0 ..< self.list.elements.count {
+        let objects = self.showChecked ? self.list.elements : self.list.uncheckedElements
+        
+        self.table.setNumberOfRows(objects.count, withRowType: "ElementCell")
+        
+        for i in 0 ..< objects.count {
             let cell = self.table.rowControllerAtIndex(i) as! ElementCell
-            cell.prepareCell(self.list.elements[i])
+            cell.prepareCell(objects[i])
         }
     }
     
     override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
         return self.list.elements[rowIndex]
+    }
+    
+    @IBAction func unhideCompleted() {
+        self.showChecked = true
+        self.prepareCells()
+    }
+    
+    @IBAction func hideCompleted() {
+        self.showChecked = false
+        self.prepareCells()
     }
     
 }

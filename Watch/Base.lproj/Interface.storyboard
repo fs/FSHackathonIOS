@@ -76,7 +76,16 @@
                         <items>
                             <menuItem title="Done" icon="accept" id="7ma-ka-iJ6"/>
                             <menuItem title="Restore all" icon="repeat" id="x4T-LI-pij" userLabel="Restore All"/>
-                            <menuItem title="Unhide" icon="block" id="vJJ-18-Rnn" userLabel="Unhide completed"/>
+                            <menuItem title="Unhide completed" icon="resume" id="vJJ-18-Rnn" userLabel="Unhide completed">
+                                <connections>
+                                    <action selector="unhideCompleted" destination="HU8-rw-gFP" id="v88-B7-wF4"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide completed" icon="block" id="iWQ-gg-dr0" userLabel="Hide completed">
+                                <connections>
+                                    <action selector="hideCompleted" destination="HU8-rw-gFP" id="bF7-Gy-SJp"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>

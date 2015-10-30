@@ -20,6 +20,8 @@ class Element {
     
     var checked: Bool = false
     
+    var categoryColor = RandomColor()
+    
     init (title: String, count: Int, unit: String, minPrice: Double, maxPrice: Double) {
         self.title = title
         self.count = count
@@ -36,6 +38,20 @@ class List {
     init (title: String, elements: [Element]) {
         self.title = title
         self.elements = elements
+    }
+    
+    var uncheckedElements: [Element] {
+        let values = self.elements.filter { (value: Element) -> Bool in
+            return !value.checked
+        }
+        return values
+    }
+    
+    var checkedElements: [Element] {
+        let values = self.elements.filter { (value: Element) -> Bool in
+            return value.checked
+        }
+        return values
     }
 }
 
@@ -92,4 +108,12 @@ class ListsController: WKInterfaceController {
         let list = self.lists[rowIndex]
         return list
     }
+}
+
+func RandomColor () -> UIColor {
+    let red     = CGFloat(arc4random_uniform(255))/255.0
+    let green   = CGFloat(arc4random_uniform(255))/255.0
+    let blue    = CGFloat(arc4random_uniform(255))/255.0
+    
+    return UIColor(red: red, green: green, blue: blue, alpha: 1)
 }
