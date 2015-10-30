@@ -77,6 +77,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var listTitleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
     var lists: [List] = []
     
     private var _currentIndex: Int = 0
@@ -86,7 +89,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             if value >= self.lists.count {
                 self._currentIndex = 0
             } else {
-                self.currentIndex = value
+                self._currentIndex = value
             }
             self.reloadData()
         }
@@ -131,6 +134,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func reloadData () {
+        if let list = self.currentList {
+            self.listTitleLabel.text = list.title
+            self.priceLabel.text = "От \(Int(list.minPrice)) до \(Int(list.maxPrice)) рублей"
+        }
+        
         self.tableView.reloadData()
     }
     
@@ -146,6 +154,30 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         self.currentIndex = 0
     }
     
+    @IBAction func tappedInView(sender: AnyObject) {
+        self.currentIndex++
+    }
+    
+    @IBAction func upButtonTapped(sender: AnyObject) {
+        let cells = self.tableView.visibleCells
+        guard let first = cells.first else {return}
+        
+        var toIndex = first.tag - 3
+        toIndex = toIndex >= 0 ? toIndex : 0
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: toIndex, inSection: 0), atScrollPosition: .Top, animated: true)
+    }
+    
+    @IBAction func downButtonTapped(sender: AnyObject) {
+        let cells = self.tableView.visibleCells
+        guard let last = cells.last else {return}
+        guard let list = self.currentList else {return}
+        
+        var toIndex = last.tag + 3
+        toIndex = toIndex < list.elements.count ? toIndex : list.elements.count - 1
+        
+        self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: toIndex, inSection: 0), atScrollPosition: .Top, animated: true)
+    }
 }
 
 extension TodayViewController: UITableViewDataSource {
@@ -158,6 +190,7 @@ extension TodayViewController: UITableViewDataSource {
         let list = self.currentList!
         let cell = tableView.dequeueReusableCellWithIdentifier("TodayCell") as! TodayCell
         cell.prepareCell(list.elements[indexPath.row])
+        cell.tag = indexPath.row
         return cell
     }
 }
