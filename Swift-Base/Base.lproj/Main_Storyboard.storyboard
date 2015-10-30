@@ -37,7 +37,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uc5-hD-mjb">
-                                            <rect key="frame" x="0.0" y="50" width="320" height="202"/>
+                                            <rect key="frame" x="0.0" y="50" width="320" height="201"/>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <prototypes>
@@ -64,7 +64,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-Qf-9Jk">
-                                                                <rect key="frame" x="68" y="10" width="198" height="22"/>
+                                                                <rect key="frame" x="68" y="10" width="198" height="21"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,6 +111,7 @@
                                         </tableView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxj-yc-1eo">
                                             <rect key="frame" x="276" y="7" width="36" height="36"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="PuB-hf-2F9"/>
                                                 <constraint firstAttribute="width" constant="36" id="YW4-QL-Njf"/>
@@ -406,4 +407,7 @@
             <point key="canvasLocation" x="435" y="535"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dma-rW-Y9X"/>
+    </inferredMetricsTieBreakers>
 </document>
