@@ -13,6 +13,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     //MARK: - UI
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addItemButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

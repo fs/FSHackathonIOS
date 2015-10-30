@@ -137,6 +137,7 @@
                                     <constraint firstItem="tdD-u6-Ckl" firstAttribute="leading" secondItem="MuF-yk-JlR" secondAttribute="leading" constant="16" id="hyq-Dq-Tts"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="addItemButton" destination="lxj-yc-1eo" id="k4b-vf-hRp"/>
                                     <outlet property="nameLabel" destination="tdD-u6-Ckl" id="3hp-NL-iQF"/>
                                     <outlet property="tableView" destination="uc5-hD-mjb" id="qHf-6L-WAi"/>
                                 </connections>
