@@ -70,7 +70,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="onb-gT-dXC">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailItemViewCell" rowHeight="70" id="Dgg-eb-Qu7" customClass="DetailItemViewCell" customModule="Swift_Base" customModuleProvider="target">
@@ -116,8 +116,16 @@
                             <constraint firstAttribute="trailing" secondItem="onb-gT-dXC" secondAttribute="trailing" id="2Gd-aG-3M2"/>
                             <constraint firstItem="QQG-pL-sJR" firstAttribute="top" secondItem="onb-gT-dXC" secondAttribute="bottom" id="9fA-td-PUO"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="EL1-kW-uMU"/>
+                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="zqh-AS-b4M" secondAttribute="top" id="Qsj-ux-p21"/>
+                            <constraint firstItem="onb-gT-dXC" firstAttribute="top" secondItem="fJb-52-CKv" secondAttribute="bottom" id="cl1-U1-nWs"/>
                             <constraint firstItem="onb-gT-dXC" firstAttribute="leading" secondItem="zqh-AS-b4M" secondAttribute="leading" id="lQj-DL-DKP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EL1-kW-uMU"/>
+                                <exclude reference="cl1-U1-nWs"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="detail" id="my8-Er-IjX">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="BZb-eM-LxC"/>
