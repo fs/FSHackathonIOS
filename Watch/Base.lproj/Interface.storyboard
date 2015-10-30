@@ -16,11 +16,11 @@
                                     <group key="rootItem" width="1" height="51.5" alignment="left" layout="vertical" id="QHR-i8-1bt">
                                         <items>
                                             <label width="1" alignment="left" verticalAlignment="center" text="List Title" id="zCB-7i-gHo"/>
-                                            <label width="1" alignment="left" verticalAlignment="center" text="Count" id="Zz3-5K-Lee"/>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="Price" id="Zz3-5K-Lee"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="countLabel" destination="Zz3-5K-Lee" id="1wk-Ui-TNz"/>
+                                        <outlet property="priceLabel" destination="Zz3-5K-Lee" id="ivR-Ix-2Nw"/>
                                         <outlet property="titleLabel" destination="zCB-7i-gHo" id="07C-dl-xAC"/>
                                         <segue destination="HU8-rw-gFP" kind="push" id="idD-s3-H2v"/>
                                     </connections>
@@ -57,26 +57,20 @@
                         <table alignment="left" id="5eV-KJ-KVB">
                             <items>
                                 <tableRow identifier="ElementCell" id="fSU-Uf-e96" customClass="ElementCell" customModule="watch_Extension">
-                                    <group key="rootItem" width="1" height="75" alignment="left" id="KDW-yP-o4k">
+                                    <group key="rootItem" width="1" height="50" alignment="left" id="KDW-yP-o4k">
                                         <items>
-                                            <group width="4" height="60" alignment="left" verticalAlignment="center" radius="3" id="Lev-TN-vx8">
+                                            <group width="4" height="40" alignment="left" verticalAlignment="center" radius="3" id="Lev-TN-vx8">
                                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </group>
                                             <group width="1" alignment="left" layout="vertical" id="xbY-T4-QLV">
                                                 <items>
                                                     <label width="1" alignment="left" text="Product Title" id="8T5-jM-DfJ"/>
-                                                    <group width="1" alignment="left" id="k52-eD-ffs">
-                                                        <items>
-                                                            <label alignment="left" text="Count" id="S7t-rH-E6l"/>
-                                                        </items>
-                                                    </group>
                                                     <label width="1" alignment="left" text="Price" id="Nfe-1R-kW7"/>
                                                 </items>
                                             </group>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="countLabel" destination="S7t-rH-E6l" id="RzG-XR-knC"/>
                                         <outlet property="priceLabel" destination="Nfe-1R-kW7" id="Btb-f8-IMW"/>
                                         <outlet property="tagGroup" destination="Lev-TN-vx8" id="xkR-7l-KLh"/>
                                         <outlet property="titleLabel" destination="8T5-jM-DfJ" id="8q2-lA-6TL"/>
