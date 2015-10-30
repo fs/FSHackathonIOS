@@ -19,6 +19,7 @@ class TodayCell: UITableViewCell {
             self.checkboxContainer.addConstraints(FSCenterConstraints(checkbox))
             
             checkbox.radius = checkbox.frame.width/2
+            checkbox.tintColor = UIColor.clearColor()
             
             self.checkbox = checkbox
         }
@@ -38,9 +39,35 @@ class TodayCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    weak var element: Element?
+    
     func prepareCell (element: Element) {
+        self.element = element
+        
         self.titleLabel.text = element.title
-        self.checkbox.checkState = M13CheckboxStateUnchecked
+        self.checkbox.checkState = element.checked ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
+        
+        self.checkbox.strokeColor = element.categoryColor
+        self.checkbox.checkColor = element.categoryColor
     }
-
+    
+    @IBAction func checkboxTapped (sender: AnyObject?) {
+        guard let checkbox = sender as? M13Checkbox else {return}
+        
+        switch checkbox.checkState {
+        case M13CheckboxStateUnchecked:
+            checkbox.checkState = M13CheckboxStateChecked
+            self.element?.checked = true
+            
+        case M13CheckboxStateChecked:
+            checkbox.checkState = M13CheckboxStateUnchecked
+            self.element?.checked = false
+            
+        case M13CheckboxStateMixed:
+            checkbox.checkState = M13CheckboxStateChecked
+            self.element?.checked = true
+            
+        default: break
+        }
+    }
 }
