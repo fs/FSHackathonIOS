@@ -118,11 +118,24 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vP1-Gg-T90">
                                                     <rect key="frame" x="8" y="7" width="30" height="30"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-xo-Ztk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                            <animations/>
+                                                            <connections>
+                                                                <action selector="checkboxTapped:" destination="dZN-BI-9tJ" eventType="touchUpInside" id="DIC-3q-EeN"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
+                                                        <constraint firstItem="wHH-xo-Ztk" firstAttribute="top" secondItem="vP1-Gg-T90" secondAttribute="top" id="2VJ-P1-QjD"/>
                                                         <constraint firstAttribute="width" constant="30" id="Smv-4s-LQy"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wHH-xo-Ztk" secondAttribute="trailing" id="aqO-gX-0Im"/>
+                                                        <constraint firstItem="wHH-xo-Ztk" firstAttribute="leading" secondItem="vP1-Gg-T90" secondAttribute="leading" id="huZ-mG-Lvp"/>
                                                         <constraint firstAttribute="height" constant="30" id="wvd-Hh-RG3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wHH-xo-Ztk" secondAttribute="bottom" id="yOg-sB-gDe"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaU-Pi-R7X">

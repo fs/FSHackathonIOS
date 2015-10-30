@@ -33,7 +33,7 @@ class Element {
 
 class List {
     let title: String
-    let elements: [Element]
+    var elements: [Element]
     
     var completed = false
     
@@ -187,9 +187,8 @@ extension TodayViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let list = self.currentList!
         let cell = tableView.dequeueReusableCellWithIdentifier("TodayCell") as! TodayCell
-        cell.prepareCell(list.elements[indexPath.row])
+        cell.prepareCell(self.currentList!.elements[indexPath.row])
         cell.tag = indexPath.row
         return cell
     }
