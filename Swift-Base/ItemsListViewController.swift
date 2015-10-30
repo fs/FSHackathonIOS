@@ -13,10 +13,11 @@ class ItemsListViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var list: List!
+    var listIndex: Int!
+    var listViewController: ListViewController!
     
     lazy var items = {
-        return Item.MR_findAll() as! [Item]
+        return Item.MR_findAllSortedBy(ItemAttributes.order.rawValue, ascending: true)  as! [Item]
     }()
     
     override func viewDidLoad() {
@@ -51,6 +52,17 @@ extension ItemsListViewController: UICollectionViewDelegate
     //MARK: Cells
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // create new listedItem
+        
+        let listedItem = ListedItem.MR_createEntity()
+        listedItem.item = self.items[indexPath.row]
+        listedItem.count = 12
+        listedItem.unit = Unit.Kilogramm.numberValue
+        
+        self.listViewController.listOfLists[self.listIndex].addListedItemsObject(listedItem)
+        self.listViewController.collectionView?.reloadData()
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        
         self.navigationController?.popViewControllerAnimated(true)
     }
 }
@@ -59,7 +71,7 @@ extension ItemsListViewController: UICollectionViewDelegate
 extension ItemsListViewController: UICollectionViewDataSource {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return items.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

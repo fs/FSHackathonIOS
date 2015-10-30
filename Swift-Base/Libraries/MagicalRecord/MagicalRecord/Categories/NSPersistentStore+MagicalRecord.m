@@ -42,8 +42,12 @@ static NSPersistentStore *defaultPersistentStore_ = nil;
 
 + (NSURL *) MR_urlForStoreName:(NSString *)storeFileName
 {
-    NSString *pathForStoreName = [[self MR_applicationStorageDirectory] stringByAppendingPathComponent:storeFileName];
-    return [NSURL fileURLWithPath:pathForStoreName];
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    
+    NSURL *directory = [fileManager containerURLForSecurityApplicationGroupIdentifier:@"group.flatstack"];
+    NSURL *pathToStore = [directory URLByAppendingPathComponent:storeFileName];
+    
+    return pathToStore;
 }
 
 + (NSURL *) MR_cloudURLForUbiqutiousContainer:(NSString *)bucketName;

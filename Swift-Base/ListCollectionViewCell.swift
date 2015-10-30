@@ -13,6 +13,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     //MARK: - UI
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addItemButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +29,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     }
     
     //MARK: - params
-    private(set) var list: List! = nil {
+    private(set) var listedItems: [ListedItem]! = nil {
         didSet {
             self.tableView?.reloadData()
         }
@@ -37,12 +38,12 @@ class ListCollectionViewCell: UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         self.nameLabel.text = nil
-        self.list = nil
+        self.listedItems = nil
     }
     
     func prepareCell(list: List) {
         self.nameLabel.text = list.title
-        self.list = list
+        self.listedItems = ListedItem.MR_findByAttribute(ListedItemRelationships.list.rawValue, withValue: list, andOrderBy: ListedItemAttributes.date.rawValue, ascending: false) as! [ListedItem]
     }
 }
 
@@ -63,12 +64,12 @@ extension ListCollectionViewCell: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.list?.listedItem.count ?? 0
+        return self.listedItems?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("DetailItemViewCell") as! DetailItemViewCell
-        let item = self.list.listedItem.allObjects[indexPath.row] as! ListedItem
+        let item = self.listedItems[indexPath.row]
         cell.prepareCell(item)
         return cell
     }

@@ -55,9 +55,18 @@ class ListViewController: TGLStackedViewController {
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
     }
     
-    //MARK: - actions
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         guard let identifier = segue.identifier else { return }
+        
+        if let lSender = sender as? UIButton {
+            //need change to identifier
+            let itemsList = segue.destinationViewController as! ItemsListViewController
+            itemsList.listIndex = lSender.tag
+            itemsList.listViewController = self
+            
+            return
+        }
+        
         switch identifier {
         case SegueIdentifier.NewList.rawValue:
             let destinationViewController = segue.destinationViewController as! NewListViewController
@@ -86,6 +95,7 @@ extension ListViewController {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier.List.rawValue, forIndexPath: indexPath) as! ListCollectionViewCell
         cell.prepareCell(list)
+        cell.addItemButton.tag = indexPath.row
         return cell
     }
 }
