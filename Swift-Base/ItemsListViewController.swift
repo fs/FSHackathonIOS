@@ -16,48 +16,16 @@ class ItemsListViewController: UIViewController {
     var listCollectionViewCell: ListCollectionViewCell!
     
     lazy var items = {
-        return Item.MR_findAll() as! [Item]
+        return Item.MR_findAllSortedBy(ItemAttributes.order.rawValue, ascending: true) as! [Item]
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-//MARK: - UICollectionView -
-
-//MARK: - UICollectionViewDelegate
-extension ItemsListViewController: UICollectionViewDelegate
-{
-    //MARK: Cells
-    
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-        self.navigationController?.popViewControllerAnimated(true)
-    }
 }
 
 //MARK: - UICollectionViewDataSource
 extension ItemsListViewController: UICollectionViewDataSource {
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -67,5 +35,66 @@ extension ItemsListViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemListCollectionViewCell", forIndexPath: indexPath) as! ItemListCollectionViewCell
         cell.prepareCell(self.items[indexPath.row])
         return cell
+    }
+}
+
+extension ItemsListViewController: RACollectionViewDelegateTripletLayout {
+    
+    func sectionSpacingForCollectionView(collectionView: UICollectionView) -> CGFloat {
+        return 8.0
+    }
+    
+    func minimumInteritemSpacingForCollectionView(collectionView: UICollectionView) -> CGFloat {
+        return 8.0
+    }
+    
+    func minimumLineSpacingForCollectionView(collectionView: UICollectionView) -> CGFloat {
+        return 8.0
+    }
+    
+    func insetsForCollectionView(collectionView: UICollectionView) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(8, 8, 8, 8)
+    }
+    
+    func collectionView(collectionView: UICollectionView, sizeForLargeItemsInSection section: Int) -> CGSize {
+        return CGSizeZero
+    }
+    
+    func autoScrollTrigerEdgeInsets(collectionView: UICollectionView) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(50, 0, 50, 0)
+    }
+    
+    func autoScrollTrigerPadding(collectionView: UICollectionView) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(64, 0, 0, 0)
+    }
+    
+    func reorderingItemAlpha(collectionView: UICollectionView) -> CGFloat {
+        return 0.3
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,  didEndDraggingItemAtIndexPath indexPath: NSIndexPath) {
+        self.collectionView.reloadData()
+    }
+}
+
+extension ItemsListViewController: RACollectionViewReorderableTripletLayoutDataSource {
+    
+    func collectionView(collectionView: UICollectionView, itemAtIndexPath fromIndexPath: NSIndexPath, didMoveToIndexPath toIndexPath: NSIndexPath) {
+        
+        let item = self.items[fromIndexPath.item]
+        self.items.removeAtIndex(fromIndexPath.item)
+        self.items.insert(item, atIndex: toIndexPath.item)
+        for i in 0...self.items.count-1 {
+            self.items[i].order = i
+        }
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreWithCompletion(nil)
+    }
+
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, canMoveToIndexPath toIndexPath: NSIndexPath!) -> Bool {
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView, canMoveItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
     }
 }

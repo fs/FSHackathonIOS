@@ -5,6 +5,7 @@
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maxPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="minPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="listedItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ListedItem" inverseName="item" inverseEntity="ListedItem" syncable="YES"/>
         <userInfo>
@@ -27,7 +28,7 @@
         <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="listedItem" inverseEntity="List" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-126" positionY="-36" width="128" height="133"/>
+        <element name="Item" positionX="-126" positionY="-36" width="128" height="148"/>
         <element name="List" positionX="-596" positionY="-279" width="128" height="90"/>
         <element name="ListedItem" positionX="-344" positionY="-150" width="128" height="120"/>
     </elements>

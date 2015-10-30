@@ -8,6 +8,7 @@ enum ItemAttributes: String {
     case image = "image"
     case maxPrice = "maxPrice"
     case minPrice = "minPrice"
+    case order = "order"
     case title = "title"
 }
 
@@ -60,6 +61,11 @@ class _Item: NSManagedObject {
     var minPrice: NSNumber?
 
     // func validateMinPrice(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged
+    var order: NSNumber?
+
+    // func validateOrder(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged
     var title: String?
