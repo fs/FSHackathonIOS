@@ -64,6 +64,7 @@
 		21DB301F19DD2289003A418D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DB301E19DD2289003A418D /* Images.xcassets */; };
 		21DB304919DD2D6D003A418D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DB304819DD2D6D003A418D /* Constants.swift */; };
 		21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E157E11BB3EDF40041FCE4 /* FSTestHelpers.swift */; };
+		21E7AEA81BE3E25B00264DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E7AEA71BE3E25B00264DC9 /* Images.xcassets */; };
 		A432CF001BE3907200B03AE4 /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CEE41BE3906D00B03AE4 /* MagicalRecord.h */; };
 		A432CF121BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A432CECC1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.h */; };
 		A432CF131BE3907F00B03AE4 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CECD1BE3906D00B03AE4 /* NSManagedObjectModel+MagicalRecord.m */; };
@@ -336,6 +337,7 @@
 		21E157F11BB3F2CE0041FCE4 /* FSE+UITextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UITextViewTests.swift"; sourceTree = "<group>"; };
 		21E157F31BB3F2DE0041FCE4 /* FSE+UIViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIViewTests.swift"; sourceTree = "<group>"; };
 		21E157F51BB3F2E80041FCE4 /* FSE+UIImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSE+UIImageTests.swift"; sourceTree = "<group>"; };
+		21E7AEA71BE3E25B00264DC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A432CEA81BE3906D00B03AE4 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		A432CEAA1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -886,6 +888,7 @@
 				A4A069841BE37F79004F0999 /* TodayViewController.swift */,
 				A4A069861BE37F79004F0999 /* MainInterface.storyboard */,
 				A4A069891BE37F79004F0999 /* Info.plist */,
+				21E7AEA71BE3E25B00264DC9 /* Images.xcassets */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -1206,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A069881BE37F79004F0999 /* MainInterface.storyboard in Resources */,
+				21E7AEA81BE3E25B00264DC9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
