@@ -15,8 +15,8 @@
                                 <tableRow identifier="ListCell" id="wbj-GB-TUy" customClass="ListCell" customModule="watch_Extension">
                                     <group key="rootItem" width="1" height="51.5" alignment="left" layout="vertical" id="QHR-i8-1bt">
                                         <items>
-                                            <label width="1" alignment="left" verticalAlignment="center" text="List Title" id="zCB-7i-gHo"/>
-                                            <label width="1" alignment="left" verticalAlignment="center" text="Price" id="Zz3-5K-Lee"/>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="List Title" minimumScaleFactor="0.5" id="zCB-7i-gHo"/>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="Price" minimumScaleFactor="0.5" id="Zz3-5K-Lee"/>
                                         </items>
                                     </group>
                                     <connections>
@@ -64,8 +64,8 @@
                                             </group>
                                             <group width="1" alignment="left" layout="vertical" id="xbY-T4-QLV">
                                                 <items>
-                                                    <label width="1" alignment="left" text="Product Title" id="8T5-jM-DfJ"/>
-                                                    <label width="1" alignment="left" text="Price" id="Nfe-1R-kW7"/>
+                                                    <label width="1" alignment="left" text="Product Title" minimumScaleFactor="0.5" id="8T5-jM-DfJ"/>
+                                                    <label width="1" alignment="left" text="Price" minimumScaleFactor="0.5" id="Nfe-1R-kW7"/>
                                                 </items>
                                             </group>
                                         </items>
@@ -116,16 +116,16 @@
             <objects>
                 <controller id="ulD-3c-trZ" customClass="DetailController" customModule="watch_Extension">
                     <items>
-                        <label alignment="left" text="Product title" id="ou1-z7-ehl"/>
-                        <label alignment="left" text="Category" id="wQf-Vq-dJ8"/>
+                        <label alignment="left" text="Product title" minimumScaleFactor="0.5" id="ou1-z7-ehl"/>
+                        <label alignment="left" text="Category" minimumScaleFactor="0.5" id="wQf-Vq-dJ8"/>
                         <group width="1" alignment="left" id="u7I-Q6-FH0">
                             <items>
-                                <label alignment="left" text="Count" id="5KP-F4-kAl"/>
+                                <label alignment="left" text="Count" minimumScaleFactor="0.5" id="5KP-F4-kAl"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="ERs-Li-f97">
                             <items>
-                                <label alignment="left" text="Price" id="S7a-uv-B55"/>
+                                <label alignment="left" text="Price" minimumScaleFactor="0.5" id="S7a-uv-B55"/>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Done" id="JHz-pA-mas">

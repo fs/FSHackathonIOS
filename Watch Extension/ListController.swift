@@ -21,7 +21,7 @@ class ElementCell: NSObject {
     func prepareCell (element: Element) {
         self.titleLabel.setText(element.title)
         let middle = (element.maxPrice + element.minPrice)/2
-        self.priceLabel.setText("\(element.count) x \(middle)")
+        self.priceLabel.setText("\(element.count) x \(Int(middle))")
         
         let color = element.checked ? UIColor.lightGrayColor() : UIColor.whiteColor()
         self.titleLabel.setTextColor(color)
@@ -36,7 +36,7 @@ class ListController: WKInterfaceController {
     @IBOutlet var table: WKInterfaceTable!
     var list: List!
     
-    var showChecked = false
+    var showChecked = true
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

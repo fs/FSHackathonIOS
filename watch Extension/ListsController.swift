@@ -11,6 +11,7 @@ import Foundation
 
 class Element {
     let title: String
+    let category: String
     
     let count: Int
     let unit: String
@@ -20,10 +21,12 @@ class Element {
     
     var checked: Bool = false
     
-    var categoryColor = RandomColor()
+    let categoryColor: UIColor
     
-    init (title: String, count: Int, unit: String, minPrice: Double, maxPrice: Double) {
+    init (title: String, category: (name: String, color: UIColor), count: Int, unit: String, minPrice: Double, maxPrice: Double) {
         self.title = title
+        self.category = category.name
+        self.categoryColor = category.color
         self.count = count
         self.unit = unit
         self.minPrice = minPrice
@@ -79,7 +82,7 @@ class ListCell: NSObject {
     
     func prepareCell (list: List) {
         self.titleLabel.setText(list.title)
-        self.priceLabel.setText("\(list.minPrice) - \(list.maxPrice)")
+        self.priceLabel.setText("\(Int(list.minPrice)) - \(Int(list.maxPrice)) рублей")
         
         let color = list.completed ? UIColor.lightGrayColor() : UIColor.whiteColor()
         
@@ -93,19 +96,12 @@ class ListsController: WKInterfaceController {
     @IBOutlet var table: WKInterfaceTable!
     var lists: [List] = []
 
-    var showCompleted = false
+    var showCompleted = true
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        for i in 0 ..< 5 {
-            var arr: [Element] = []
-            for j in 0 ..< 10 {
-                let value = Element(title: "Title \(i):\(j)", count: 5, unit: "гр.", minPrice: 5, maxPrice: 10)
-                arr.append(value)
-            }
-            self.lists.append(List(title: "List \(i)", elements: arr))
-        }
+        self.lists = self.createLists()
         
         self.prepareCells()
     }
@@ -148,6 +144,37 @@ class ListsController: WKInterfaceController {
     @IBAction func hideCompleted() {
         self.showCompleted = false
         self.prepareCells()
+    }
+    
+    func createLists () -> [List] {
+        
+        var categories: [(name: String, color: UIColor)] = []
+        
+        categories.append((name: "Молочные продукты", color: UIColor.blueColor()))
+        categories.append((name: "Мясо", color: UIColor.redColor()))
+        categories.append((name: "Фрукты", color: UIColor.yellowColor()))
+        categories.append((name: "Кондитерские изделия", color: UIColor.purpleColor()))
+        
+        var items: [Element] = []
+        
+        items.append(Element(title: "Молоко", category: categories[0], count: 2, unit: "л", minPrice: 30, maxPrice: 60))
+        items.append(Element(title: "Кефир", category: categories[0], count: 2, unit: "л", minPrice: 30, maxPrice: 50))
+        
+        items.append(Element(title: "Колбаса", category: categories[1], count: 1, unit: "кг", minPrice: 200, maxPrice: 300))
+        items.append(Element(title: "Котлеты", category: categories[1], count: 2, unit: "кг", minPrice: 200, maxPrice: 250))
+        
+        items.append(Element(title: "Яблоки", category: categories[2], count: 5, unit: "шт", minPrice: 15, maxPrice: 20))
+        items.append(Element(title: "Апельсины", category: categories[2], count: 3, unit: "шт", minPrice: 20, maxPrice: 25))
+        
+        items.append(Element(title: "Конфеты", category: categories[3], count: 1, unit: "кг", minPrice: 200, maxPrice: 300))
+        items.append(Element(title: "Мороженое", category: categories[3], count: 2, unit: "шт", minPrice: 50, maxPrice: 70))
+        
+        var lists: [List] = []
+        for _ in 0 ..< 5 {
+            lists.append(List(title: "Покупки", elements: items))
+        }
+        
+        return lists
     }
 }
 
