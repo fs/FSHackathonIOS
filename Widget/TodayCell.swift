@@ -21,6 +21,8 @@ class TodayCell: UITableViewCell {
             checkbox.radius = checkbox.frame.width/2
             checkbox.tintColor = UIColor.clearColor()
             
+            checkbox.userInteractionEnabled = false
+            
             self.checkbox = checkbox
         }
     }
@@ -39,35 +41,45 @@ class TodayCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    weak var element: Element?
+    weak var element: ListedItem?
     
-    func prepareCell (element: Element) {
+    func prepareCell (element: ListedItem) {
         self.element = element
         
-        self.titleLabel.text = element.title
-        self.checkbox.checkState = element.checked ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
+        self.titleLabel.text = element.item!.title
+        self.checkbox.checkState = element.selected!.boolValue ? M13CheckboxStateChecked : M13CheckboxStateUnchecked
         
-        self.checkbox.strokeColor = element.categoryColor
-        self.checkbox.checkColor = element.categoryColor
+        self.checkbox.strokeColor = element.item!.color
+        self.checkbox.checkColor = element.item!.color
     }
     
     @IBAction func checkboxTapped (sender: AnyObject?) {
-        guard let checkbox = sender as? M13Checkbox else {return}
+        guard let checkbox = self.checkbox else {return}
+        
+        var value = false
         
         switch checkbox.checkState {
         case M13CheckboxStateUnchecked:
             checkbox.checkState = M13CheckboxStateChecked
-            self.element?.checked = true
+            value = true
             
         case M13CheckboxStateChecked:
             checkbox.checkState = M13CheckboxStateUnchecked
-            self.element?.checked = false
+            value = false
             
         case M13CheckboxStateMixed:
             checkbox.checkState = M13CheckboxStateChecked
-            self.element?.checked = true
+             value = true
             
         default: break
         }
+        
+        MagicalRecord.saveWithBlockAndWait {[weak self] (context: NSManagedObjectContext!) -> Void in
+            guard let sself = self else {return}
+            guard let contextElement = sself.element?.MR_inContext(context) else {return}
+            contextElement.selected = NSNumber(bool: value)
+        }
+        
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
     }
 }
