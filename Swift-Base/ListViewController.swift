@@ -55,7 +55,7 @@ class ListViewController: TGLStackedViewController {
         self.exposedTopOverlap = 30.0
         self.exposedBottomOverlap = 50.0
         self.exposedLayoutMargin = UIEdgeInsetsMake(50.0, 0.0, 0.0, 0.0)
-        self.stackedLayout.topReveal = 60
+        self.stackedLayout.topReveal = 50
     }
     
     override func viewWillAppear(animated: Bool) {
