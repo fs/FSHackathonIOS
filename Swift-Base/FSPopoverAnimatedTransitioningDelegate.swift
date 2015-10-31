@@ -83,8 +83,6 @@ extension BFPopoverAnimatedTransitioning : UIViewControllerAnimatedTransitioning
         if let lPresentedViewController = presentedViewController as? UINavigationController {
             presentedViewController = lPresentedViewController.topViewController
         }
-        print(presentingViewController)
-        print(presentedViewController)
         
         let presentingView  = presentingViewController.view
         
