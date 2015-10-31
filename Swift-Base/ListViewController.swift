@@ -26,6 +26,10 @@ class ListViewController: TGLStackedViewController {
         case NewList = "NewList"
     }
     
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     //MARK: - params
     var listOfLists: [List] = [] {
         didSet {
@@ -56,10 +60,16 @@ class ListViewController: TGLStackedViewController {
         self.exposedBottomOverlap = 50.0
         self.exposedLayoutMargin = UIEdgeInsetsMake(50.0, 0.0, 0.0, 0.0)
         self.stackedLayout.topReveal = 50
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadData:", name: "ReactivateApp", object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.reloadData()
+    }
+    
+    func reloadData (sender: AnyObject? = nil) {
         self.listOfLists = List.MR_findAllSortedBy(ListAttributes.date.rawValue, ascending: false, inContext: NSManagedObjectContext.MR_defaultContext()) as! [List]
     }
     
