@@ -30,17 +30,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snU-bV-xlr">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-u6-Ckl">
-                                                    <rect key="frame" x="10" y="8" width="256" height="33.5"/>
+                                                    <rect key="frame" x="10" y="2" width="256" height="33.5"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxj-yc-1eo">
-                                                    <rect key="frame" x="274" y="7" width="36" height="36"/>
+                                                    <rect key="frame" x="274" y="1" width="36" height="36"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="PuB-hf-2F9"/>
@@ -50,20 +50,30 @@
                                                         <segue destination="Nr3-Se-VDD" kind="show" identifier="chooseItem" id="Dma-rW-Y9X"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="От 1000 до 1200 рублей" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JwE-Aw-zC4">
+                                                    <rect key="frame" x="10" y="41.5" width="300" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="JwE-Aw-zC4" secondAttribute="trailing" constant="10" id="Bje-yj-soR"/>
                                                 <constraint firstItem="lxj-yc-1eo" firstAttribute="leading" secondItem="tdD-u6-Ckl" secondAttribute="trailing" constant="8" id="FEx-dt-fiJ"/>
-                                                <constraint firstItem="lxj-yc-1eo" firstAttribute="centerY" secondItem="snU-bV-xlr" secondAttribute="centerY" constant="4" id="I0G-Ll-oTM"/>
-                                                <constraint firstItem="tdD-u6-Ckl" firstAttribute="centerY" secondItem="snU-bV-xlr" secondAttribute="centerY" constant="4" id="Mwf-up-dsE"/>
+                                                <constraint firstItem="lxj-yc-1eo" firstAttribute="centerY" secondItem="tdD-u6-Ckl" secondAttribute="centerY" id="FiH-Ju-6rJ"/>
+                                                <constraint firstItem="tdD-u6-Ckl" firstAttribute="top" secondItem="snU-bV-xlr" secondAttribute="top" constant="2" id="Nir-6f-crd"/>
                                                 <constraint firstItem="tdD-u6-Ckl" firstAttribute="leading" secondItem="snU-bV-xlr" secondAttribute="leading" constant="10" id="X05-EO-b44"/>
+                                                <constraint firstAttribute="bottom" secondItem="JwE-Aw-zC4" secondAttribute="bottom" constant="8" id="e0Q-im-WZf"/>
                                                 <constraint firstAttribute="trailing" secondItem="lxj-yc-1eo" secondAttribute="trailing" constant="10" id="gfJ-Wy-cfK"/>
-                                                <constraint firstAttribute="height" constant="42" id="n0h-fF-oBm"/>
+                                                <constraint firstItem="JwE-Aw-zC4" firstAttribute="leading" secondItem="snU-bV-xlr" secondAttribute="leading" constant="10" id="guN-Xm-Et7"/>
+                                                <constraint firstAttribute="height" constant="70" id="n0h-fF-oBm"/>
                                             </constraints>
                                         </view>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uc5-hD-mjb">
-                                            <rect key="frame" x="0.0" y="50" width="320" height="201"/>
+                                            <rect key="frame" x="0.0" y="78" width="320" height="173"/>
                                             <animations/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <prototypes>
@@ -152,6 +162,7 @@
                                 <connections>
                                     <outlet property="addItemButton" destination="lxj-yc-1eo" id="k4b-vf-hRp"/>
                                     <outlet property="nameLabel" destination="tdD-u6-Ckl" id="3hp-NL-iQF"/>
+                                    <outlet property="priceLabel" destination="JwE-Aw-zC4" id="q4C-f7-d7Z"/>
                                     <outlet property="tableView" destination="uc5-hD-mjb" id="qHf-6L-WAi"/>
                                 </connections>
                             </collectionViewCell>

@@ -14,6 +14,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addItemButton: UIButton!
+    @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,6 +44,7 @@ class ListCollectionViewCell: UICollectionViewCell {
     
     func prepareCell(list: List) {
         self.nameLabel.text = list.title
+        self.priceLabel.text = "От \(list.minPrice) до \(list.maxPrice) рублей"
         self.listedItems = ListedItem.MR_findByAttribute(ListedItemRelationships.list.rawValue, withValue: list, andOrderBy: ListedItemAttributes.date.rawValue, ascending: false) as! [ListedItem]
     }
 }
