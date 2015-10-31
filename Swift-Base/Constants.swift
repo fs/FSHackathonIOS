@@ -104,4 +104,9 @@ enum Unit: String {
         case .Undefined   : return NSNumber(float: -1.0)
         }
     }
+    
+    static var all: [Unit] {
+        return [.Kilogramm, .Volume, .Count, .Gramm]
+    }
+    
 }

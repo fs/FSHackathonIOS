@@ -145,6 +145,14 @@
 		A4A0698C1BE37F79004F0999 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4A069801BE37F78004F0999 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E70876711BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */; };
 		E70876731BE409E50083BBFC /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876721BE409E50083BBFC /* NewListViewController.swift */; };
+		E70876751BE4CFEC0083BBFC /* ItemListAddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70876741BE4CFEC0083BBFC /* ItemListAddingViewController.swift */; };
+		E726FCC21BE4D2F300FE13CD /* BaseModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726FCC11BE4D2F300FE13CD /* BaseModalViewController.swift */; };
+		E726FCCB1BE4D4B600FE13CD /* GVModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E726FCC41BE4D4B600FE13CD /* GVModalView.m */; };
+		E726FCCC1BE4D4B600FE13CD /* GVModalDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E726FCC61BE4D4B600FE13CD /* GVModalDatePickerView.m */; };
+		E726FCCD1BE4D4B600FE13CD /* GVModalDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726FCC71BE4D4B600FE13CD /* GVModalDatePickerView.xib */; };
+		E726FCCE1BE4D4B600FE13CD /* GVModalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E726FCC91BE4D4B600FE13CD /* GVModalPickerView.m */; };
+		E726FCCF1BE4D4B600FE13CD /* GVModalPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E726FCCA1BE4D4B600FE13CD /* GVModalPickerView.xib */; };
+		E726FCD21BE4D6DE00FE13CD /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E726FCD11BE4D6DE00FE13CD /* CAAnimation+Blocks.m */; };
 		E73888731BE381D7002FC003 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73888721BE381D7002FC003 /* ListViewController.swift */; };
 		E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */; };
 		E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7566DA11A1F85CB00DE3010 /* Main_Storyboard.storyboard */; };
@@ -427,6 +435,18 @@
 		A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchExtension.entitlements; sourceTree = "<group>"; };
 		E70876701BE3FC5F0083BBFC /* FSPopoverAnimatedTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPopoverAnimatedTransitioningDelegate.swift; sourceTree = "<group>"; };
 		E70876721BE409E50083BBFC /* NewListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
+		E70876741BE4CFEC0083BBFC /* ItemListAddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListAddingViewController.swift; sourceTree = "<group>"; };
+		E726FCC11BE4D2F300FE13CD /* BaseModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModalViewController.swift; sourceTree = "<group>"; };
+		E726FCC31BE4D4B600FE13CD /* GVModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVModalView.h; sourceTree = "<group>"; };
+		E726FCC41BE4D4B600FE13CD /* GVModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVModalView.m; sourceTree = "<group>"; };
+		E726FCC51BE4D4B600FE13CD /* GVModalDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVModalDatePickerView.h; sourceTree = "<group>"; };
+		E726FCC61BE4D4B600FE13CD /* GVModalDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVModalDatePickerView.m; sourceTree = "<group>"; };
+		E726FCC71BE4D4B600FE13CD /* GVModalDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GVModalDatePickerView.xib; sourceTree = "<group>"; };
+		E726FCC81BE4D4B600FE13CD /* GVModalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVModalPickerView.h; sourceTree = "<group>"; };
+		E726FCC91BE4D4B600FE13CD /* GVModalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVModalPickerView.m; sourceTree = "<group>"; };
+		E726FCCA1BE4D4B600FE13CD /* GVModalPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GVModalPickerView.xib; sourceTree = "<group>"; };
+		E726FCD01BE4D6DE00FE13CD /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
+		E726FCD11BE4D6DE00FE13CD /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
 		E73888721BE381D7002FC003 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E7457E111BE3BEA3001780E2 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7566DA01A1F85CB00DE3010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_Storyboard.storyboard; sourceTree = "<group>"; };
@@ -465,6 +485,7 @@
 			children = (
 				190B85201BE3BB3500BCFA20 /* ItemsListViewController.swift */,
 				190B85221BE3BB5D00BCFA20 /* ItemListCollectionViewCell.swift */,
+				E70876741BE4CFEC0083BBFC /* ItemListAddingViewController.swift */,
 			);
 			name = ItemsList;
 			sourceTree = "<group>";
@@ -740,6 +761,7 @@
 		A432CDD31BE3901D00B03AE4 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E726FCD31BE4D6E500FE13CD /* CAAnimation+Blocks */,
 				4FBAC3011BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout */,
 				A432CF3F1BE390E400B03AE4 /* TGLStackedViewController */,
 				A432CF3D1BE390BA00B03AE4 /* ChackBox */,
@@ -892,9 +914,34 @@
 			path = Widget;
 			sourceTree = "<group>";
 		};
+		E726FCC01BE4D2E400FE13CD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E726FCC11BE4D2F300FE13CD /* BaseModalViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		E726FCD31BE4D6E500FE13CD /* CAAnimation+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				E726FCD01BE4D6DE00FE13CD /* CAAnimation+Blocks.h */,
+				E726FCD11BE4D6DE00FE13CD /* CAAnimation+Blocks.m */,
+			);
+			name = "CAAnimation+Blocks";
+			sourceTree = "<group>";
+		};
 		E731DC711A1CB30C00E12CBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E726FCC31BE4D4B600FE13CD /* GVModalView.h */,
+				E726FCC41BE4D4B600FE13CD /* GVModalView.m */,
+				E726FCC51BE4D4B600FE13CD /* GVModalDatePickerView.h */,
+				E726FCC61BE4D4B600FE13CD /* GVModalDatePickerView.m */,
+				E726FCC71BE4D4B600FE13CD /* GVModalDatePickerView.xib */,
+				E726FCC81BE4D4B600FE13CD /* GVModalPickerView.h */,
+				E726FCC91BE4D4B600FE13CD /* GVModalPickerView.m */,
+				E726FCCA1BE4D4B600FE13CD /* GVModalPickerView.xib */,
 				4FBAC3081BE4313300AED116 /* TitleView.xib */,
 				4FBAC30C1BE4328300AED116 /* TitleView.swift */,
 			);
@@ -912,6 +959,7 @@
 		E736C5A41A252B1500B8986E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E726FCC01BE4D2E400FE13CD /* Base */,
 				E73888711BE381B7002FC003 /* List */,
 				190B851F1BE3BB1600BCFA20 /* ItemsList */,
 			);
@@ -1111,6 +1159,7 @@
 				190B85501BE3D36A00BCFA20 /* Сосиски.jpg in Resources */,
 				190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */,
 				2158286D1A91E2F200833BE6 /* mogend.sh in Resources */,
+				E726FCCF1BE4D4B600FE13CD /* GVModalPickerView.xib in Resources */,
 				4FBAC3091BE4313300AED116 /* TitleView.xib in Resources */,
 				4FBAC30F1BE43A3500AED116 /* LaunchScreen.xib in Resources */,
 				190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */,
@@ -1124,6 +1173,7 @@
 				190B854F1BE3D36A00BCFA20 /* Сало.jpg in Resources */,
 				190B85421BE3D36A00BCFA20 /* Катык.jpg in Resources */,
 				190B85481BE3D36A00BCFA20 /* Мед.jpg in Resources */,
+				E726FCCD1BE4D4B600FE13CD /* GVModalDatePickerView.xib in Resources */,
 				190B854D1BE3D36A00BCFA20 /* Помидоры.jpg in Resources */,
 				190B85521BE3D36A00BCFA20 /* Хлеб.jpg in Resources */,
 				190B85401BE3D36A00BCFA20 /* Йогурт.jpg in Resources */,
@@ -1186,16 +1236,19 @@
 				4FBAC30D1BE4328300AED116 /* TitleView.swift in Sources */,
 				E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */,
 				21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				E726FCD21BE4D6DE00FE13CD /* CAAnimation+Blocks.m in Sources */,
 				21BA3B461BE408B900D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */,
 				21BA3B481BE408C000D6FE1F /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				21A1432E1B99A479004116B8 /* FSE+Array.swift in Sources */,
 				21BA3B561BE408D900D6FE1F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				4FBAC3061BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m in Sources */,
 				21BA3B591BE408D900D6FE1F /* NSObject+MagicalDataImport.m in Sources */,
+				E726FCCE1BE4D4B600FE13CD /* GVModalPickerView.m in Sources */,
 				21A143351B99A479004116B8 /* FSE+UITextView.swift in Sources */,
 				21A143361B99A479004116B8 /* FSE+UIView.swift in Sources */,
 				21BA3B581BE408D900D6FE1F /* NSNumber+MagicalDataImport.m in Sources */,
 				21E157E21BB3EDF40041FCE4 /* FSTestHelpers.swift in Sources */,
+				E70876751BE4CFEC0083BBFC /* ItemListAddingViewController.swift in Sources */,
 				21BA3B3E1BE4089E00D6FE1F /* TGLExposedLayout.m in Sources */,
 				21BA3B531BE408D000D6FE1F /* NSManagedObject+MagicalRecord.m in Sources */,
 				E7A30FD41BE39DC500CF27A4 /* Item.swift in Sources */,
@@ -1208,6 +1261,8 @@
 				21BA3B451BE408B900D6FE1F /* MagicalRecord+Setup.m in Sources */,
 				21BA3B401BE408A500D6FE1F /* TGLStackedViewController.m in Sources */,
 				190B851A1BE3A01600BCFA20 /* _ListedItem.swift in Sources */,
+				E726FCCC1BE4D4B600FE13CD /* GVModalDatePickerView.m in Sources */,
+				E726FCC21BE4D2F300FE13CD /* BaseModalViewController.swift in Sources */,
 				4FBAC3071BE40E6F00AED116 /* RACollectionViewTripletLayout.m in Sources */,
 				21BA3B501BE408D000D6FE1F /* NSManagedObject+MagicalAggregation.m in Sources */,
 				21A566001BB2BF7600A96C23 /* FSE+UIImage.swift in Sources */,
@@ -1236,6 +1291,7 @@
 				21DB304919DD2D6D003A418D /* Constants.swift in Sources */,
 				21BA3B4A1BE408C000D6FE1F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				21A143301B99A479004116B8 /* FSE+Double.swift in Sources */,
+				E726FCCB1BE4D4B600FE13CD /* GVModalView.m in Sources */,
 				E73888731BE381D7002FC003 /* ListViewController.swift in Sources */,
 				21BA3B471BE408B900D6FE1F /* MagicalRecordInternal.m in Sources */,
 				21BA3B421BE408B900D6FE1F /* MagicalRecord+ErrorHandling.m in Sources */,

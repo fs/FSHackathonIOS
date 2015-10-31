@@ -47,6 +47,23 @@ class ItemsListViewController: UIViewController {
         self.searchItems = self.items
         self.searchBar.text = ""
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let identifier = segue.identifier, let destinationViewController = segue.destinationViewController as? ItemListAddingViewController else { return }
+        
+        switch identifier {
+            case "itemListAdding":
+            destinationViewController.itemsListViewController = self
+            destinationViewController.list = self.listViewController.listOfLists[self.listIndex]
+            destinationViewController.item = self.items[self.collectionView.indexPathsForSelectedItems()!.first!.row]
+            
+            destinationViewController.transitioningDelegate = destinationViewController.popoverDelegate
+            destinationViewController.modalPresentationStyle = .Custom
+            
+        default:
+            super.prepareForSegue(segue, sender: sender)
+        }
+    }
 
 }
 
@@ -85,7 +102,7 @@ extension ItemsListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return searchItems.count
+        return self.searchItems.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -134,18 +151,7 @@ extension ItemsListViewController: RACollectionViewDelegateTripletLayout {
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        // create new listedItem
-        
-        let listedItem = ListedItem.MR_createEntity()
-        listedItem.item = self.items[indexPath.row]
-        listedItem.count = 12
-        listedItem.unit = Unit.Kilogramm.numberValue
-        
-        self.listViewController.listOfLists[self.listIndex].addListedItemsObject(listedItem)
-        self.listViewController.collectionView?.reloadData()
-        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
-        
-        self.navigationController?.popViewControllerAnimated(true)
+        self.performSegueWithIdentifier("itemListAdding", sender: nil)
     }
 }
 

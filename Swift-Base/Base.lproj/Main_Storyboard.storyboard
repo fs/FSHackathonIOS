@@ -274,6 +274,7 @@
                     <connections>
                         <outlet property="collectionView" destination="UJK-US-dJJ" id="FLW-IA-yGh"/>
                         <outlet property="searchBar" destination="KWC-IH-Vn0" id="MKf-Nx-4I1"/>
+                        <segue destination="n4r-ro-9IA" kind="showDetail" identifier="itemListAdding" id="Nmx-l4-Yay"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMw-HH-jYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,6 +424,138 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gr-D0-sAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="435" y="535"/>
+        </scene>
+        <!--Item List Adding View Controller-->
+        <scene sceneID="aAs-pW-EPL">
+            <objects>
+                <viewController id="n4r-ro-9IA" customClass="ItemListAddingViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zcb-AX-mnt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ape-6F-6oV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sLW-q5-Ylj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0y-7m-Mxc">
+                                <rect key="frame" x="40" y="216" width="240" height="137"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpb-yP-VqS">
+                                        <rect key="frame" x="134" y="99" width="86" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Hd9-M0-YDR"/>
+                                            <constraint firstAttribute="width" constant="86" id="Tus-UR-hW5"/>
+                                        </constraints>
+                                        <state key="normal" title="Отмена"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="n4r-ro-9IA" eventType="touchUpInside" id="04L-lN-PWD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfg-Ph-5Df">
+                                        <rect key="frame" x="20" y="99" width="86" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="86" id="msP-1F-haN"/>
+                                            <constraint firstAttribute="height" constant="30" id="pSz-7V-3d3"/>
+                                        </constraints>
+                                        <state key="normal" title="Добавить"/>
+                                        <connections>
+                                            <action selector="add:" destination="n4r-ro-9IA" eventType="touchUpInside" id="TEp-kf-Y4Y"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Количество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fj-UX-iga">
+                                        <rect key="frame" x="20" y="20" width="200" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="hWu-Dz-b7R"/>
+                                            <constraint firstAttribute="width" constant="200" id="oK9-sM-IBd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hWu-Dz-b7R"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="n4r-ro-9IA" id="4nW-B8-hgH"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Единица измерения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-uz-9Qc">
+                                        <rect key="frame" x="20" y="58" width="200" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="IFM-DY-NcB"/>
+                                            <constraint firstAttribute="width" constant="100" id="TQv-CH-eam"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="TQv-CH-eam"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="n4r-ro-9IA" id="GiG-hP-kcb"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9fj-UX-iga" secondAttribute="trailing" constant="20" id="02Q-cA-foD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tib-uz-9Qc" secondAttribute="trailing" constant="20" id="5Ki-Fg-jlu"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfg-Ph-5Df" secondAttribute="bottom" constant="8" id="GI7-tP-ZFq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gpb-yP-VqS" secondAttribute="bottom" constant="8" id="J2q-ts-xSl"/>
+                                    <constraint firstAttribute="height" constant="200" id="JnI-fZ-rbY"/>
+                                    <constraint firstItem="dfg-Ph-5Df" firstAttribute="leading" secondItem="Tib-uz-9Qc" secondAttribute="leading" id="Olj-rI-Vom"/>
+                                    <constraint firstItem="9fj-UX-iga" firstAttribute="leading" secondItem="W0y-7m-Mxc" secondAttribute="leading" constant="20" id="St9-ER-NRd"/>
+                                    <constraint firstAttribute="width" constant="240" id="fTE-K9-BO4"/>
+                                    <constraint firstItem="Tib-uz-9Qc" firstAttribute="top" secondItem="9fj-UX-iga" secondAttribute="bottom" constant="8" id="h6K-cm-oNj"/>
+                                    <constraint firstItem="9fj-UX-iga" firstAttribute="top" secondItem="W0y-7m-Mxc" secondAttribute="top" constant="20" id="ja6-ZA-soI"/>
+                                    <constraint firstItem="Gpb-yP-VqS" firstAttribute="top" secondItem="Tib-uz-9Qc" secondAttribute="bottom" constant="11" id="pea-qE-Gaz"/>
+                                    <constraint firstItem="dfg-Ph-5Df" firstAttribute="top" secondItem="Tib-uz-9Qc" secondAttribute="bottom" constant="11" id="pzx-5W-1B4"/>
+                                    <constraint firstItem="Tib-uz-9Qc" firstAttribute="centerX" secondItem="W0y-7m-Mxc" secondAttribute="centerX" id="rzK-Z2-reS"/>
+                                    <constraint firstItem="Tib-uz-9Qc" firstAttribute="leading" secondItem="W0y-7m-Mxc" secondAttribute="leading" constant="20" id="wAY-ty-BMb"/>
+                                    <constraint firstItem="Gpb-yP-VqS" firstAttribute="trailing" secondItem="Tib-uz-9Qc" secondAttribute="trailing" id="yjn-1o-n5M"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JnI-fZ-rbY"/>
+                                        <exclude reference="fTE-K9-BO4"/>
+                                        <exclude reference="5Ki-Fg-jlu"/>
+                                        <exclude reference="wAY-ty-BMb"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W0y-7m-Mxc" firstAttribute="centerY" secondItem="sLW-q5-Ylj" secondAttribute="centerY" id="BVH-6z-Qyz"/>
+                            <constraint firstItem="W0y-7m-Mxc" firstAttribute="centerX" secondItem="sLW-q5-Ylj" secondAttribute="centerX" id="dVG-vo-rP7"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="addButton" destination="dfg-Ph-5Df" id="F0U-vo-Z1D"/>
+                        <outlet property="backgroundView" destination="W0y-7m-Mxc" id="4Bf-MW-vhQ"/>
+                        <outlet property="cancelButton" destination="Gpb-yP-VqS" id="uIk-lf-GVn"/>
+                        <outlet property="numberTextField" destination="9fj-UX-iga" id="6HZ-Wv-G3G"/>
+                        <outlet property="unitTextField" destination="Tib-uz-9Qc" id="Ddx-KY-alo"/>
+                        <outlet property="yAxisConstraint" destination="BVH-6z-Qyz" id="QNR-gg-pcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0td-OK-zXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="520"/>
         </scene>
     </scenes>
     <resources>
