@@ -20,7 +20,6 @@
 		190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852B1BE3D36A00BCFA20 /* Кефир.jpg */; };
 		190B85441BE3D36A00BCFA20 /* Колбаса.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */; };
 		190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */; };
-		190B85461BE3D36A00BCFA20 /* Майонез.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852E1BE3D36A00BCFA20 /* Майонез.jpg */; };
 		190B85471BE3D36A00BCFA20 /* Масло растительное.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */; };
 		190B85481BE3D36A00BCFA20 /* Мед.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85301BE3D36A00BCFA20 /* Мед.jpg */; };
 		190B85491BE3D36A00BCFA20 /* Молоко.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190B85311BE3D36A00BCFA20 /* Молоко.jpg */; };
@@ -270,7 +269,6 @@
 		190B852B1BE3D36A00BCFA20 /* Кефир.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Кефир.jpg"; sourceTree = "<group>"; };
 		190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Колбаса.jpg"; sourceTree = "<group>"; };
 		190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Конфеты.jpg"; sourceTree = "<group>"; };
-		190B852E1BE3D36A00BCFA20 /* Майонез.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Майонез.jpg"; sourceTree = "<group>"; };
 		190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Масло растительное.jpg"; sourceTree = "<group>"; };
 		190B85301BE3D36A00BCFA20 /* Мед.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Мед.jpg"; sourceTree = "<group>"; };
 		190B85311BE3D36A00BCFA20 /* Молоко.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Молоко.jpg"; sourceTree = "<group>"; };
@@ -502,7 +500,6 @@
 				190B852B1BE3D36A00BCFA20 /* Кефир.jpg */,
 				190B852C1BE3D36A00BCFA20 /* Колбаса.jpg */,
 				190B852D1BE3D36A00BCFA20 /* Конфеты.jpg */,
-				190B852E1BE3D36A00BCFA20 /* Майонез.jpg */,
 				190B852F1BE3D36A00BCFA20 /* Масло растительное.jpg */,
 				190B85301BE3D36A00BCFA20 /* Мед.jpg */,
 				190B85311BE3D36A00BCFA20 /* Молоко.jpg */,
@@ -1151,7 +1148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				190B85541BE3D36A00BCFA20 /* Яблоки.jpg in Resources */,
-				190B85461BE3D36A00BCFA20 /* Майонез.jpg in Resources */,
 				E7566D9F1A1F85CB00DE3010 /* Main_Storyboard.storyboard in Resources */,
 				190B854A1BE3D36A00BCFA20 /* Мука.jpg in Resources */,
 				218C64C01BA07DDE00EEEDF1 /* Localizable.strings in Resources */,
