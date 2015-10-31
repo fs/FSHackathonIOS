@@ -133,6 +133,9 @@
 		21E7AEA91BE3E7C000264DC9 /* FSHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A1432D1B99A479004116B8 /* FSHelpers.swift */; };
 		4FBAC3061BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAC3031BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m */; };
 		4FBAC3071BE40E6F00AED116 /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAC3051BE40E6F00AED116 /* RACollectionViewTripletLayout.m */; };
+		4FBAC3091BE4313300AED116 /* TitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAC3081BE4313300AED116 /* TitleView.xib */; };
+		4FBAC30D1BE4328300AED116 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAC30C1BE4328300AED116 /* TitleView.swift */; };
+		4FBAC30F1BE43A3500AED116 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAC30E1BE43A3500AED116 /* LaunchScreen.xib */; };
 		A432CF3C1BE390B500B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
 		A432CF3E1BE390C700B03AE4 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A432CF3B1BE390B500B03AE4 /* M13Checkbox.m */; };
 		A4A069821BE37F79004F0999 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A069811BE37F79004F0999 /* NotificationCenter.framework */; };
@@ -339,6 +342,9 @@
 		4FBAC3031BE40E6F00AED116 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
 		4FBAC3041BE40E6F00AED116 /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
 		4FBAC3051BE40E6F00AED116 /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
+		4FBAC3081BE4313300AED116 /* TitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleView.xib; sourceTree = "<group>"; };
+		4FBAC30C1BE4328300AED116 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		4FBAC30E1BE43A3500AED116 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		A432CEA81BE3906D00B03AE4 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		A432CEA91BE3906D00B03AE4 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		A432CEAA1BE3906D00B03AE4 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -651,6 +657,7 @@
 		21DB300619DD2289003A418D = {
 			isa = PBXGroup;
 			children = (
+				4FBAC30E1BE43A3500AED116 /* LaunchScreen.xib */,
 				A432CDD31BE3901D00B03AE4 /* Libraries */,
 				A4A069CD1BE381F9004F0999 /* WatchExtension.entitlements */,
 				21DB301119DD2289003A418D /* Swift-Base */,
@@ -887,6 +894,8 @@
 		E731DC711A1CB30C00E12CBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FBAC3081BE4313300AED116 /* TitleView.xib */,
+				4FBAC30C1BE4328300AED116 /* TitleView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1101,6 +1110,8 @@
 				190B85501BE3D36A00BCFA20 /* Сосиски.jpg in Resources */,
 				190B85451BE3D36A00BCFA20 /* Конфеты.jpg in Resources */,
 				2158286D1A91E2F200833BE6 /* mogend.sh in Resources */,
+				4FBAC3091BE4313300AED116 /* TitleView.xib in Resources */,
+				4FBAC30F1BE43A3500AED116 /* LaunchScreen.xib in Resources */,
 				190B85431BE3D36A00BCFA20 /* Кефир.jpg in Resources */,
 				190B85531BE3D36A00BCFA20 /* Шоколад.jpg in Resources */,
 				190B853F1BE3D36A00BCFA20 /* Груши.jpg in Resources */,
@@ -1171,6 +1182,7 @@
 				21BA3B431BE408B900D6FE1F /* MagicalRecord+iCloud.m in Sources */,
 				21BA3B511BE408D000D6FE1F /* NSManagedObject+MagicalDataImport.m in Sources */,
 				21BA3B441BE408B900D6FE1F /* MagicalRecord+Options.m in Sources */,
+				4FBAC30D1BE4328300AED116 /* TitleView.swift in Sources */,
 				E7457E121BE3BEA3001780E2 /* ListCollectionViewCell.swift in Sources */,
 				21BA3B5A1BE408D900D6FE1F /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				21BA3B461BE408B900D6FE1F /* MagicalRecord+ShorthandMethods.m in Sources */,
@@ -1374,7 +1386,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -1453,7 +1464,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Staging";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -1535,7 +1545,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -2029,7 +2038,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -2069,7 +2077,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -2148,7 +2155,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Staging";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -2226,7 +2232,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Staging";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base Staging";
 				BUNDLE_ID = "com.flatstack.Swift-Base.staging";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";
@@ -2477,7 +2482,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				BUNDLE_DISPLAY_NAME = "Swift-Base";
 				BUNDLE_ID = "com.flatstack.Swift-Base";
 				CODE_SIGN_ENTITLEMENTS = "Swift-Base/Swift-Base.entitlements";

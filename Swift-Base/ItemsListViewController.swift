@@ -19,6 +19,62 @@ class ItemsListViewController: UIViewController {
     lazy var items = {
         return Item.MR_findAllSortedBy(ItemAttributes.order.rawValue, ascending: true) as! [Item]
     }()
+    
+    private var searchItems: [Item] = []
+    private var enableDrag: Bool = true
+    
+    override func loadView() {
+        super.loadView()
+        self.searchBar.delegate = self
+        
+        self.navigationController?.navigationBar.barTintColor = RGBA(53, 178, 226, 1.0)
+        
+        if let lTitle = self.navigationItem.title {
+            let titleView = TitleView.createView()
+            titleView.title.text = lTitle
+            self.navigationItem.titleView = titleView
+        }
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Noteworthy-Light", size: 15.0)!,
+                                                  NSForegroundColorAttributeName: UIColor.whiteColor()], forState: UIControlState.Normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Noteworthy-Light", size: 15.0)!,
+                                                  NSForegroundColorAttributeName: UIColor.lightGrayColor()], forState: UIControlState.Highlighted)
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.searchItems = self.items
+        self.searchBar.text = ""
+    }
+
+}
+
+extension ItemsListViewController: UISearchBarDelegate {
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText == "" {
+            self.enableDrag = true
+            self.searchItems = self.items
+            self.collectionView.reloadData()
+            return
+        }
+        
+        self.enableDrag = false
+        self.searchItems = self.items.filter({ (item: Item) -> Bool in
+            
+            if let lTitle = item.title {
+                if let _ = lTitle.rangeOfString(searchText) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+            return false
+        })
+        self.collectionView.reloadData()
+    }
 }
 
 //MARK: - UICollectionViewDataSource
@@ -29,12 +85,12 @@ extension ItemsListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return searchItems.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ItemListCollectionViewCell", forIndexPath: indexPath) as! ItemListCollectionViewCell
-        cell.prepareCell(self.items[indexPath.row])
+        cell.prepareCell(self.searchItems[indexPath.row])
         return cell
     }
 }
@@ -103,6 +159,7 @@ extension ItemsListViewController: RACollectionViewReorderableTripletLayoutDataS
         for i in 0...self.items.count-1 {
             self.items[i].order = i
         }
+        self.searchItems = self.items
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreWithCompletion(nil)
     }
 
@@ -111,6 +168,6 @@ extension ItemsListViewController: RACollectionViewReorderableTripletLayoutDataS
     }
     
     func collectionView(collectionView: UICollectionView, canMoveItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
+        return self.enableDrag
     }
 }

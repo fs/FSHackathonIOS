@@ -39,6 +39,14 @@ class ListViewController: TGLStackedViewController {
         
         self.collectionView!.delegate = self
         self.collectionView!.dataSource = self
+        
+        self.navigationController?.navigationBar.barTintColor = RGBA(53, 178, 226, 1.0)
+        
+        if let lTitle = self.navigationItem.title {
+            let titleView = TitleView.createView()
+            titleView.title.text = lTitle
+            self.navigationItem.titleView = titleView
+        }
     }
     
     override func viewDidLoad() {

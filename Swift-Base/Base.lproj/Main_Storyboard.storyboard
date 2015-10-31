@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--My lists-->
         <scene sceneID="p1O-Dp-6as">
             <objects>
                 <collectionViewController automaticallyAdjustsScrollViewInsets="NO" id="vwP-6e-gmj" customClass="ListViewController" customModule="Swift_Base" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36078431372549019" green="0.76078431372549016" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Oip-mL-4RA">
                             <size key="itemSize" width="320" height="251"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -68,7 +68,6 @@
                                                                 <rect key="frame" x="68" y="10" width="198" height="22"/>
                                                                 <animations/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUe-Ze-7iY">
@@ -118,7 +117,7 @@
                                                 <constraint firstAttribute="width" constant="36" id="YW4-QL-Njf"/>
                                             </constraints>
                                             <connections>
-                                                <segue destination="Nr3-Se-VDD" kind="show" id="Dma-rW-Y9X"/>
+                                                <segue destination="Nr3-Se-VDD" kind="show" identifier="chooseItem" id="Dma-rW-Y9X"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -147,8 +146,9 @@
                         </cells>
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" id="9ba-1w-tZu">
+                    <navigationItem key="navigationItem" title="My lists" id="9ba-1w-tZu">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wbt-fo-jiK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="hVs-qg-2sc" kind="showDetail" identifier="NewList" id="U9i-8i-zms"/>
                             </connections>
@@ -156,12 +156,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="QA9-sC-nwI" id="hoC-hP-F5c"/>
-                        <segue destination="Nr3-Se-VDD" kind="show" identifier="chooseItem" id="CS2-UE-pIb"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ACJ-kv-oCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="535"/>
+            <point key="canvasLocation" x="870" y="520"/>
         </scene>
         <!--Выберите покупку-->
         <scene sceneID="yKO-V2-pI4">
@@ -175,18 +174,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-IH-Vn0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grossery" translatesAutoresizingMaskIntoConstraints="NO" id="aUk-Ai-Wdc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <animations/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Nr3-Se-VDD" id="3MN-WP-PME"/>
-                                </connections>
-                            </searchBar>
+                            </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UJK-US-dJJ">
                                 <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e1w-zJ-9ps" customClass="RACollectionViewReorderableTripletLayout">
                                     <size key="itemSize" width="168" height="179"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -235,10 +230,23 @@
                                     <outlet property="delegate" destination="Nr3-Se-VDD" id="qz1-L4-mge"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" text="вапвап" placeholder="Введите название товара" translatesAutoresizingMaskIntoConstraints="NO" id="KWC-IH-Vn0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.85381943260000004" blue="0.87347859179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.49019607843137253" green="0.83137254901960778" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Nr3-Se-VDD" id="3MN-WP-PME"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kpc-tO-6D4" firstAttribute="top" secondItem="aUk-Ai-Wdc" secondAttribute="bottom" constant="-20" id="922-dt-yBj"/>
+                            <constraint firstAttribute="trailing" secondItem="aUk-Ai-Wdc" secondAttribute="trailing" id="ENc-CF-fgG"/>
+                            <constraint firstItem="aUk-Ai-Wdc" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="QXH-e7-nnn"/>
                             <constraint firstItem="KWC-IH-Vn0" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="XiN-96-vTa"/>
                             <constraint firstItem="UJK-US-dJJ" firstAttribute="leading" secondItem="dbP-Ur-pto" secondAttribute="leading" id="ZnE-SH-js6"/>
                             <constraint firstItem="UJK-US-dJJ" firstAttribute="top" secondItem="KWC-IH-Vn0" secondAttribute="bottom" id="akb-Xh-J9C"/>
@@ -246,6 +254,7 @@
                             <constraint firstItem="UJK-US-dJJ" firstAttribute="top" secondItem="KWC-IH-Vn0" secondAttribute="bottom" id="gYp-HP-mvu"/>
                             <constraint firstItem="kpc-tO-6D4" firstAttribute="top" secondItem="UJK-US-dJJ" secondAttribute="bottom" id="hqb-jg-rZj"/>
                             <constraint firstAttribute="trailing" secondItem="UJK-US-dJJ" secondAttribute="trailing" id="q9V-MI-2qg"/>
+                            <constraint firstItem="aUk-Ai-Wdc" firstAttribute="top" secondItem="Mzt-8f-lwE" secondAttribute="bottom" id="sGQ-xQ-oAh"/>
                             <constraint firstItem="KWC-IH-Vn0" firstAttribute="top" secondItem="dbP-Ur-pto" secondAttribute="top" id="tqe-q9-fC0"/>
                         </constraints>
                     </view>
@@ -271,10 +280,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ro-yL-tme">
-                                <rect key="frame" x="40" y="215.5" width="240" height="137"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ro-yL-tme">
+                                <rect key="frame" x="40" y="216" width="240" height="137"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-AL-a3h">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Jj-AL-a3h">
                                         <rect key="frame" x="20" y="61" width="200" height="30"/>
                                         <animations/>
                                         <constraints>
@@ -293,13 +302,13 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название списка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1W-Lz-eqw">
-                                        <rect key="frame" x="20" y="20" width="200" height="21.5"/>
+                                        <rect key="frame" x="20" y="20" width="200" height="22"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw3-0W-i3I">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nw3-0W-i3I">
                                         <rect key="frame" x="134" y="99" width="86" height="30"/>
                                         <animations/>
                                         <constraints>
@@ -311,7 +320,7 @@
                                             <action selector="cancel:" destination="hVs-qg-2sc" eventType="touchUpInside" id="AFu-KZ-p3h"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-jM-RQf">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-jM-RQf">
                                         <rect key="frame" x="20" y="99" width="86" height="30"/>
                                         <animations/>
                                         <constraints>
@@ -393,6 +402,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.34901960780000002" green="0.40784313729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="vwP-6e-gmj" kind="relationship" relationship="rootViewController" id="QTg-OH-iND"/>
@@ -403,7 +413,7 @@
             <point key="canvasLocation" x="435" y="535"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Dma-rW-Y9X"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Grossery" width="844" height="644"/>
+    </resources>
 </document>

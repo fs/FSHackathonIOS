@@ -39,7 +39,7 @@ class ItemListCollectionViewCell: UICollectionViewCell {
         self.titleLabel.textAlignment = NSTextAlignment.Center
         self.titleLabel.minimumScaleFactor = 0.6
         self.titleLabel.adjustsFontSizeToFitWidth = true
-        self.titleLabel.shadowOffset = CGSizeMake(1, 0)
+        self.titleLabel.shadowOffset = CGSizeMake(1, 1)
         self.titleLabel.shadowColor = UIColor.darkGrayColor()
         
         visualEffect.addSubview(self.titleLabel)
@@ -57,4 +57,8 @@ class ItemListCollectionViewCell: UICollectionViewCell {
         self.titleLabel.text = item.title!
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.imageView.image = nil
+    }
 }
