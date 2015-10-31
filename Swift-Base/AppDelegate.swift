@@ -249,6 +249,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func applicationDidBecomeActive(application: UIApplication) {
+        NSNotificationCenter.defaultCenter().postNotificationName("ReactivateApp", object: self)
+    }
 }
 
 

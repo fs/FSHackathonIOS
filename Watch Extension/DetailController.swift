@@ -44,9 +44,11 @@ class DetailController: WKInterfaceController {
         let object = self.element
         
         self.productTitle.setText(object.title)
-        self.productCategory.setText("Овощи")
+        self.productCategory.setText(object.category)
         self.productCount.setText("\(object.count) \(object.unit)")
-        self.productPrice.setText("\(object.minPrice) - \(object.maxPrice)")
+        self.productPrice.setText("\(Int(object.minPrice)) - \(Int(object.maxPrice)) рублей")
+        
+        self.productCategory.setTextColor(object.categoryColor)
         
         self.updateButtonTitle()
     }

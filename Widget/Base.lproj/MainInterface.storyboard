@@ -52,7 +52,7 @@
                                             </button>
                                         </subviews>
                                         <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Lqy-LH-gc3" firstAttribute="leading" secondItem="bPU-SS-hBL" secondAttribute="leading" id="1hk-Vn-7Ar"/>
                                             <constraint firstAttribute="bottom" secondItem="Lqy-LH-gc3" secondAttribute="bottom" id="8h6-Il-Gq4"/>
@@ -76,19 +76,19 @@
                                         <rect key="frame" x="8" y="29.5" width="196" height="20.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ашан" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kh2-2a-LfK">
                                         <rect key="frame" x="8" y="8" width="196" height="20.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="kh2-2a-LfK" firstAttribute="leading" secondItem="Xrf-Nd-doc" secondAttribute="leading" constant="8" id="2AO-gb-Pnq"/>
                                     <constraint firstItem="bPU-SS-hBL" firstAttribute="leading" secondItem="kh2-2a-LfK" secondAttribute="trailing" constant="16" id="DYO-PE-OBf"/>
